@@ -732,7 +732,7 @@ end
 
 function _cell_id(stage::AbstractString, params::AbstractDict)
     payload = "issue86-cell-v1|" * _canonical_cell_value(params)
-    digest = first(bytes2hex(sha1(payload)), 16)
+    digest = first(bytes2hex(sha1(payload)), 32)
     return "$(stage)-$(digest)"
 end
 
@@ -773,7 +773,7 @@ function _successful_manifest(path::AbstractString, cell = nothing)
     try
         manifest = JSON.parsefile(path)
         get(manifest, "status", nothing) == "success" || return nothing
-        haskey(manifest, "result") || return nothing
+        get(manifest, "result", nothing) isa AbstractDict || return nothing
         if !isnothing(cell)
             get(manifest, "cell_id", nothing) == cell["cell_id"] || return nothing
             get(manifest, "stage", nothing) == cell["stage"] || return nothing

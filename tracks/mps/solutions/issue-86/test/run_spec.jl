@@ -34,7 +34,8 @@ using .Issue86TrackB
     @test length(spec["cells"]) == 6
     @test length(unique(cell["cell_id"] for cell in spec["cells"])) == 6
     @test all(
-        startswith(cell["cell_id"], "stage-test-") for cell in spec["cells"]
+        !isnothing(match(r"^stage-test-[0-9a-f]{32}$", cell["cell_id"]))
+        for cell in spec["cells"]
     )
     @test [cell["cell_id"] for cell in spec["cells"]] ==
         [cell["cell_id"] for cell in build_run_spec(
@@ -134,6 +135,41 @@ end
         @test length(collected) == 1
         @test collected[1]["E0"] == -1.0
         @test collected[1]["cell_id"] == first_id
+    end
+end
+
+@testset "Malformed success manifests remain pending" begin
+    config = Dict(
+        "sweeps" => Any[
+            Dict(
+                "model" => "nn",
+                "lengths" => [8],
+                "gammas" => [1.0],
+                "chis" => [64],
+            ),
+        ],
+    )
+    spec = build_run_spec(config; run_id = "malformed-run", stage = "stage1")
+    cell = only(spec["cells"])
+
+    mktempdir() do directory
+        manifest_path = joinpath(
+            directory, "cells", cell["cell_id"], "manifest.json"
+        )
+        mkpath(dirname(manifest_path))
+        open(manifest_path, "w") do io
+            JSON.print(io, Dict(
+                "status" => "success",
+                "cell_id" => cell["cell_id"],
+                "stage" => cell["stage"],
+                "resource_class" => cell["resource_class"],
+                "params" => cell["params"],
+                "result" => nothing,
+            ))
+        end
+
+        @test pending_cell_indices(spec, directory) == [1]
+        @test isempty(collect_cell_results(spec, directory))
     end
 end
 
