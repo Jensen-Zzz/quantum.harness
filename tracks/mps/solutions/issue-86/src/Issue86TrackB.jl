@@ -8,6 +8,7 @@ using LinearAlgebra
 using MPSKit
 using Printf
 using Random
+using SHA
 using SparseArrays
 using SpecialFunctions
 using Statistics
@@ -706,21 +707,52 @@ function resource_class(job::AbstractDict)
     return "A"
 end
 
+function _canonical_cell_value(value)
+    isnothing(value) && return "n:null"
+    value isa Bool && return value ? "b:true" : "b:false"
+    value isa Integer && return "i:" * string(value)
+    if value isa AbstractFloat
+        normalized = iszero(value) ? zero(value) : value
+        return "f:" * @sprintf("%.17g", Float64(normalized))
+    end
+    value isa AbstractString && return "s:" * JSON.json(value)
+    if value isa AbstractVector
+        return "a:[" * join(_canonical_cell_value.(value), ",") * "]"
+    end
+    if value isa AbstractDict
+        keys_sorted = sort!(String.(collect(keys(value))))
+        entries = (
+            JSON.json(key) * ":" * _canonical_cell_value(value[key])
+            for key in keys_sorted
+        )
+        return "d:{" * join(entries, ",") * "}"
+    end
+    error("unsupported run-spec parameter type $(typeof(value))")
+end
+
+function _cell_id(stage::AbstractString, params::AbstractDict)
+    payload = "issue86-cell-v1|" * _canonical_cell_value(params)
+    digest = first(bytes2hex(sha1(payload)), 16)
+    return "$(stage)-$(digest)"
+end
+
 function build_run_spec(
         config::AbstractDict;
         run_id::AbstractString,
         stage::AbstractString,
     )
     jobs = read_config_jobs(config)
-    width = max(4, ndigits(max(length(jobs), 1)))
-    cells = map(enumerate(jobs)) do (index, job)
+    cells = map(jobs) do job
         Dict{String, Any}(
-            "cell_id" => @sprintf("%s-%0*d", stage, width, index),
+            "cell_id" => _cell_id(stage, job),
             "stage" => String(stage),
             "resource_class" => resource_class(job),
             "params" => job,
         )
     end
+    cell_ids = [cell["cell_id"] for cell in cells]
+    length(unique(cell_ids)) == length(cell_ids) ||
+        error("run spec contains duplicate parameter cells")
     return Dict{String, Any}(
         "metadata" => Dict{String, Any}(
             "schema_version" => 1,
@@ -736,12 +768,21 @@ function build_run_spec(
     )
 end
 
-function _successful_manifest(path::AbstractString)
+function _successful_manifest(path::AbstractString, cell = nothing)
     isfile(path) || return nothing
     try
         manifest = JSON.parsefile(path)
         get(manifest, "status", nothing) == "success" || return nothing
         haskey(manifest, "result") || return nothing
+        if !isnothing(cell)
+            get(manifest, "cell_id", nothing) == cell["cell_id"] || return nothing
+            get(manifest, "stage", nothing) == cell["stage"] || return nothing
+            get(manifest, "resource_class", nothing) == cell["resource_class"] ||
+                return nothing
+            haskey(manifest, "params") || return nothing
+            _canonical_cell_value(manifest["params"]) ==
+                _canonical_cell_value(cell["params"]) || return nothing
+        end
         return manifest
     catch
         return nothing
@@ -761,7 +802,7 @@ function pending_cell_indices(
         manifest_path = joinpath(
             output_directory, "cells", cell["cell_id"], "manifest.json"
         )
-        isnothing(_successful_manifest(manifest_path)) && push!(pending, index)
+        isnothing(_successful_manifest(manifest_path, cell)) && push!(pending, index)
     end
     return pending
 end
@@ -772,7 +813,7 @@ function collect_cell_results(spec::AbstractDict, output_directory::AbstractStri
         manifest_path = joinpath(
             output_directory, "cells", cell["cell_id"], "manifest.json"
         )
-        manifest = _successful_manifest(manifest_path)
+        manifest = _successful_manifest(manifest_path, cell)
         isnothing(manifest) && continue
         result = Dict{String, Any}(manifest["result"])
         result["cell_id"] = cell["cell_id"]
@@ -830,7 +871,7 @@ function execute_cell(
     cell = spec["cells"][index]
     cell_directory = joinpath(output_directory, "cells", cell["cell_id"])
     manifest_path = joinpath(cell_directory, "manifest.json")
-    existing = _successful_manifest(manifest_path)
+    existing = _successful_manifest(manifest_path, cell)
     isnothing(existing) || return Dict{String, Any}(existing["result"])
 
     params = cell["params"]

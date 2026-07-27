@@ -32,12 +32,22 @@ using .Issue86TrackB
     @test spec["metadata"]["run_id"] == "unit-run"
     @test spec["metadata"]["stage"] == "stage-test"
     @test length(spec["cells"]) == 6
+    @test length(unique(cell["cell_id"] for cell in spec["cells"])) == 6
+    @test all(
+        startswith(cell["cell_id"], "stage-test-") for cell in spec["cells"]
+    )
     @test [cell["cell_id"] for cell in spec["cells"]] ==
-        ["stage-test-0001", "stage-test-0002", "stage-test-0003",
-         "stage-test-0004", "stage-test-0005", "stage-test-0006"]
+        [cell["cell_id"] for cell in build_run_spec(
+            config; run_id = "another-run", stage = "stage-test"
+        )["cells"]]
     @test [cell["resource_class"] for cell in spec["cells"]] ==
         ["A", "B", "A", "B", "C", "D"]
     @test all(cell["params"]["tolerance"] == 1.0e-8 for cell in spec["cells"])
+
+    changed = deepcopy(config)
+    changed["sweeps"][1]["gammas"] = [1.01, 1.0]
+    changed_spec = build_run_spec(changed; run_id = "changed", stage = "stage-test")
+    @test changed_spec["cells"][1]["cell_id"] != spec["cells"][1]["cell_id"]
 end
 
 @testset "Production stage configurations have the planned cells" begin
@@ -78,16 +88,43 @@ end
     spec = build_run_spec(config; run_id = "resume-run", stage = "stage1")
 
     mktempdir() do directory
-        first_manifest = joinpath(directory, "cells", "stage1-0001", "manifest.json")
+        first_id = spec["cells"][1]["cell_id"]
+        second_id = spec["cells"][2]["cell_id"]
+        first_manifest = joinpath(directory, "cells", first_id, "manifest.json")
         mkpath(dirname(first_manifest))
         open(first_manifest, "w") do io
-            JSON.print(io, Dict("status" => "success", "result" => Dict("E0" => -1.0)))
+            JSON.print(io, Dict(
+                "status" => "success",
+                "cell_id" => first_id,
+                "stage" => spec["cells"][1]["stage"],
+                "resource_class" => spec["cells"][1]["resource_class"],
+                "params" => spec["cells"][1]["params"],
+                "result" => Dict("E0" => -1.0),
+            ))
         end
 
-        failed_manifest = joinpath(directory, "cells", "stage1-0002", "manifest.json")
+        failed_manifest = joinpath(directory, "cells", second_id, "manifest.json")
         mkpath(dirname(failed_manifest))
         open(failed_manifest, "w") do io
             JSON.print(io, Dict("status" => "failed", "error" => "test failure"))
+        end
+
+        third_cell = spec["cells"][3]
+        stale_params = deepcopy(third_cell["params"])
+        stale_params["gamma"] = 9.99
+        stale_manifest = joinpath(
+            directory, "cells", third_cell["cell_id"], "manifest.json"
+        )
+        mkpath(dirname(stale_manifest))
+        open(stale_manifest, "w") do io
+            JSON.print(io, Dict(
+                "status" => "success",
+                "cell_id" => third_cell["cell_id"],
+                "stage" => third_cell["stage"],
+                "resource_class" => third_cell["resource_class"],
+                "params" => stale_params,
+                "result" => Dict("E0" => -9.99),
+            ))
         end
 
         @test pending_cell_indices(spec, directory) == [2, 3]
@@ -96,7 +133,7 @@ end
         collected = collect_cell_results(spec, directory)
         @test length(collected) == 1
         @test collected[1]["E0"] == -1.0
-        @test collected[1]["cell_id"] == "stage1-0001"
+        @test collected[1]["cell_id"] == first_id
     end
 end
 
@@ -121,13 +158,14 @@ end
     mktempdir() do directory
         first = execute_cell(spec, 1, directory; solver = fake_solver)
         second = execute_cell(spec, 1, directory; solver = fake_solver)
-        manifest_path = joinpath(directory, "cells", "stage1-0001", "manifest.json")
+        cell_id = spec["cells"][1]["cell_id"]
+        manifest_path = joinpath(directory, "cells", cell_id, "manifest.json")
         manifest = JSON.parsefile(manifest_path)
 
         @test calls[] == 1
         @test first["E0"] == second["E0"] == -8.0
         @test manifest["status"] == "success"
-        @test manifest["cell_id"] == "stage1-0001"
+        @test manifest["cell_id"] == cell_id
         @test manifest["resource_class"] == "A"
         @test manifest["runtime"]["julia_threads"] >= 1
         @test isempty(filter(name -> occursin(".tmp-", name), readdir(dirname(manifest_path))))
