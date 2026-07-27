@@ -105,6 +105,14 @@ the allocation. `run_full.sbatch` requests 128 cores and 480 GB and uses:
 | C | 4 workers × 32 cores | `L = 128`, `chi = 128` |
 | D | 2 workers × 64 cores | optional `chi = 256` |
 
+Each `srun` step receives an explicit share of `SLURM_MEM_PER_NODE`; without
+that step-level request, SCNet treated every step as if it needed the full job
+memory and serialized the first seven-cell smoke run. The launcher also caps
+the requested worker count by `SLURM_CPUS_PER_TASK`, so a 16-core validation
+allocation automatically uses four 4-core workers while a 128-core class-A
+allocation uses all 32. A bounded GNU `xargs -P` pool is used because the
+cluster provides Bash 4.2, which predates `wait -n`.
+
 The committed stage configurations are:
 
 | config | cells | purpose |

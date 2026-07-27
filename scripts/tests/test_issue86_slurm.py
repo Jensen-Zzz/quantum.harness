@@ -1,4 +1,8 @@
+import json
+import os
 from pathlib import Path
+import subprocess
+import textwrap
 
 ROOT = Path(__file__).resolve().parents[2]
 PROFILE = ROOT / "skills/using-slurm/profiles/scnet.toml"
@@ -32,15 +36,121 @@ def test_issue86_sbatch_packs_a_full_cpu_node():
     assert "HARNESS_RUN_SPEC" in script
 
 
-def test_packed_worker_is_resumable_and_pins_each_worker():
-    script = PACKED_WORKER.read_text()
+def _write_executable(path: Path, contents: str) -> None:
+    path.write_text(textwrap.dedent(contents).lstrip())
+    path.chmod(0o755)
 
-    assert "pending_cells.jl" in script
-    assert 'RESOURCE_CLASS' in script
-    assert "srun --exclusive" in script
-    assert "--cpu-bind=cores" in script
-    assert "OPENBLAS_NUM_THREADS" in script
-    assert "run_cell.jl" in script
+
+def _run_fake_packed_worker(tmp_path: Path, *, fail_index: int | None = None):
+    fake_bin = tmp_path / "bin"
+    fake_bin.mkdir()
+    _write_executable(
+        fake_bin / "julia",
+        """\
+        #!/bin/bash
+        case "$*" in
+          *pending_cells.jl*) printf '1\\n2\\n3\\n4\\n5\\n6\\n' ;;
+          *collect.jl*) exit 0 ;;
+          *) exit 0 ;;
+        esac
+        """,
+    )
+    _write_executable(
+        fake_bin / "srun",
+        """\
+        #!/usr/bin/env python3
+        import fcntl
+        import json
+        import os
+        import sys
+        import time
+
+        path = os.environ["FAKE_SRUN_STATE"]
+        index = int(sys.argv[-2])
+
+        def update(delta):
+            with open(path, "a+", encoding="utf-8") as handle:
+                fcntl.flock(handle, fcntl.LOCK_EX)
+                handle.seek(0)
+                raw = handle.read()
+                state = json.loads(raw) if raw else {
+                    "active": 0,
+                    "maximum": 0,
+                    "memories": [],
+                    "seen": [],
+                    "arguments": [],
+                    "thread_sets": [],
+                }
+                state["active"] += delta
+                state["maximum"] = max(state["maximum"], state["active"])
+                if delta > 0:
+                    state["memories"].extend(
+                        arg.split("=", 1)[1]
+                        for arg in sys.argv
+                        if arg.startswith("--mem=")
+                    )
+                    state["seen"].append(index)
+                    state["arguments"].append(sys.argv[1:])
+                    state["thread_sets"].append([
+                        os.environ.get("JULIA_NUM_THREADS"),
+                        os.environ.get("OPENBLAS_NUM_THREADS"),
+                    ])
+                handle.seek(0)
+                handle.truncate()
+                json.dump(state, handle)
+                fcntl.flock(handle, fcntl.LOCK_UN)
+
+        update(1)
+        time.sleep(0.08)
+        update(-1)
+        if os.environ.get("FAKE_FAIL_INDEX") == str(index):
+            raise SystemExit(255)
+        """,
+    )
+
+    spec = tmp_path / "run_spec.json"
+    spec.write_text("{}")
+    output = tmp_path / "results"
+    state_path = tmp_path / "srun-state.json"
+    env = os.environ | {
+        "PATH": f"{fake_bin}:{os.environ['PATH']}",
+        "SLURM_CPUS_PER_TASK": "8",
+        "SLURM_MEM_PER_NODE": "12288",
+        "FAKE_SRUN_STATE": str(state_path),
+    }
+    if fail_index is not None:
+        env["FAKE_FAIL_INDEX"] = str(fail_index)
+    result = subprocess.run(
+        [str(PACKED_WORKER), str(spec), str(output), "A", "32", "4"],
+        env=env,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+    assert state_path.exists(), result.stderr
+    state = json.loads(state_path.read_text())
+    return result, state
+
+
+def test_packed_worker_caps_concurrency_to_allocation_and_splits_memory(tmp_path):
+    result, state = _run_fake_packed_worker(tmp_path)
+
+    assert result.returncode == 0, result.stderr
+    assert state["maximum"] == 2
+    assert set(state["memories"]) == {"6144M"}
+    assert sorted(state["seen"]) == [1, 2, 3, 4, 5, 6]
+    assert all("--exact" in args for args in state["arguments"])
+    assert all("--exclusive" in args for args in state["arguments"])
+    assert all("--cpu-bind=cores" in args for args in state["arguments"])
+    assert all("--cpus-per-task=4" in args for args in state["arguments"])
+    assert state["thread_sets"] == [["4", "4"]] * 6
+
+
+def test_packed_worker_retains_progress_after_one_cell_fails(tmp_path):
+    result, state = _run_fake_packed_worker(tmp_path, fail_index=3)
+
+    assert result.returncode != 0
+    assert sorted(state["seen"]) == [1, 2, 3, 4, 5, 6]
 
 
 def test_run_spec_entrypoints_are_separate_from_the_solver():

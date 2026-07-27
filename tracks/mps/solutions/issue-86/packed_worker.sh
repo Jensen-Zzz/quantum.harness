@@ -26,7 +26,10 @@ if (( workers * cores_per_worker > 128 )); then
 fi
 
 mkdir -p "$output_directory"
-mapfile -t pending_indices < <(
+pending_indices=()
+while IFS= read -r index; do
+  [[ -n "$index" ]] && pending_indices+=("$index")
+done < <(
   julia --project="$julia_project" \
     "$solution_directory/pending_cells.jl" \
     "$run_spec" "$output_directory" "$resource_class"
@@ -37,31 +40,49 @@ if (( ${#pending_indices[@]} == 0 )); then
   exit 0
 fi
 
-echo "launching ${#pending_indices[@]} class-$resource_class cells: ${workers} workers x ${cores_per_worker} cores"
+allocated_cpus="${SLURM_CPUS_PER_TASK:-128}"
+effective_workers=$((allocated_cpus / cores_per_worker))
+if (( effective_workers < 1 )); then
+  echo "allocation has fewer CPUs than one worker requires" >&2
+  exit 2
+fi
+(( effective_workers <= workers )) || effective_workers="$workers"
+
+allocated_memory_mb="${SLURM_MEM_PER_NODE:?SLURM_MEM_PER_NODE is required}"
+step_memory_mb="${ISSUE86_MEMORY_PER_WORKER_MB:-$((allocated_memory_mb / effective_workers))}"
+if (( step_memory_mb < 4096 )); then
+  echo "each worker needs at least 4096 MB; got ${step_memory_mb} MB" >&2
+  exit 2
+fi
+if (( step_memory_mb * effective_workers > allocated_memory_mb )); then
+  echo "worker memory requests exceed the job allocation" >&2
+  exit 2
+fi
+
+echo "launching ${#pending_indices[@]} class-$resource_class cells: ${effective_workers} workers x ${cores_per_worker} cores x ${step_memory_mb} MB"
 export JULIA_NUM_THREADS="$cores_per_worker"
 export OPENBLAS_NUM_THREADS="$cores_per_worker"
 export OMP_NUM_THREADS="$cores_per_worker"
 export MKL_NUM_THREADS="$cores_per_worker"
 
-pids=()
-for index in "${pending_indices[@]}"; do
-  srun --exclusive --nodes=1 --ntasks=1 \
-    --cpus-per-task="$cores_per_worker" --cpu-bind=cores --unbuffered \
-    julia --project="$julia_project" \
-      "$solution_directory/run_cell.jl" \
-      "$run_spec" "$index" "$output_directory" &
-  pids+=("$!")
-done
+export ISSUE86_RUN_SPEC_ABS="$run_spec"
+export ISSUE86_OUTPUT_DIRECTORY="$output_directory"
+export ISSUE86_SOLUTION_DIRECTORY="$solution_directory"
+export ISSUE86_JULIA_PROJECT="$julia_project"
+export ISSUE86_CORES_PER_WORKER="$cores_per_worker"
+export ISSUE86_MEMORY_PER_WORKER_MB="$step_memory_mb"
 
-failures=0
-for pid in "${pids[@]}"; do
-  wait "$pid" || failures=$((failures + 1))
-done
+set +e
+printf '%s\n' "${pending_indices[@]}" |
+  xargs -n 1 -P "$effective_workers" \
+    bash "$solution_directory/run_cell_step.sh"
+worker_status="${PIPESTATUS[1]}"
+set -e
 
 julia --project="$julia_project" \
   "$solution_directory/collect.jl" "$run_spec" "$output_directory"
 
-if (( failures > 0 )); then
-  echo "$failures cell step(s) failed; successful manifests were retained" >&2
+if (( worker_status != 0 )); then
+  echo "one or more cell steps failed; successful manifests were retained" >&2
   exit 1
 fi
