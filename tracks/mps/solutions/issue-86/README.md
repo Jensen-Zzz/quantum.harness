@@ -142,11 +142,11 @@ export HARNESS_CLUSTER_PROFILE=scnet
 scripts/harness_slurm.sh submit --test-only \
   --script tracks/mps/solutions/issue-86/run_calibration.sbatch \
   --partition xhacnormalb --time 00:30:00 --cpus 4 \
-  --extra="--mem=16G --output=tracks/mps/results/issue-86-calibration-4t/slurm-%x-%j.out"
+  --extra "--mem=16G --output=tracks/mps/results/issue-86-calibration-4t/slurm-%x-%j.out"
 scripts/harness_slurm.sh submit --test-only \
   --script tracks/mps/solutions/issue-86/run_calibration.sbatch \
   --partition xhacnormalb --time 00:30:00 --cpus 8 \
-  --extra="--mem=24G --output=tracks/mps/results/issue-86-calibration-8t/slurm-%x-%j.out"
+  --extra "--mem=24G --output=tracks/mps/results/issue-86-calibration-8t/slurm-%x-%j.out"
 
 scripts/harness_slurm.sh submit --test-only \
   --script tracks/mps/solutions/issue-86/run_full.sbatch \
