@@ -28,7 +28,17 @@ cells (the L=64 σ trend and its controls). The shards never share a `run.json`
 or checkpoint directory and are merged by source SHA, Gamma-map hash, cell id,
 and parameter hash.
 
-Create initial-estimate JSON with the exact keys required by the two critical
+The reviewed initial estimates and immutable A/B critical-scan specifications
+are committed under `configs/sprint/`, so both collaborators receive identical
+files with a normal Git pull:
+
+```text
+configs/sprint/initial-gamma-sprint.json
+configs/sprint/critical-A.json
+configs/sprint/critical-B.json
+```
+
+The initial-estimate JSON contains the exact keys required by the two critical
 shards:
 
 ```text
@@ -43,23 +53,18 @@ scans. Each sprint spec registers a conservative `initial_half_width=0.2`
 because the OBC finite-size peak can differ materially from the periodic
 anchor; the final accepted interval still obeys its stage-specific target.
 
-Generate and run the critical shards independently:
+Run the committed critical shards independently:
 
 ```bash
-julia --project=julia-env \
-  tracks/mps/solutions/issue-86-track-c/track_c.jl \
-  generate-critical-shard A critical-A.json initial-gamma.json
-julia --project=julia-env \
-  tracks/mps/solutions/issue-86-track-c/track_c.jl \
-  generate-critical-shard B critical-B.json initial-gamma.json
-
 bash tracks/mps/solutions/issue-86-track-c/scnet/submit_critical_shard.sh \
-  critical-A.json tracks/mps/results/issue-86-track-c/critical-A
+  tracks/mps/solutions/issue-86-track-c/configs/sprint/critical-A.json \
+  tracks/mps/results/issue-86-track-c/critical-A
 ```
 
-The collaborator runs the same command with `critical-B.json` in a separate
-clone/account. Each node packs `4 workers × 32 cores`. After both result
-directories are returned, merge all eleven completed scan JSON files:
+The collaborator replaces `critical-A.json`/`critical-A` with
+`critical-B.json`/`critical-B` in a separate clone/account. Each node packs
+`4 workers × 32 cores`. After both result directories are returned, merge all
+eleven completed scan JSON files:
 
 ```bash
 julia --project=julia-env \

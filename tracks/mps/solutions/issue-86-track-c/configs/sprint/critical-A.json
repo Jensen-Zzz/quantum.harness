@@ -1,0 +1,101 @@
+{
+  "cells": [
+    {
+      "L": 12,
+      "chi": 64,
+      "id": "critical-a-40ba4947d65d",
+      "initial_estimate": 1.4,
+      "initial_half_width": 0.2,
+      "parameter_hash": "40ba4947d65d6317ed26a4c635eab3081eb8f5ad4878f09df481ad04439c7a81",
+      "poles": 16,
+      "seed": 86,
+      "shard_id": "A",
+      "sigma": 1.0,
+      "target_width": 0.01
+    },
+    {
+      "L": 16,
+      "chi": 64,
+      "id": "critical-a-ee2b4fea9c0a",
+      "initial_estimate": 1.5,
+      "initial_half_width": 0.2,
+      "parameter_hash": "ee2b4fea9c0a806aee904f4812b095298307bc53f8ded624530259bf9c1ce0b1",
+      "poles": 16,
+      "seed": 86,
+      "shard_id": "A",
+      "sigma": 1.0,
+      "target_width": 0.01
+    },
+    {
+      "L": 20,
+      "chi": 64,
+      "id": "critical-a-9bb59c2e8821",
+      "initial_estimate": 1.58,
+      "initial_half_width": 0.2,
+      "parameter_hash": "9bb59c2e8821b179b6673939ad6c6f553ed85f5e2fbd8d60ca5e5f4108354535",
+      "poles": 16,
+      "seed": 86,
+      "shard_id": "A",
+      "sigma": 1.0,
+      "target_width": 0.01
+    },
+    {
+      "L": 64,
+      "chi": 96,
+      "id": "critical-a-a72a21be270e",
+      "initial_estimate": 1.9,
+      "initial_half_width": 0.2,
+      "parameter_hash": "a72a21be270e65f9ca748638cae6b388d8941e6364376078c843dd2ad756bd4b",
+      "poles": 16,
+      "seed": 86,
+      "shard_id": "A",
+      "sigma": 1.0,
+      "target_width": 0.005
+    },
+    {
+      "L": 32,
+      "chi": 96,
+      "id": "critical-a-c981b37791ed",
+      "initial_estimate": 1.15,
+      "initial_half_width": 0.2,
+      "parameter_hash": "c981b37791ed2cb63beb477ea3ae692b10d1bf53232555e35aee275416a1a308",
+      "poles": 16,
+      "seed": 86,
+      "shard_id": "A",
+      "sigma": 1.875,
+      "target_width": 0.002
+    },
+    {
+      "L": 64,
+      "chi": 96,
+      "id": "critical-a-24abc33ebb2a",
+      "initial_estimate": 1.29,
+      "initial_half_width": 0.2,
+      "parameter_hash": "24abc33ebb2a2c22c92002ad5cd6dea278c38fc0e91ffd2c6f8b2379f2a2da82",
+      "poles": 16,
+      "seed": 86,
+      "shard_id": "A",
+      "sigma": 1.875,
+      "target_width": 0.002
+    },
+    {
+      "L": 128,
+      "chi": 128,
+      "id": "critical-a-b2cb137a38d6",
+      "initial_estimate": 1.39,
+      "initial_half_width": 0.2,
+      "parameter_hash": "b2cb137a38d638368f827286b93005d3726f5f9e0880f01ffb78ff575662ad54",
+      "poles": 16,
+      "seed": 86,
+      "shard_id": "A",
+      "sigma": 1.875,
+      "target_width": 0.002
+    }
+  ],
+  "code_revision": "a0761f7c11305d7a09a8c5aafe689e1a259a6867",
+  "code_source_sha256": "aaf37c9d7fc02182f9ee075a50b6b2a74fdea57fa25671627c1cf274425e675e",
+  "created_at": "2026-07-28T13:02:44",
+  "kind": "track-c-critical-shard",
+  "schema_version": 1,
+  "shard_id": "A"
+}
