@@ -30,5 +30,5 @@ sinfo -h -p xhacnormalb -o '%P %a %l %D %t' || exit 1
 mkdir -p "$repo_root/tracks/mps/results/issue-86-track-c"
 cd "$repo_root"
 sbatch \
-  --export=ALL,TRACK_C_CRITICAL_SPEC="$critical_spec",TRACK_C_CRITICAL_OUTPUT_ROOT="$output_root" \
+  --export=ALL,TRACK_C_CRITICAL_SPEC="$critical_spec",TRACK_C_CRITICAL_OUTPUT_ROOT="$output_root",TRACK_C_SCNET_DIRECTORY="$script_directory" \
   "$script_directory/run_critical_packed.sbatch"

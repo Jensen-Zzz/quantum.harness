@@ -12,7 +12,7 @@ set -euo pipefail
 
 : "${TRACK_C_CRITICAL_SPEC:?set TRACK_C_CRITICAL_SPEC}"
 : "${TRACK_C_CRITICAL_OUTPUT_ROOT:?set TRACK_C_CRITICAL_OUTPUT_ROOT}"
+: "${TRACK_C_SCNET_DIRECTORY:?set TRACK_C_SCNET_DIRECTORY}"
 
-script_directory="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-bash "$script_directory/packed_critical_worker.sh" \
+bash "$TRACK_C_SCNET_DIRECTORY/packed_critical_worker.sh" \
   "$TRACK_C_CRITICAL_SPEC" "$TRACK_C_CRITICAL_OUTPUT_ROOT"

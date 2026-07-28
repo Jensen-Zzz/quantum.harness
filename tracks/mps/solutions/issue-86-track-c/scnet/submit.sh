@@ -37,5 +37,5 @@ mkdir -p "$repo_root/tracks/mps/results/issue-86-track-c"
 cd "$repo_root"
 
 sbatch \
-  --export=ALL,TRACK_C_RUN_JSON="$run_json",TRACK_C_OUTPUT_ROOT="$output_root",TRACK_C_RESOURCE="$resource_class",TRACK_C_DURATION="$duration_class" \
+  --export=ALL,TRACK_C_RUN_JSON="$run_json",TRACK_C_OUTPUT_ROOT="$output_root",TRACK_C_RESOURCE="$resource_class",TRACK_C_DURATION="$duration_class",TRACK_C_SCNET_DIRECTORY="$script_directory" \
   "$script_directory/run_packed.sbatch"

@@ -24,5 +24,5 @@ mkdir -p "$repo_root/tracks/mps/results/issue-86-track-c"
 cd "$repo_root"
 
 sbatch \
-  --export=ALL,TRACK_C_CRITICAL_OUTPUT="$output",TRACK_C_SIGMA="$2",TRACK_C_L="$3",TRACK_C_INITIAL_GAMMA="$4",TRACK_C_CHI="$5" \
+  --export=ALL,TRACK_C_CRITICAL_OUTPUT="$output",TRACK_C_SIGMA="$2",TRACK_C_L="$3",TRACK_C_INITIAL_GAMMA="$4",TRACK_C_CHI="$5",TRACK_C_SOLUTION_DIRECTORY="$solution_directory" \
   "$script_directory/run_critical.sbatch"
