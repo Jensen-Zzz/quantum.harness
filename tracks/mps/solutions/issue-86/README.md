@@ -142,7 +142,7 @@ export HARNESS_CLUSTER_PROFILE=scnet
 scripts/harness_slurm.sh submit --test-only \
   --script tracks/mps/solutions/issue-86/run_calibration.sbatch \
   --partition xhacnormalb --time 00:30:00 --cpus 4 \
-  --extra "--mem=16G --output=tracks/mps/results/issue-86-calibration-4t/slurm-%x-%j.out"
+  --extra "--mem=14G --output=tracks/mps/results/issue-86-calibration-4t/slurm-%x-%j.out"
 scripts/harness_slurm.sh submit --test-only \
   --script tracks/mps/solutions/issue-86/run_calibration.sbatch \
   --partition xhacnormalb --time 00:30:00 --cpus 8 \
@@ -156,7 +156,9 @@ scripts/harness_slurm.sh submit --test-only \
 
 The calibration entrypoint maps the 4- or 8-CPU allocation to exactly one
 worker using every allocated CPU, so the two timings measure the intended
-thread layouts. After the scheduler accepts each request, remove
+thread layouts. The 4-thread request uses 14 GB because SCNet currently
+enforces a per-CPU memory limit below 4 GB. After the scheduler accepts each
+request, remove
 `--test-only`. For production, submit class B against the same spec/output
 directory with `--command stage1:B`. Repeat with `stage2-baseline:A`, then
 `stage2-systematics:A` and
