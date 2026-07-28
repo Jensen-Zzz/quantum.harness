@@ -39,7 +39,9 @@ shards:
 
 Values are scan centers only. Track B periodic values may seed the window
 entries, but the accepted values always come from the Track C OBC entropy
-scans.
+scans. Each sprint spec registers a conservative `initial_half_width=0.2`
+because the OBC finite-size peak can differ materially from the periodic
+anchor; the final accepted interval still obeys its stage-specific target.
 
 Generate and run the critical shards independently:
 

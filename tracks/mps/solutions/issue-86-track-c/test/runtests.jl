@@ -511,6 +511,10 @@ end
         cell -> cell["target_width"] == 0.002, critical_a["cells"]
     ) == 3
     @test all(cell["target_width"] == 0.002 for cell in critical_b["cells"])
+    @test all(
+        cell["initial_half_width"] == 0.2
+        for cell in vcat(critical_a["cells"], critical_b["cells"])
+    )
     @test length(unique(cell["id"] for cell in vcat(
         critical_a["cells"], critical_b["cells"],
     ))) == 11

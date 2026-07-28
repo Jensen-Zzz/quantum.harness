@@ -2287,7 +2287,7 @@ function build_critical_shard_spec(
             "chi" => chi,
             "poles" => 16,
             "seed" => 86,
-            "initial_half_width" => 0.03,
+            "initial_half_width" => 0.2,
             "target_width" => target_width,
         )
         hash = parameter_hash(scan_parameters)
