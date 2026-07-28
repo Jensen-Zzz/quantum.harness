@@ -75,6 +75,60 @@ end
     end
 end
 
+@testset "Stage 2 first pass reuses Stage 1 baseline cells" begin
+    config_path = joinpath(
+        @__DIR__, "..", "configs", "stage2-first-pass.toml"
+    )
+    @test isfile(config_path)
+    if isfile(config_path)
+        config = TOML.parsefile(config_path)
+        spec = build_run_spec(
+            config; run_id = "stage2-first-pass", stage = "stage2-first-pass"
+        )
+        cells = spec["cells"]
+
+        @test length(cells) == 67
+        @test count(cell -> cell["resource_class"] == "A", cells) == 54
+        @test count(cell -> cell["resource_class"] == "B", cells) == 13
+        @test count(cells) do cell
+            params = cell["params"]
+            params["model"] == "long_range" &&
+                params["poles"] == 16 &&
+                params["chi"] == 64 &&
+                params["L"] in (8, 24, 48)
+        end == 30
+        @test count(cells) do cell
+            params = cell["params"]
+            params["model"] == "long_range" &&
+                params["poles"] == 12 &&
+                params["chi"] == 64
+        end == 20
+        @test count(cells) do cell
+            params = cell["params"]
+            params["model"] == "long_range" &&
+                params["poles"] == 16 &&
+                params["chi"] == 128
+        end == 12
+        @test count(cells) do cell
+            params = cell["params"]
+            params["model"] == "long_range" &&
+                params["poles"] == 16 &&
+                params["chi"] == 64 &&
+                params["L"] in (32, 64) &&
+                params["gamma"] in (1.57, 1.43)
+        end == 4
+
+        nn_diagnostics = filter(
+            cell -> cell["params"]["model"] == "nn", cells
+        )
+        @test length(nn_diagnostics) == 1
+        @test only(nn_diagnostics)["params"]["L"] == 16
+        @test only(nn_diagnostics)["params"]["chi"] == 128
+        @test only(nn_diagnostics)["params"]["tolerance"] == 1.0e-11
+        @test only(nn_diagnostics)["params"]["maxiter"] == 80
+    end
+end
+
 @testset "Completed cells are excluded from resume" begin
     config = Dict(
         "sweeps" => Any[

@@ -119,6 +119,7 @@ The committed stage configurations are:
 |---|---:|---|
 | `calibration.toml` | 1 | compare thread layouts |
 | `stage1.toml` | 75 | NN gates and the 1% long-range gate |
+| `stage2-first-pass.toml` | 67 | incremental formal audit after Stage 1 |
 | `stage2-baseline.toml` | 60 | `P=16`, `chi=64`, `L=8..64` crossings |
 | `stage2-systematics.toml` | 32 | pole and bond-dimension drift |
 | `stage2-contingency.toml` | 6 | optional `L=128`, `chi=128` |
@@ -166,6 +167,12 @@ directory with `--command stage1:B`. Repeat with `stage2-baseline:A`, then
 `stage2-systematics:A` and
 `stage2-systematics:B`. Classes C and D are conditional and are not submitted
 until the formal analysis requests them.
+
+After a completed Stage 1, prefer `stage2-first-pass.toml` over independently
+submitting the baseline and systematics configs. It reuses the existing
+`L=16,32,64`, `chi=64`, `P=16` rows and computes only the missing baseline
+sizes, the pole/chi audit, the first adaptive midpoints, and one tightened
+NN--ED diagnostic. Its 67 cells split into 54 class-A and 13 class-B cells.
 
 Every cell writes
 `results/.../cells/<cell-id>/manifest.json`. Re-running the same stage skips
