@@ -204,7 +204,10 @@ def test_calibration_uses_one_worker_with_every_allocated_cpu(tmp_path):
         ]
 
 
-def test_class_a_uses_the_calibrated_eight_core_layout(tmp_path):
+def _capture_full_run_layout(
+    tmp_path: Path, *, resource_class: str, allocated_cpus: int
+) -> list[str]:
+    tmp_path.mkdir(parents=True, exist_ok=True)
     fake_bin = tmp_path / "bin"
     fake_bin.mkdir()
     _write_executable(
@@ -222,7 +225,8 @@ def test_class_a_uses_the_calibrated_eight_core_layout(tmp_path):
     env = os.environ | {
         "PATH": f"{fake_bin}:{os.environ['PATH']}",
         "HARNESS_RUN_SPEC": str(run_spec),
-        "HARNESS_COMMAND": "stage1:A",
+        "HARNESS_COMMAND": f"stage1:{resource_class}",
+        "SLURM_CPUS_PER_TASK": str(allocated_cpus),
         "CLASS_A_CAPTURE": str(capture),
     }
 
@@ -236,14 +240,29 @@ def test_class_a_uses_the_calibrated_eight_core_layout(tmp_path):
     )
 
     assert result.returncode == 0, result.stderr
-    assert capture.read_text().splitlines() == [
+    return capture.read_text().splitlines()
+
+
+def test_class_a_uses_the_calibrated_eight_core_layout(tmp_path):
+    assert _capture_full_run_layout(
+        tmp_path, resource_class="A", allocated_cpus=128
+    ) == [
         "tracks/mps/solutions/issue-86/packed_worker.sh",
-        str(run_spec),
-        str(run_directory),
+        str(tmp_path / "stage1" / "run_spec.json"),
+        str(tmp_path / "stage1"),
         "A",
         "16",
         "8",
     ]
+
+
+def test_worker_count_scales_to_a_partial_node_allocation(tmp_path):
+    assert _capture_full_run_layout(
+        tmp_path / "class-a", resource_class="A", allocated_cpus=64
+    )[-3:] == ["A", "8", "8"]
+    assert _capture_full_run_layout(
+        tmp_path / "class-b", resource_class="B", allocated_cpus=64
+    )[-3:] == ["B", "4", "16"]
 
 
 def test_run_spec_entrypoints_are_separate_from_the_solver():

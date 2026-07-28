@@ -33,19 +33,15 @@ fi
 
 case "$RESOURCE_CLASS" in
   A)
-    : "${ISSUE86_WORKERS:=16}"
     : "${ISSUE86_CORES_PER_WORKER:=8}"
     ;;
   B)
-    : "${ISSUE86_WORKERS:=8}"
     : "${ISSUE86_CORES_PER_WORKER:=16}"
     ;;
   C)
-    : "${ISSUE86_WORKERS:=4}"
     : "${ISSUE86_CORES_PER_WORKER:=32}"
     ;;
   D)
-    : "${ISSUE86_WORKERS:=2}"
     : "${ISSUE86_CORES_PER_WORKER:=64}"
     ;;
   *)
@@ -53,6 +49,18 @@ case "$RESOURCE_CLASS" in
     exit 2
     ;;
 esac
+
+allocated_cpus="${SLURM_CPUS_PER_TASK:-128}"
+if [[ ! "$allocated_cpus" =~ ^[1-9][0-9]*$ ]]; then
+  echo "invalid SLURM_CPUS_PER_TASK=$allocated_cpus" >&2
+  exit 2
+fi
+: "${ISSUE86_WORKERS:=$((allocated_cpus / ISSUE86_CORES_PER_WORKER))}"
+if (( ISSUE86_WORKERS < 1 ||
+      ISSUE86_WORKERS * ISSUE86_CORES_PER_WORKER > allocated_cpus )); then
+  echo "worker layout exceeds the $allocated_cpus allocated CPUs" >&2
+  exit 2
+fi
 
 bash tracks/mps/solutions/issue-86/packed_worker.sh \
   "$ISSUE86_RUN_SPEC" "$ISSUE86_OUTPUT_DIR" "$RESOURCE_CLASS" \
