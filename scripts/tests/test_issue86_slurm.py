@@ -204,6 +204,48 @@ def test_calibration_uses_one_worker_with_every_allocated_cpu(tmp_path):
         ]
 
 
+def test_class_a_uses_the_calibrated_eight_core_layout(tmp_path):
+    fake_bin = tmp_path / "bin"
+    fake_bin.mkdir()
+    _write_executable(
+        fake_bin / "bash",
+        """\
+        #!/bin/sh
+        printf '%s\\n' "$@" > "$CLASS_A_CAPTURE"
+        """,
+    )
+    run_directory = tmp_path / "stage1"
+    run_directory.mkdir()
+    run_spec = run_directory / "run_spec.json"
+    run_spec.write_text('{"cells":[]}')
+    capture = tmp_path / "class-a.args"
+    env = os.environ | {
+        "PATH": f"{fake_bin}:{os.environ['PATH']}",
+        "HARNESS_RUN_SPEC": str(run_spec),
+        "HARNESS_COMMAND": "stage1:A",
+        "CLASS_A_CAPTURE": str(capture),
+    }
+
+    result = subprocess.run(
+        ["/bin/bash", str(SBATCH)],
+        cwd=ROOT,
+        env=env,
+        text=True,
+        capture_output=True,
+        check=False,
+    )
+
+    assert result.returncode == 0, result.stderr
+    assert capture.read_text().splitlines() == [
+        "tracks/mps/solutions/issue-86/packed_worker.sh",
+        str(run_spec),
+        str(run_directory),
+        "A",
+        "16",
+        "8",
+    ]
+
+
 def test_run_spec_entrypoints_are_separate_from_the_solver():
     assert "build_run_spec" in GENERATE_SPEC.read_text()
     assert "execute_cell" in RUN_CELL.read_text()

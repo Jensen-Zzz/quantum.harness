@@ -33,8 +33,8 @@ fi
 
 case "$RESOURCE_CLASS" in
   A)
-    : "${ISSUE86_WORKERS:=32}"
-    : "${ISSUE86_CORES_PER_WORKER:=4}"
+    : "${ISSUE86_WORKERS:=16}"
+    : "${ISSUE86_CORES_PER_WORKER:=8}"
     ;;
   B)
     : "${ISSUE86_WORKERS:=8}"

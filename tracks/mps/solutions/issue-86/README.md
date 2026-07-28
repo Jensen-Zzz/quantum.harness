@@ -100,7 +100,7 @@ the allocation. `run_full.sbatch` requests 128 cores and 480 GB and uses:
 
 | class | default layout | points |
 |---|---|---|
-| A | 32 workers × 4 cores | `chi <= 64`, `L <= 64` |
+| A | 16 workers × 8 cores | `chi <= 64`, `L <= 64` |
 | B | 8 workers × 16 cores | `chi = 128`, `L <= 64` |
 | C | 4 workers × 32 cores | `L = 128`, `chi = 128` |
 | D | 2 workers × 64 cores | optional `chi = 256` |
@@ -109,8 +109,8 @@ Each `srun` step receives an explicit share of `SLURM_MEM_PER_NODE`; without
 that step-level request, SCNet treated every step as if it needed the full job
 memory and serialized the first seven-cell smoke run. The launcher also caps
 the requested worker count by `SLURM_CPUS_PER_TASK`, so a 16-core validation
-allocation automatically uses four 4-core workers while a 128-core class-A
-allocation uses all 32. A bounded GNU `xargs -P` pool is used because the
+allocation automatically uses two 8-core workers while a 128-core class-A
+allocation uses all 16. A bounded GNU `xargs -P` pool is used because the
 cluster provides Bash 4.2, which predates `wait -n`.
 
 The committed stage configurations are:
@@ -157,8 +157,10 @@ scripts/harness_slurm.sh submit --test-only \
 The calibration entrypoint maps the 4- or 8-CPU allocation to exactly one
 worker using every allocated CPU, so the two timings measure the intended
 thread layouts. The 4-thread request uses 14 GB because SCNet currently
-enforces a per-CPU memory limit below 4 GB. After the scheduler accepts each
-request, remove
+enforces a per-CPU memory limit below 4 GB. On 2026-07-28 the 8-thread point
+completed 2.69 times faster, corresponding to 1.34 times the full-node
+throughput after accounting for the halved worker count; class A therefore
+uses 16 workers × 8 cores. After the scheduler accepts each request, remove
 `--test-only`. For production, submit class B against the same spec/output
 directory with `--command stage1:B`. Repeat with `stage2-baseline:A`, then
 `stage2-systematics:A` and
