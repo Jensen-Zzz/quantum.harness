@@ -1,5 +1,9 @@
 # Issue #86, Track B: first reproduction pass
 
+For the current collaboration handoff, completed results, remaining compute
+matrix, cluster commands, formal acceptance gates, and contingency rules, see
+[`COLLABORATION_PLAN.md`](COLLABORATION_PLAN.md).
+
 This solution targets the validation floor of the consolidated challenge:
 
 ```text
