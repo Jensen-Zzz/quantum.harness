@@ -140,14 +140,26 @@ exact request first:
 ```bash
 export HARNESS_CLUSTER_PROFILE=scnet
 scripts/harness_slurm.sh submit --test-only \
+  --script tracks/mps/solutions/issue-86/run_calibration.sbatch \
+  --partition xhacnormalb --time 00:30:00 --cpus 4 \
+  --extra="--mem=16G --output=tracks/mps/results/issue-86-calibration-4t/slurm-%x-%j.out"
+scripts/harness_slurm.sh submit --test-only \
+  --script tracks/mps/solutions/issue-86/run_calibration.sbatch \
+  --partition xhacnormalb --time 00:30:00 --cpus 8 \
+  --extra="--mem=24G --output=tracks/mps/results/issue-86-calibration-8t/slurm-%x-%j.out"
+
+scripts/harness_slurm.sh submit --test-only \
   --script tracks/mps/solutions/issue-86/run_full.sbatch \
   --run-spec tracks/mps/results/issue-86-stage1/run_spec.json \
   --command stage1:A --partition xhacnormalb --time 06:00:00 --cpus 128
 ```
 
-After the scheduler accepts the request, remove `--test-only`. Submit class B
-against the same spec/output directory with `--command stage1:B`. Repeat with
-`stage2-baseline:A`, then `stage2-systematics:A` and
+The calibration entrypoint maps the 4- or 8-CPU allocation to exactly one
+worker using every allocated CPU, so the two timings measure the intended
+thread layouts. After the scheduler accepts each request, remove
+`--test-only`. For production, submit class B against the same spec/output
+directory with `--command stage1:B`. Repeat with `stage2-baseline:A`, then
+`stage2-systematics:A` and
 `stage2-systematics:B`. Classes C and D are conditional and are not submitted
 until the formal analysis requests them.
 

@@ -7,6 +7,9 @@ import textwrap
 ROOT = Path(__file__).resolve().parents[2]
 PROFILE = ROOT / "skills/using-slurm/profiles/scnet.toml"
 SBATCH = ROOT / "tracks/mps/solutions/issue-86/run_full.sbatch"
+CALIBRATION_SBATCH = (
+    ROOT / "tracks/mps/solutions/issue-86/run_calibration.sbatch"
+)
 PACKED_WORKER = ROOT / "tracks/mps/solutions/issue-86/packed_worker.sh"
 GENERATE_SPEC = ROOT / "tracks/mps/solutions/issue-86/generate_run_spec.jl"
 RUN_CELL = ROOT / "tracks/mps/solutions/issue-86/run_cell.jl"
@@ -151,6 +154,54 @@ def test_packed_worker_retains_progress_after_one_cell_fails(tmp_path):
 
     assert result.returncode != 0
     assert sorted(state["seen"]) == [1, 2, 3, 4, 5, 6]
+
+
+def test_calibration_uses_one_worker_with_every_allocated_cpu(tmp_path):
+    fake_bin = tmp_path / "bin"
+    fake_bin.mkdir()
+    _write_executable(
+        fake_bin / "bash",
+        """\
+        #!/bin/sh
+        env | sort > "$CALIBRATION_CAPTURE.env"
+        printf '%s\\n' "$@" > "$CALIBRATION_CAPTURE.args"
+        """,
+    )
+
+    for threads in ("4", "8"):
+        capture = tmp_path / f"capture-{threads}"
+        env = os.environ | {
+            "PATH": f"{fake_bin}:{os.environ['PATH']}",
+            "SLURM_CPUS_PER_TASK": threads,
+            "CALIBRATION_CAPTURE": str(capture),
+        }
+        result = subprocess.run(
+            ["/bin/bash", str(CALIBRATION_SBATCH)],
+            cwd=ROOT,
+            env=env,
+            text=True,
+            capture_output=True,
+            check=False,
+        )
+
+        assert result.returncode == 0, result.stderr
+        captured_env = dict(
+            line.split("=", 1)
+            for line in Path(f"{capture}.env").read_text().splitlines()
+            if "=" in line
+        )
+        run_directory = (
+            f"tracks/mps/results/issue-86-calibration-{threads}t"
+        )
+        assert captured_env["ISSUE86_WORKERS"] == "1"
+        assert captured_env["ISSUE86_CORES_PER_WORKER"] == threads
+        assert captured_env["ISSUE86_STAGE"] == "calibration"
+        assert captured_env["RESOURCE_CLASS"] == "A"
+        assert captured_env["HARNESS_RUN_SPEC"] == f"{run_directory}/run_spec.json"
+        assert captured_env["ISSUE86_OUTPUT_DIR"] == run_directory
+        assert Path(f"{capture}.args").read_text().splitlines() == [
+            "tracks/mps/solutions/issue-86/run_full.sbatch"
+        ]
 
 
 def test_run_spec_entrypoints_are_separate_from_the_solver():
