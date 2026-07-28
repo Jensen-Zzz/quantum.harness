@@ -1,0 +1,304 @@
+{
+  "crossings": [
+    {
+      "Gamma_crossing": 0.9979780577490796,
+      "L_pair": [
+        16,
+        32
+      ],
+      "chi": 64,
+      "model": "nn",
+      "poles": null,
+      "sigma": null
+    },
+    {
+      "Gamma_crossing": 0.9989289575804409,
+      "L_pair": [
+        24,
+        48
+      ],
+      "chi": 64,
+      "model": "nn",
+      "poles": null,
+      "sigma": null
+    },
+    {
+      "Gamma_crossing": 0.9993397770869324,
+      "L_pair": [
+        32,
+        64
+      ],
+      "chi": 64,
+      "model": "nn",
+      "poles": null,
+      "sigma": null
+    },
+    {
+      "Gamma_crossing": 1.4272250660349701,
+      "L_pair": [
+        16,
+        32
+      ],
+      "chi": 32,
+      "model": "long_range",
+      "poles": 16,
+      "sigma": 2.0
+    },
+    {
+      "Gamma_crossing": 1.5684815545751685,
+      "L_pair": [
+        16,
+        32
+      ],
+      "chi": 32,
+      "model": "long_range",
+      "poles": 16,
+      "sigma": 1.75
+    },
+    {
+      "Gamma_crossing": 1.5640731683379032,
+      "L_pair": [
+        32,
+        64
+      ],
+      "chi": 64,
+      "model": "long_range",
+      "poles": 16,
+      "sigma": 1.75
+    },
+    {
+      "Gamma_crossing": 1.4236896745449583,
+      "L_pair": [
+        32,
+        64
+      ],
+      "chi": 64,
+      "model": "long_range",
+      "poles": 16,
+      "sigma": 2.0
+    }
+  ],
+  "nn_dynamic_exponent_fit": {
+    "gaps": [
+      0.09825369932280736,
+      0.06547322113653209,
+      0.04909724441804997,
+      0.03272784795618122,
+      0.024544924756355613
+    ],
+    "intercept": 0.4536896592796181,
+    "lengths": [
+      16,
+      24,
+      32,
+      48,
+      64
+    ],
+    "log_rmse": 0.00010036001987974142,
+    "without_smallest": {
+      "lengths": [
+        24,
+        32,
+        48,
+        64
+      ],
+      "z": 1.0003073255722421
+    },
+    "z": 1.0005177937771796
+  },
+  "status": "finite-size preliminary result",
+  "validation": {
+    "correlation_absolute_tolerance": 1.0e-6,
+    "energy_relative_tolerance": 1.0e-8,
+    "largest_pole_rows_pass": true,
+    "rows": [
+      {
+        "Gamma": 0.98,
+        "L": 16,
+        "chi": 64,
+        "correlation_absolute_error": 1.668298006912705e-5,
+        "energy_relative_error": 4.390337085410727e-11,
+        "model": "nn",
+        "passes_ed_gate": false,
+        "poles": null,
+        "sigma": null
+      },
+      {
+        "Gamma": 0.99,
+        "L": 16,
+        "chi": 64,
+        "correlation_absolute_error": 1.5553514970789717e-5,
+        "energy_relative_error": 4.228331285831371e-11,
+        "model": "nn",
+        "passes_ed_gate": false,
+        "poles": null,
+        "sigma": null
+      },
+      {
+        "Gamma": 1.0,
+        "L": 16,
+        "chi": 64,
+        "correlation_absolute_error": 1.3661649435281475e-5,
+        "energy_relative_error": 5.414178599753538e-11,
+        "model": "nn",
+        "passes_ed_gate": false,
+        "poles": null,
+        "sigma": null
+      },
+      {
+        "Gamma": 1.01,
+        "L": 16,
+        "chi": 64,
+        "correlation_absolute_error": 1.1078763346550335e-5,
+        "energy_relative_error": 2.970462346099627e-11,
+        "model": "nn",
+        "passes_ed_gate": false,
+        "poles": null,
+        "sigma": null
+      },
+      {
+        "Gamma": 1.02,
+        "L": 16,
+        "chi": 64,
+        "correlation_absolute_error": 8.82651748468355e-6,
+        "energy_relative_error": 4.3822661609323626e-11,
+        "model": "nn",
+        "passes_ed_gate": false,
+        "poles": null,
+        "sigma": null
+      },
+      {
+        "Gamma": 1.0,
+        "L": 16,
+        "chi": 64,
+        "correlation_absolute_error": 1.3661649435281475e-5,
+        "energy_relative_error": 5.414178599753538e-11,
+        "model": "nn",
+        "passes_ed_gate": false,
+        "poles": null,
+        "sigma": null
+      },
+      {
+        "Gamma": 1.0,
+        "L": 16,
+        "chi": 128,
+        "correlation_absolute_error": 1.3210333281610254e-5,
+        "energy_relative_error": 3.328508792972289e-11,
+        "model": "nn",
+        "passes_ed_gate": false,
+        "poles": null,
+        "sigma": null
+      },
+      {
+        "Gamma": 1.52,
+        "L": 16,
+        "chi": 32,
+        "correlation_absolute_error": 5.2060494803995994e-8,
+        "energy_relative_error": 6.801068782246959e-10,
+        "model": "long_range",
+        "passes_ed_gate": true,
+        "poles": 16,
+        "sigma": 1.75
+      },
+      {
+        "Gamma": 1.54,
+        "L": 16,
+        "chi": 32,
+        "correlation_absolute_error": 4.6789393692847625e-8,
+        "energy_relative_error": 6.353830468262929e-10,
+        "model": "long_range",
+        "passes_ed_gate": true,
+        "poles": 16,
+        "sigma": 1.75
+      },
+      {
+        "Gamma": 1.56,
+        "L": 16,
+        "chi": 32,
+        "correlation_absolute_error": 4.1652251925317074e-8,
+        "energy_relative_error": 5.89401967514088e-10,
+        "model": "long_range",
+        "passes_ed_gate": true,
+        "poles": 16,
+        "sigma": 1.75
+      },
+      {
+        "Gamma": 1.58,
+        "L": 16,
+        "chi": 32,
+        "correlation_absolute_error": 3.704456869035866e-8,
+        "energy_relative_error": 5.440151478935564e-10,
+        "model": "long_range",
+        "passes_ed_gate": true,
+        "poles": 16,
+        "sigma": 1.75
+      },
+      {
+        "Gamma": 1.6,
+        "L": 16,
+        "chi": 32,
+        "correlation_absolute_error": 3.305789580965168e-8,
+        "energy_relative_error": 5.002767401947044e-10,
+        "model": "long_range",
+        "passes_ed_gate": true,
+        "poles": 16,
+        "sigma": 1.75
+      },
+      {
+        "Gamma": 1.38,
+        "L": 16,
+        "chi": 32,
+        "correlation_absolute_error": 5.9127300611194755e-8,
+        "energy_relative_error": 5.18545641163824e-10,
+        "model": "long_range",
+        "passes_ed_gate": true,
+        "poles": 16,
+        "sigma": 2.0
+      },
+      {
+        "Gamma": 1.4,
+        "L": 16,
+        "chi": 32,
+        "correlation_absolute_error": 5.256176843770888e-8,
+        "energy_relative_error": 4.88131171967883e-10,
+        "model": "long_range",
+        "passes_ed_gate": true,
+        "poles": 16,
+        "sigma": 2.0
+      },
+      {
+        "Gamma": 1.42,
+        "L": 16,
+        "chi": 32,
+        "correlation_absolute_error": 4.6672834264072094e-8,
+        "energy_relative_error": 4.558722620393465e-10,
+        "model": "long_range",
+        "passes_ed_gate": true,
+        "poles": 16,
+        "sigma": 2.0
+      },
+      {
+        "Gamma": 1.44,
+        "L": 16,
+        "chi": 32,
+        "correlation_absolute_error": 4.150642685107897e-8,
+        "energy_relative_error": 4.2281947814522046e-10,
+        "model": "long_range",
+        "passes_ed_gate": true,
+        "poles": 16,
+        "sigma": 2.0
+      },
+      {
+        "Gamma": 1.46,
+        "L": 16,
+        "chi": 32,
+        "correlation_absolute_error": 3.702787593207191e-8,
+        "energy_relative_error": 3.8993082869712885e-10,
+        "model": "long_range",
+        "passes_ed_gate": true,
+        "poles": 16,
+        "sigma": 2.0
+      }
+    ]
+  }
+}

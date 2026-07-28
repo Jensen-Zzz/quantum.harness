@@ -1,0 +1,1153 @@
+{
+  "cells": [
+    {
+      "cell_id": "stage2-first-pass-79149e52ebbf60cd88a4cb090c595225",
+      "params": {
+        "L": 8,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.52,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-65ac7d70e5d0ad0af2867dcda2255a02",
+      "params": {
+        "L": 8,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.54,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-3bcbe4b9a10cd69969573ad256c9b684",
+      "params": {
+        "L": 8,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.56,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-81b53171fe183147729043202554cc87",
+      "params": {
+        "L": 8,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.58,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-d6a037771ece444ee228e860bc9f77de",
+      "params": {
+        "L": 8,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.6,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-8ae17abc00410e4d9121013637ef4846",
+      "params": {
+        "L": 24,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.52,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-765185e7f9c7d16773ba33337e3b14bc",
+      "params": {
+        "L": 24,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.54,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-a01ee85e44b477b5141c8056325f4cc2",
+      "params": {
+        "L": 24,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.56,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-0ce13df250737e5160926323cf42517e",
+      "params": {
+        "L": 24,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.58,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-6dce9adcbebdb0ece57b9fd2cd3489e2",
+      "params": {
+        "L": 24,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.6,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-49fab9057f97d93bfbb5c5fbe92e12c1",
+      "params": {
+        "L": 48,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.52,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-537dfc3d2d60ef55868950b71d38fa09",
+      "params": {
+        "L": 48,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.54,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-be777903f8f6995a02eb71dae06881db",
+      "params": {
+        "L": 48,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.56,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-e1cf3fb2b7b29e7b58c04cfd9bd9552f",
+      "params": {
+        "L": 48,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.58,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-55a2561475579f757822c2962629728b",
+      "params": {
+        "L": 48,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.6,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-af4bb032f37442a04c51d802b8b3cbad",
+      "params": {
+        "L": 8,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.38,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-3fa138fad08f4e3dca4e594bf2412069",
+      "params": {
+        "L": 8,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.4,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-b2726479a02f77b392125c475cd6d285",
+      "params": {
+        "L": 8,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.42,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-b276bab14fbbca23b8948dc0522c949e",
+      "params": {
+        "L": 8,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.44,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-f56dc7b21f819caf069178c8067c751d",
+      "params": {
+        "L": 8,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.46,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-6c8213eb3828e9bd586f02133b5ca4a4",
+      "params": {
+        "L": 24,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.38,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-55878a18fc6a0077524b95bc01fdde74",
+      "params": {
+        "L": 24,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.4,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-acf9f1ca756375723aa07ea52d174eb7",
+      "params": {
+        "L": 24,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.42,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-cfdbbd76e4a544ef7a49e0e856526e36",
+      "params": {
+        "L": 24,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.44,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-8e83ea020210d053f6a727826e0cd77a",
+      "params": {
+        "L": 24,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.46,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-5ce990939b640854b901d22ca04a674f",
+      "params": {
+        "L": 48,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.38,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-7ca1cb10e27d404544b2b555dc38dd8f",
+      "params": {
+        "L": 48,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.4,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-ebe8fc6ef40029f420c4bea19c05c946",
+      "params": {
+        "L": 48,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.42,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-fb788adac77c2271498ad9a3e9b240fb",
+      "params": {
+        "L": 48,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.44,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-4975650210ca4e9a699380de03374cf6",
+      "params": {
+        "L": 48,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.46,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-f451db451a062d331aa9ca1cfdb3c970",
+      "params": {
+        "L": 32,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.52,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-db162f2897d89c09aa0bb4f1529a4907",
+      "params": {
+        "L": 32,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.54,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-058e53653bd6deadc9576c1b8b755984",
+      "params": {
+        "L": 32,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.56,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-9f94396942b3b015869dc5a6d1a15b7e",
+      "params": {
+        "L": 32,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.58,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-bd0ff2dcb8169e784c21a8bd5523f251",
+      "params": {
+        "L": 32,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.6,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-12847d8b6681f7f49f6e9f293e7ba6bd",
+      "params": {
+        "L": 64,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.52,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-324a8f15b4aa9b618e9a5cbd35fb15e3",
+      "params": {
+        "L": 64,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.54,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-ecf5988ccf3d6377c0eaf65c957e2977",
+      "params": {
+        "L": 64,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.56,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-01376fc72c30bc80f5513c9fce495b8f",
+      "params": {
+        "L": 64,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.58,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-28f1996e782c56efb92c353272c9e1ef",
+      "params": {
+        "L": 64,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.6,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-8dc72ba597d43c781aabfbdc53e97ab4",
+      "params": {
+        "L": 32,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.38,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-865c0e402bfcf31b5381df44b9182271",
+      "params": {
+        "L": 32,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.4,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-16727c861bf15d5a0fc86b85971a2189",
+      "params": {
+        "L": 32,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.42,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-3e8a924ddab449586df67b7f28cab85c",
+      "params": {
+        "L": 32,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.44,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-392334b763fb94a98d9c44fae70ce798",
+      "params": {
+        "L": 32,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.46,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-23619676bff901dec6843fbe0a6eac3d",
+      "params": {
+        "L": 64,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.38,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-a530da7b952bd0a89a0368a8fef2497e",
+      "params": {
+        "L": 64,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.4,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-2d2f4f7b4364fbcf815cb053591bfbdd",
+      "params": {
+        "L": 64,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.42,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-0e547077cb9594ac88df6f76442d138d",
+      "params": {
+        "L": 64,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.44,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-51bcde2ca538e76041fe4e713adc37eb",
+      "params": {
+        "L": 64,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.46,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 12,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-4e0fd19d9d14300fcdfe86a4638f76c1",
+      "params": {
+        "L": 32,
+        "chi": 128,
+        "excited": false,
+        "gamma": 1.555,
+        "maxiter": 50,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "B",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-eb870f938566dcac0d4435d53e13b4cb",
+      "params": {
+        "L": 32,
+        "chi": 128,
+        "excited": false,
+        "gamma": 1.5609,
+        "maxiter": 50,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "B",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-e9384935c6e7ba89ac11c41a3bf864d1",
+      "params": {
+        "L": 32,
+        "chi": 128,
+        "excited": false,
+        "gamma": 1.567,
+        "maxiter": 50,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "B",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-3c2d18f4b52b7e25cbf8f4c14d695055",
+      "params": {
+        "L": 64,
+        "chi": 128,
+        "excited": false,
+        "gamma": 1.555,
+        "maxiter": 50,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "B",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-978fb3ee98ca3d0fcce4d0feb22525b9",
+      "params": {
+        "L": 64,
+        "chi": 128,
+        "excited": false,
+        "gamma": 1.5609,
+        "maxiter": 50,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "B",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-f7b9b17380629aebc7f6db3c5a7165e5",
+      "params": {
+        "L": 64,
+        "chi": 128,
+        "excited": false,
+        "gamma": 1.567,
+        "maxiter": 50,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "B",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-65e640d453f0b653330a7fa8be13ed47",
+      "params": {
+        "L": 32,
+        "chi": 128,
+        "excited": false,
+        "gamma": 1.415,
+        "maxiter": 50,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "B",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-bdd751e1e637b06327e208a877220f6d",
+      "params": {
+        "L": 32,
+        "chi": 128,
+        "excited": false,
+        "gamma": 1.4208,
+        "maxiter": 50,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "B",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-9ec6b7e8ccb8774a8cd9a398605ad321",
+      "params": {
+        "L": 32,
+        "chi": 128,
+        "excited": false,
+        "gamma": 1.427,
+        "maxiter": 50,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "B",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-df0d8afaa06eca97917913048f28911e",
+      "params": {
+        "L": 64,
+        "chi": 128,
+        "excited": false,
+        "gamma": 1.415,
+        "maxiter": 50,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "B",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-789bd13409013dc319367af9e1694875",
+      "params": {
+        "L": 64,
+        "chi": 128,
+        "excited": false,
+        "gamma": 1.4208,
+        "maxiter": 50,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "B",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-65126f7d47687dbaa3541e3e225c1508",
+      "params": {
+        "L": 64,
+        "chi": 128,
+        "excited": false,
+        "gamma": 1.427,
+        "maxiter": 50,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "B",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-8142004a45de5c9a9ae805872c427788",
+      "params": {
+        "L": 32,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.57,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-8985a0fce6d5a494b5217c9e1349fb71",
+      "params": {
+        "L": 64,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.57,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-9d6d48ce964d626049b27dec47776616",
+      "params": {
+        "L": 32,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.43,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-d54bd99a7f7cd74323b6aa09240e13ad",
+      "params": {
+        "L": 64,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.43,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "stage2-first-pass"
+    },
+    {
+      "cell_id": "stage2-first-pass-50a049fc1c48fcc931e29c79c075d9f1",
+      "params": {
+        "L": 16,
+        "chi": 128,
+        "excited": false,
+        "gamma": 1.0,
+        "maxiter": 80,
+        "model": "nn",
+        "poles": null,
+        "seed": 86,
+        "sigma": null,
+        "tolerance": 1.0e-11
+      },
+      "resource_class": "B",
+      "stage": "stage2-first-pass"
+    }
+  ],
+  "metadata": {
+    "boundary": "periodic image sum via Hurwitz zeta",
+    "code_commit": "16b62684c898525ff5b736a93e9f653cb6470548",
+    "created_utc": "2026-07-28T06:34:22.224",
+    "hamiltonian": "-sum_{i<j} J_L(|i-j|) Z_i Z_j - Gamma sum_i X_i",
+    "jobs_total": 67,
+    "run_id": "issue-86-stage2-first-pass",
+    "schema_version": 1,
+    "stage": "stage2-first-pass"
+  }
+}

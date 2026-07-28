@@ -1,0 +1,75 @@
+{
+  "cell_id": "stage1-c74c086a940d1f8f0797ba066969ab62",
+  "params": {
+    "L": 16,
+    "chi": 128,
+    "excited": true,
+    "gamma": 1.0,
+    "maxiter": 40,
+    "model": "nn",
+    "poles": null,
+    "seed": 86,
+    "sigma": null,
+    "tolerance": 1.0e-9
+  },
+  "resource_class": "B",
+  "result": {
+    "E0": -20.404594474077484,
+    "E1": -20.306340774754677,
+    "Gamma": 1.0,
+    "L": 16,
+    "MPO_bond_dimension": 4,
+    "MPO_error": null,
+    "S0": 8.357459427945916,
+    "Sq": 1.1383182967916121,
+    "chi": 128,
+    "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+    "convergence_residual": 4.5145731597528993e-10,
+    "correlation_ratio": 0.400803070044067,
+    "correlation_ratio_absolute_error": 1.3210333281610254e-5,
+    "discarded_weight": null,
+    "ed_E0": -20.404594474756653,
+    "ed_E1": -20.30634077521774,
+    "ed_correlation_ratio": 0.4007898597107854,
+    "ed_energy_relative_error": 3.328508792972289e-11,
+    "ed_gap": 0.09825369953891183,
+    "excited_variance": 3.5708467294170987e-9,
+    "gap": 0.09825369932280736,
+    "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+    "ground_variance": 3.6075675780011807e-9,
+    "model": "nn",
+    "mpo_error": null,
+    "normalized_excited_variance": 8.659800144762882e-12,
+    "normalized_ground_variance": 8.664799930288038e-12,
+    "poles": null,
+    "runtime": 236.64471793174744,
+    "runtime_seconds": 236.64471793174744,
+    "sigma": null,
+    "soe_fit_error": null,
+    "timestamp_utc": "2026-07-28T05:08:17.909",
+    "trajectory": [
+      {
+        "energy": -20.40459445241941,
+        "iteration": 1
+      },
+      {
+        "energy": -20.404594474077484,
+        "iteration": 2
+      }
+    ]
+  },
+  "runtime": {
+    "blas_threads": 16,
+    "completed_utc": "2026-07-28T05:08:17.914",
+    "hostname": "a04r05n07",
+    "julia_threads": 16,
+    "max_rss_raw": 1782956032,
+    "slurm_cpus_per_task": "16",
+    "slurm_job_id": "22975256",
+    "slurm_step_id": "4",
+    "started_utc": "2026-07-28T05:04:12.461"
+  },
+  "schema_version": 1,
+  "stage": "stage1",
+  "status": "success"
+}

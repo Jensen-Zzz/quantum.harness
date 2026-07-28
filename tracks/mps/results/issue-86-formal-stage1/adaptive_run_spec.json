@@ -1,0 +1,82 @@
+{
+  "cells": [
+    {
+      "cell_id": "adaptive-8142004a45de5c9a9ae805872c427788",
+      "params": {
+        "L": 32,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.57,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "adaptive"
+    },
+    {
+      "cell_id": "adaptive-8985a0fce6d5a494b5217c9e1349fb71",
+      "params": {
+        "L": 64,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.57,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 1.75,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "adaptive"
+    },
+    {
+      "cell_id": "adaptive-9d6d48ce964d626049b27dec47776616",
+      "params": {
+        "L": 32,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.43,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "adaptive"
+    },
+    {
+      "cell_id": "adaptive-d54bd99a7f7cd74323b6aa09240e13ad",
+      "params": {
+        "L": 64,
+        "chi": 64,
+        "excited": false,
+        "gamma": 1.43,
+        "maxiter": 40,
+        "model": "long_range",
+        "poles": 16,
+        "seed": 86,
+        "sigma": 2.0,
+        "tolerance": 1.0e-9
+      },
+      "resource_class": "A",
+      "stage": "adaptive"
+    }
+  ],
+  "metadata": {
+    "boundary": "periodic image sum via Hurwitz zeta",
+    "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+    "created_utc": "2026-07-28T06:08:33.721",
+    "hamiltonian": "-sum_{i<j} J_L(|i-j|) Z_i Z_j - Gamma sum_i X_i",
+    "jobs_total": 4,
+    "run_id": "issue-86-adaptive",
+    "schema_version": 1,
+    "stage": "adaptive"
+  }
+}

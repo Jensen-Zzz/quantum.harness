@@ -1,0 +1,75 @@
+{
+  "cell_id": "stage1-f835886ac15bdfbc6dd7deabcf3b6d5a",
+  "params": {
+    "L": 16,
+    "chi": 64,
+    "excited": false,
+    "gamma": 1.0,
+    "maxiter": 30,
+    "model": "nn",
+    "poles": null,
+    "seed": 86,
+    "sigma": null,
+    "tolerance": 1.0e-9
+  },
+  "resource_class": "A",
+  "result": {
+    "E0": -20.40459447365191,
+    "E1": null,
+    "Gamma": 1.0,
+    "L": 16,
+    "MPO_bond_dimension": 4,
+    "MPO_error": null,
+    "S0": 8.357463803125803,
+    "Sq": 1.1383166783163718,
+    "chi": 64,
+    "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+    "convergence_residual": 4.5145731597528993e-10,
+    "correlation_ratio": 0.40080352136022507,
+    "correlation_ratio_absolute_error": 1.3661649435281475e-5,
+    "discarded_weight": null,
+    "ed_E0": -20.40459447475665,
+    "ed_E1": -20.306340775217688,
+    "ed_correlation_ratio": 0.4007898597107898,
+    "ed_energy_relative_error": 5.414178599753538e-11,
+    "ed_gap": 0.09825369953896157,
+    "excited_variance": null,
+    "gap": null,
+    "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+    "ground_variance": 1.0031044439529069e-8,
+    "model": "nn",
+    "mpo_error": null,
+    "normalized_excited_variance": null,
+    "normalized_ground_variance": 2.4092963273644567e-11,
+    "poles": null,
+    "runtime": 208.68291401863098,
+    "runtime_seconds": 208.68291401863098,
+    "sigma": null,
+    "soe_fit_error": null,
+    "timestamp_utc": "2026-07-28T05:07:50.934",
+    "trajectory": [
+      {
+        "energy": -20.40459445241941,
+        "iteration": 1
+      },
+      {
+        "energy": -20.40459447365191,
+        "iteration": 2
+      }
+    ]
+  },
+  "runtime": {
+    "blas_threads": 8,
+    "completed_utc": "2026-07-28T05:07:50.938",
+    "hostname": "a04r03n06",
+    "julia_threads": 8,
+    "max_rss_raw": 1941635072,
+    "slurm_cpus_per_task": "8",
+    "slurm_job_id": "22975247",
+    "slurm_step_id": "1",
+    "started_utc": "2026-07-28T05:04:13.284"
+  },
+  "schema_version": 1,
+  "stage": "stage1",
+  "status": "success"
+}

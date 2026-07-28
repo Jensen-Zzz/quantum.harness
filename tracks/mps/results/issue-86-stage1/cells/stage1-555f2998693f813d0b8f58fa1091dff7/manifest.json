@@ -1,0 +1,94 @@
+{
+  "cell_id": "stage1-555f2998693f813d0b8f58fa1091dff7",
+  "params": {
+    "L": 16,
+    "chi": 32,
+    "excited": false,
+    "gamma": 1.58,
+    "maxiter": 30,
+    "model": "long_range",
+    "poles": 16,
+    "seed": 86,
+    "sigma": 1.75,
+    "tolerance": 1.0e-9
+  },
+  "resource_class": "A",
+  "result": {
+    "E0": -28.803229002854255,
+    "E1": null,
+    "Gamma": 1.58,
+    "L": 16,
+    "MPO_bond_dimension": 34,
+    "MPO_error": {
+      "max_absolute": 2.7067237340361316e-13,
+      "max_relative": 4.164404413474493e-13,
+      "rms_relative": 2.384603445333114e-13
+    },
+    "S0": 6.280691108730924,
+    "Sq": 1.2372172273069708,
+    "chi": 32,
+    "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+    "convergence_residual": 2.9483082641945657e-12,
+    "correlation_ratio": 0.32133796601904824,
+    "correlation_ratio_absolute_error": 3.704456869035866e-8,
+    "discarded_weight": null,
+    "ed_E0": -28.80322901852365,
+    "ed_E1": -27.16871333244034,
+    "ed_correlation_ratio": 0.32133800306361693,
+    "ed_energy_relative_error": 5.440151478935564e-10,
+    "ed_gap": 1.6345156860833079,
+    "excited_variance": null,
+    "gap": null,
+    "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+    "ground_variance": 3.0624016744695837e-7,
+    "model": "long_range",
+    "mpo_error": {
+      "max_absolute": 2.7067237340361316e-13,
+      "max_relative": 4.164404413474493e-13,
+      "rms_relative": 2.384603445333114e-13
+    },
+    "normalized_excited_variance": null,
+    "normalized_ground_variance": 3.6913038776653596e-10,
+    "poles": 16,
+    "runtime": 204.23815083503723,
+    "runtime_seconds": 204.23815083503723,
+    "sigma": 1.75,
+    "soe_fit_error": {
+      "max_relative": 4.163336342344337e-13,
+      "rms_relative": 2.532151035897361e-13,
+      "target": "finite_periodic_hurwitz",
+      "unique_distances": 8,
+      "xmax": 2.5,
+      "xmin": -8.4
+    },
+    "timestamp_utc": "2026-07-28T05:17:38.752",
+    "trajectory": [
+      {
+        "energy": -28.803228885340328,
+        "iteration": 1
+      },
+      {
+        "energy": -28.803229002877757,
+        "iteration": 2
+      },
+      {
+        "energy": -28.803229002854255,
+        "iteration": 3
+      }
+    ]
+  },
+  "runtime": {
+    "blas_threads": 8,
+    "completed_utc": "2026-07-28T05:17:38.757",
+    "hostname": "a04r03n06",
+    "julia_threads": 8,
+    "max_rss_raw": 1841238016,
+    "slurm_cpus_per_task": "8",
+    "slurm_job_id": "22975247",
+    "slurm_step_id": "33",
+    "started_utc": "2026-07-28T05:14:02.953"
+  },
+  "schema_version": 1,
+  "stage": "stage1",
+  "status": "success"
+}

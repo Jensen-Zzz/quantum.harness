@@ -1,0 +1,75 @@
+{
+  "cell_id": "stage1-b2bcd2b62621684e62c1a92eb4b82b04",
+  "params": {
+    "L": 16,
+    "chi": 64,
+    "excited": false,
+    "gamma": 1.02,
+    "maxiter": 30,
+    "model": "nn",
+    "poles": null,
+    "seed": 86,
+    "sigma": null,
+    "tolerance": 1.0e-9
+  },
+  "resource_class": "A",
+  "result": {
+    "E0": -20.61194628981431,
+    "E1": null,
+    "Gamma": 1.02,
+    "L": 16,
+    "MPO_bond_dimension": 4,
+    "MPO_error": null,
+    "S0": 7.799052480549785,
+    "Sq": 1.2535275902810863,
+    "chi": 64,
+    "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+    "convergence_residual": 3.5563929579041087e-10,
+    "correlation_ratio": 0.36368502777478307,
+    "correlation_ratio_absolute_error": 8.82651748468355e-6,
+    "discarded_weight": null,
+    "ed_E0": -20.61194629071758,
+    "ed_E1": -20.491320569412157,
+    "ed_correlation_ratio": 0.3636762012572984,
+    "ed_energy_relative_error": 4.3822661609323626e-11,
+    "ed_gap": 0.12062572130542293,
+    "excited_variance": null,
+    "gap": null,
+    "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+    "ground_variance": 9.425150437891716e-9,
+    "model": "nn",
+    "mpo_error": null,
+    "normalized_excited_variance": null,
+    "normalized_ground_variance": 2.218453277901629e-11,
+    "poles": null,
+    "runtime": 207.230535030365,
+    "runtime_seconds": 207.230535030365,
+    "sigma": null,
+    "soe_fit_error": null,
+    "timestamp_utc": "2026-07-28T05:07:49.285",
+    "trajectory": [
+      {
+        "energy": -20.61194627153227,
+        "iteration": 1
+      },
+      {
+        "energy": -20.61194628981431,
+        "iteration": 2
+      }
+    ]
+  },
+  "runtime": {
+    "blas_threads": 8,
+    "completed_utc": "2026-07-28T05:07:49.290",
+    "hostname": "a04r03n06",
+    "julia_threads": 8,
+    "max_rss_raw": 1902923776,
+    "slurm_cpus_per_task": "8",
+    "slurm_job_id": "22975247",
+    "slurm_step_id": "4",
+    "started_utc": "2026-07-28T05:04:13.088"
+  },
+  "schema_version": 1,
+  "stage": "stage1",
+  "status": "success"
+}

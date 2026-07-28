@@ -1,0 +1,4692 @@
+{
+  "metadata": {
+    "boundary": "periodic image sum via Hurwitz zeta",
+    "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+    "collected_utc": "2026-07-28T05:30:36.739",
+    "completed_cells": 75,
+    "created_utc": "2026-07-28T04:43:48.813",
+    "hamiltonian": "-sum_{i<j} J_L(|i-j|) Z_i Z_j - Gamma sum_i X_i",
+    "jobs_total": 75,
+    "run_id": "issue-86-stage1",
+    "schema_version": 1,
+    "stage": "stage1"
+  },
+  "rows": [
+    {
+      "E0": -20.20392096883627,
+      "E1": null,
+      "Gamma": 0.98,
+      "L": 16,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 8.921397076258938,
+      "Sq": 1.0219658172724153,
+      "cell_id": "stage1-b102902b986ad3bf0ee2dd0c2beb047e",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 5.751926712704858e-10,
+      "correlation_ratio": 0.44248633056118,
+      "correlation_ratio_absolute_error": 1.668298006912705e-5,
+      "discarded_weight": null,
+      "ed_E0": -20.203920969723292,
+      "ed_E1": -20.12523244029763,
+      "ed_correlation_ratio": 0.44246964758111085,
+      "ed_energy_relative_error": 4.390337085410727e-11,
+      "ed_gap": 0.07868852942566207,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 5.950653303443687e-9,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.45778449284068e-11,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 204.04666590690613,
+      "runtime_seconds": 204.04666590690613,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:07:45.470",
+      "trajectory": [
+        {
+          "energy": -20.203920940420797,
+          "iteration": 1
+        },
+        {
+          "energy": -20.20392096883627,
+          "iteration": 2
+        }
+      ]
+    },
+    {
+      "E0": -20.303411413248583,
+      "E1": null,
+      "Gamma": 0.99,
+      "L": 16,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 8.639676542810065,
+      "Sq": 1.080025926367678,
+      "cell_id": "stage1-3f465f31a0b5d1ca8d755cf06de8749c",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 5.251654666693639e-10,
+      "correlation_ratio": 0.4210696150325606,
+      "correlation_ratio_absolute_error": 1.5553514970789717e-5,
+      "discarded_weight": null,
+      "ed_E0": -20.303411414107078,
+      "ed_E1": -20.21529551953009,
+      "ed_correlation_ratio": 0.4210540615175898,
+      "ed_energy_relative_error": 4.228331285831371e-11,
+      "ed_gap": 0.08811589457698688,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 5.579124717769446e-9,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.353405820933535e-11,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 210.69136714935303,
+      "runtime_seconds": 210.69136714935303,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:07:53.168",
+      "trajectory": [
+        {
+          "energy": -20.30341138826272,
+          "iteration": 1
+        },
+        {
+          "energy": -20.303411413248583,
+          "iteration": 2
+        }
+      ]
+    },
+    {
+      "E0": -20.40459447365191,
+      "E1": null,
+      "Gamma": 1.0,
+      "L": 16,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 8.357463803125803,
+      "Sq": 1.1383166783163718,
+      "cell_id": "stage1-f835886ac15bdfbc6dd7deabcf3b6d5a",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 4.5145731597528993e-10,
+      "correlation_ratio": 0.40080352136022507,
+      "correlation_ratio_absolute_error": 1.3661649435281475e-5,
+      "discarded_weight": null,
+      "ed_E0": -20.40459447475665,
+      "ed_E1": -20.306340775217688,
+      "ed_correlation_ratio": 0.4007898597107898,
+      "ed_energy_relative_error": 5.414178599753538e-11,
+      "ed_gap": 0.09825369953896157,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.0031044439529069e-8,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 2.4092963273644567e-11,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 208.68291401863098,
+      "runtime_seconds": 208.68291401863098,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:07:50.934",
+      "trajectory": [
+        {
+          "energy": -20.40459445241941,
+          "iteration": 1
+        },
+        {
+          "energy": -20.40459447365191,
+          "iteration": 2
+        }
+      ]
+    },
+    {
+      "E0": -20.507449007636804,
+      "E1": null,
+      "Gamma": 1.01,
+      "L": 16,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 8.076643602845591,
+      "Sq": 1.1963205093899645,
+      "cell_id": "stage1-8072deb4d4e0ff6114eef22df4e6435d",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 3.8522574019594913e-10,
+      "correlation_ratio": 0.38168120434805963,
+      "correlation_ratio_absolute_error": 1.1078763346550335e-5,
+      "discarded_weight": null,
+      "ed_E0": -20.50744900824597,
+      "ed_E1": -20.398354087880126,
+      "ed_correlation_ratio": 0.3816701255847131,
+      "ed_energy_relative_error": 2.970462346099627e-11,
+      "ed_gap": 0.10909492036584467,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 4.482956228457624e-9,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.0659607599156428e-11,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 208.05038499832153,
+      "runtime_seconds": 208.05038499832153,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:07:49.888",
+      "trajectory": [
+        {
+          "energy": -20.507448986513282,
+          "iteration": 1
+        },
+        {
+          "energy": -20.507449007636804,
+          "iteration": 2
+        }
+      ]
+    },
+    {
+      "E0": -20.61194628981431,
+      "E1": null,
+      "Gamma": 1.02,
+      "L": 16,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 7.799052480549785,
+      "Sq": 1.2535275902810863,
+      "cell_id": "stage1-b2bcd2b62621684e62c1a92eb4b82b04",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 3.5563929579041087e-10,
+      "correlation_ratio": 0.36368502777478307,
+      "correlation_ratio_absolute_error": 8.82651748468355e-6,
+      "discarded_weight": null,
+      "ed_E0": -20.61194629071758,
+      "ed_E1": -20.491320569412157,
+      "ed_correlation_ratio": 0.3636762012572984,
+      "ed_energy_relative_error": 4.3822661609323626e-11,
+      "ed_gap": 0.12062572130542293,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 9.425150437891716e-9,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 2.218453277901629e-11,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 207.230535030365,
+      "runtime_seconds": 207.230535030365,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:07:49.285",
+      "trajectory": [
+        {
+          "energy": -20.61194627153227,
+          "iteration": 1
+        },
+        {
+          "energy": -20.61194628981431,
+          "iteration": 2
+        }
+      ]
+    },
+    {
+      "E0": -30.279455860350247,
+      "E1": null,
+      "Gamma": 0.98,
+      "L": 24,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 12.524839108661196,
+      "Sq": 1.3357599317677973,
+      "cell_id": "stage1-6d05d44f4c407a5650630b969f56c36d",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 3.9968028886505635e-15,
+      "correlation_ratio": 0.4606309331638916,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.1038991942768916e-10,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.2040188427062272e-13,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 208.49089097976685,
+      "runtime_seconds": 208.49089097976685,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:07:49.667",
+      "trajectory": [
+        {
+          "energy": -30.27941469971857,
+          "iteration": 1
+        },
+        {
+          "energy": -30.27945584725696,
+          "iteration": 2
+        },
+        {
+          "energy": -30.279455860350286,
+          "iteration": 3
+        },
+        {
+          "energy": -30.279455860350247,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -30.428093865563177,
+      "E1": null,
+      "Gamma": 0.99,
+      "L": 24,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 11.942054214926578,
+      "Sq": 1.4485502110471007,
+      "cell_id": "stage1-18204362b9c116edf06200b03ce6d913",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 3.885780586188048e-15,
+      "correlation_ratio": 0.42836464681006914,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.1527845344971865e-10,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.2450839844761514e-13,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 210.95243501663208,
+      "runtime_seconds": 210.95243501663208,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:07:58.166",
+      "trajectory": [
+        {
+          "energy": -30.428065175334638,
+          "iteration": 1
+        },
+        {
+          "energy": -30.428093861899544,
+          "iteration": 2
+        },
+        {
+          "energy": -30.42809386556321,
+          "iteration": 3
+        },
+        {
+          "energy": -30.428093865563177,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -30.579576597346307,
+      "E1": null,
+      "Gamma": 1.0,
+      "L": 24,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 11.353609635043759,
+      "Sq": 1.5630685932059551,
+      "cell_id": "stage1-81f42a0dc40b13c7291416409c19e10f",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 4.551914400963142e-15,
+      "correlation_ratio": 0.39832215176066227,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.248281478183344e-10,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.3349026362963558e-13,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 209.44028902053833,
+      "runtime_seconds": 209.44028902053833,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:07:54.502",
+      "trajectory": [
+        {
+          "energy": -30.579554926013092,
+          "iteration": 1
+        },
+        {
+          "energy": -30.57957658244153,
+          "iteration": 2
+        },
+        {
+          "energy": -30.579576597346275,
+          "iteration": 3
+        },
+        {
+          "energy": -30.579576597346307,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -30.733875573342683,
+      "E1": null,
+      "Gamma": 1.01,
+      "L": 24,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 10.768089452665874,
+      "Sq": 1.6770155070947832,
+      "cell_id": "stage1-f9d0041052d0eecb2139ce9ca6aa7fee",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 4.3298697960381105e-15,
+      "correlation_ratio": 0.37056055446384095,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.2755663192365319e-10,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.3504185219729638e-13,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 210.22000098228455,
+      "runtime_seconds": 210.22000098228455,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:07:57.214",
+      "trajectory": [
+        {
+          "energy": -30.733858950840936,
+          "iteration": 1
+        },
+        {
+          "energy": -30.733875562416237,
+          "iteration": 2
+        },
+        {
+          "energy": -30.7338755733426,
+          "iteration": 3
+        },
+        {
+          "energy": -30.733875573342683,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -30.890935733191252,
+      "E1": null,
+      "Gamma": 1.02,
+      "L": 24,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 10.193873150596643,
+      "Sq": 1.7881097505631347,
+      "cell_id": "stage1-49490edabae1e407e87db0414a468ea7",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 3.6637359812630166e-15,
+      "correlation_ratio": 0.34507351423807286,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.241460267920047e-10,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.3009802299125041e-13,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 212.5784158706665,
+      "runtime_seconds": 212.5784158706665,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:07:55.165",
+      "trajectory": [
+        {
+          "energy": -30.89092278700257,
+          "iteration": 1
+        },
+        {
+          "energy": -30.890935725820757,
+          "iteration": 2
+        },
+        {
+          "energy": -30.890935733191213,
+          "iteration": 3
+        },
+        {
+          "energy": -30.890935733191252,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -40.36057197807244,
+      "E1": null,
+      "Gamma": 0.98,
+      "L": 32,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 16.05443363503983,
+      "Sq": 1.588201574570761,
+      "cell_id": "stage1-175c7749d39fa615509df3de1f597e84",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 3.2818192607919627e-13,
+      "correlation_ratio": 0.48033588623247203,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 3.3624019124545157e-9,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 2.0641202733388206e-12,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 215.30297899246216,
+      "runtime_seconds": 215.30297899246216,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:07:57.693",
+      "trajectory": [
+        {
+          "energy": -40.35105264548276,
+          "iteration": 1
+        },
+        {
+          "energy": -40.360571959548004,
+          "iteration": 2
+        },
+        {
+          "energy": -40.360571978072734,
+          "iteration": 3
+        },
+        {
+          "energy": -40.36057197807244,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -40.55826536130839,
+      "E1": null,
+      "Gamma": 0.99,
+      "L": 32,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 15.089900226119887,
+      "Sq": 1.768594557753835,
+      "cell_id": "stage1-3df047f8f1938c1a3bdc4e0fd9526009",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 6.661338147750939e-14,
+      "correlation_ratio": 0.4367967379324667,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 3.5513494367478415e-9,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 2.1589106180657697e-12,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 219.64419984817505,
+      "runtime_seconds": 219.64419984817505,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:08:01.148",
+      "trajectory": [
+        {
+          "energy": -40.54942886699432,
+          "iteration": 1
+        },
+        {
+          "energy": -40.558265355205336,
+          "iteration": 2
+        },
+        {
+          "energy": -40.55826536130837,
+          "iteration": 3
+        },
+        {
+          "energy": -40.55826536130839,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -40.760032493847845,
+      "E1": null,
+      "Gamma": 1.0,
+      "L": 32,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 14.105435056265577,
+      "Sq": 1.9546251382062239,
+      "cell_id": "stage1-ac7d07d89e95689e841357495ef5721b",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 6.59472476627343e-14,
+      "correlation_ratio": 0.39681767226300496,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 3.6679921322502196e-9,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 2.2077980851643267e-12,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 210.87157702445984,
+      "runtime_seconds": 210.87157702445984,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:07:56.223",
+      "trajectory": [
+        {
+          "energy": -40.75214427723882,
+          "iteration": 1
+        },
+        {
+          "energy": -40.76003248991685,
+          "iteration": 2
+        },
+        {
+          "energy": -40.76003249384771,
+          "iteration": 3
+        },
+        {
+          "energy": -40.760032493847845,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -40.965845511439696,
+      "E1": null,
+      "Gamma": 1.01,
+      "L": 32,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 13.125866740068684,
+      "Sq": 2.139719045762103,
+      "cell_id": "stage1-b0d9296fc040dd78ec8ca9137bf220b9",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 6.405986852087153e-14,
+      "correlation_ratio": 0.3606321757747715,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 3.678223947645165e-9,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 2.191766687594735e-12,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 210.7762680053711,
+      "runtime_seconds": 210.7762680053711,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:07:55.683",
+      "trajectory": [
+        {
+          "energy": -40.95872005702507,
+          "iteration": 1
+        },
+        {
+          "energy": -40.9658455077708,
+          "iteration": 2
+        },
+        {
+          "energy": -40.96584551143977,
+          "iteration": 3
+        },
+        {
+          "energy": -40.965845511439696,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -41.1756131247712,
+      "E1": null,
+      "Gamma": 1.02,
+      "L": 32,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 12.175642019334799,
+      "Sq": 2.3172616178334975,
+      "cell_id": "stage1-d5c62214e50c5eac9c2956334bb94c34",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 6.161737786669619e-14,
+      "correlation_ratio": 0.3282731659169952,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 3.6070559872314334e-9,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 2.1275155049143047e-12,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 218.1645691394806,
+      "runtime_seconds": 218.1645691394806,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:08:00.273",
+      "trajectory": [
+        {
+          "energy": -41.16979919207273,
+          "iteration": 1
+        },
+        {
+          "energy": -41.17561312053015,
+          "iteration": 2
+        },
+        {
+          "energy": -41.17561312477099,
+          "iteration": 3
+        },
+        {
+          "energy": -41.1756131247712,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -60.528524953327796,
+      "E1": null,
+      "Gamma": 0.98,
+      "L": 48,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 23.080806425758464,
+      "Sq": 1.959771075060652,
+      "cell_id": "stage1-cd0f6192af93de0a9054eeca33f872ef",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 2.6742497105658458e-11,
+      "correlation_ratio": 0.5224864855577418,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.0533995009609498e-7,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 2.8752322246960827e-11,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 223.81800413131714,
+      "runtime_seconds": 223.81800413131714,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:08:08.318",
+      "trajectory": [
+        {
+          "energy": -60.51705424725493,
+          "iteration": 1
+        },
+        {
+          "energy": -60.52852400261611,
+          "iteration": 2
+        },
+        {
+          "energy": -60.528524953317714,
+          "iteration": 3
+        },
+        {
+          "energy": -60.528524953327796,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -60.82413156173735,
+      "E1": null,
+      "Gamma": 0.99,
+      "L": 48,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 21.16174324333596,
+      "Sq": 2.3033187194554556,
+      "cell_id": "stage1-9004428d5d58935a33965d154e36152d",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 3.4404257220899126e-11,
+      "correlation_ratio": 0.4554029263771544,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.1925976650672965e-7,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 3.2236072290392666e-11,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 228.11569499969482,
+      "runtime_seconds": 228.11569499969482,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:12:52.420",
+      "trajectory": [
+        {
+          "energy": -60.8089042759489,
+          "iteration": 1
+        },
+        {
+          "energy": -60.82413135596741,
+          "iteration": 2
+        },
+        {
+          "energy": -60.82413156172061,
+          "iteration": 3
+        },
+        {
+          "energy": -60.82413156173735,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -61.126407805894594,
+      "E1": null,
+      "Gamma": 1.0,
+      "L": 48,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 19.144934899125982,
+      "Sq": 2.6730970175613575,
+      "cell_id": "stage1-b29255b1c0036f652493a915cd75c52a",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 9.632517006252783e-12,
+      "correlation_ratio": 0.39507886786023444,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.0952908269246109e-7,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 2.931377171800068e-11,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 227.47019696235657,
+      "runtime_seconds": 227.47019696235657,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:12:56.515",
+      "trajectory": [
+        {
+          "energy": -61.10697194727191,
+          "iteration": 1
+        },
+        {
+          "energy": -61.126407729164484,
+          "iteration": 2
+        },
+        {
+          "energy": -61.12640780592506,
+          "iteration": 3
+        },
+        {
+          "energy": -61.126407805894594,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -61.435362430638975,
+      "E1": null,
+      "Gamma": 1.01,
+      "L": 48,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 17.13828526432366,
+      "Sq": 3.0409202311692876,
+      "cell_id": "stage1-c1c46ba2e90763d7f77974e31393db88",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.7668089213884741e-12,
+      "correlation_ratio": 0.34267828944168943,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.1390557119739242e-7,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 3.0179227357263364e-11,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 232.3992781639099,
+      "runtime_seconds": 232.3992781639099,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:13:02.104",
+      "trajectory": [
+        {
+          "energy": -61.41111207498075,
+          "iteration": 1
+        },
+        {
+          "energy": -61.435362384656656,
+          "iteration": 2
+        },
+        {
+          "energy": -61.43536243060782,
+          "iteration": 3
+        },
+        {
+          "energy": -61.435362430638975,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -61.75079357011805,
+      "E1": null,
+      "Gamma": 1.02,
+      "L": 48,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 15.249872943028043,
+      "Sq": 3.377633167907566,
+      "cell_id": "stage1-fc787cfe174d6e3b48e6fe4ab6bf6b93",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.6090462295892394e-12,
+      "correlation_ratio": 0.29838722179670657,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.126663846662268e-7,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 2.954671970220267e-11,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 223.51100611686707,
+      "runtime_seconds": 223.51100611686707,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:12:52.353",
+      "trajectory": [
+        {
+          "energy": -61.722308104375436,
+          "iteration": 1
+        },
+        {
+          "energy": -61.75079353354612,
+          "iteration": 2
+        },
+        {
+          "energy": -61.750793570119306,
+          "iteration": 3
+        },
+        {
+          "energy": -61.75079357011805,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -80.69944097536353,
+      "E1": null,
+      "Gamma": 0.98,
+      "L": 64,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 30.162125049389356,
+      "Sq": 2.2045239774107506,
+      "cell_id": "stage1-60be72379963cb8a2afef2ec53441daa",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 8.359979375427429e-12,
+      "correlation_ratio": 0.5667775898214,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 6.087675501476042e-7,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 9.347822174595288e-11,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 245.77928185462952,
+      "runtime_seconds": 245.77928185462952,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:13:16.664",
+      "trajectory": [
+        {
+          "energy": -80.68889792858107,
+          "iteration": 1
+        },
+        {
+          "energy": -80.69919033289678,
+          "iteration": 2
+        },
+        {
+          "energy": -80.69944097528544,
+          "iteration": 3
+        },
+        {
+          "energy": -80.69944097536353,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -81.09279441200735,
+      "E1": null,
+      "Gamma": 0.99,
+      "L": 64,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 27.107127499181907,
+      "Sq": 2.732481035751811,
+      "cell_id": "stage1-8676d8b9619720dc96a2c06b6a892e44",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 6.377498529275272e-11,
+      "correlation_ratio": 0.47534695478951505,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 7.416119842673652e-7,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.1277483668505553e-10,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 244.5081741809845,
+      "runtime_seconds": 244.5081741809845,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:13:17.372",
+      "trajectory": [
+        {
+          "energy": -81.07826018070405,
+          "iteration": 1
+        },
+        {
+          "energy": -81.09272532447723,
+          "iteration": 2
+        },
+        {
+          "energy": -81.09279441176793,
+          "iteration": 3
+        },
+        {
+          "energy": -81.09279441200735,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -81.49551257645955,
+      "E1": null,
+      "Gamma": 1.0,
+      "L": 64,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 23.773064366870482,
+      "Sq": 3.333598456764539,
+      "cell_id": "stage1-c3166ba840bb4a7779b41bcf2532e632",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 8.851364086126523e-12,
+      "correlation_ratio": 0.3940925819063672,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 8.105917004286312e-7,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.2204915063821637e-10,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 242.02868390083313,
+      "runtime_seconds": 242.02868390083313,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:13:15.398",
+      "trajectory": [
+        {
+          "energy": -81.47603383854441,
+          "iteration": 1
+        },
+        {
+          "energy": -81.49549614535319,
+          "iteration": 2
+        },
+        {
+          "energy": -81.49551257614864,
+          "iteration": 3
+        },
+        {
+          "energy": -81.49551257645955,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -81.90770260005775,
+      "E1": null,
+      "Gamma": 1.01,
+      "L": 64,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 20.456390274979427,
+      "Sq": 3.9311896912257023,
+      "cell_id": "stage1-78ec1b4c68b273c1adefa100ceb803c9",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.0824674490095276e-11,
+      "correlation_ratio": 0.32631084008252115,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 7.828102752682753e-7,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.1668284996297282e-10,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 247.188325881958,
+      "runtime_seconds": 247.188325881958,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:13:22.304",
+      "trajectory": [
+        {
+          "energy": -81.88250352044562,
+          "iteration": 1
+        },
+        {
+          "energy": -81.90769782642857,
+          "iteration": 2
+        },
+        {
+          "energy": -81.90770259985082,
+          "iteration": 3
+        },
+        {
+          "energy": -81.90770260005775,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -82.32898941691809,
+      "E1": null,
+      "Gamma": 1.02,
+      "L": 64,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 17.458965084789178,
+      "Sq": 4.443827321233366,
+      "cell_id": "stage1-ff0bfcf22d15f08514e6aa48a8b91de9",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 9.4840801878604e-12,
+      "correlation_ratio": 0.27237417573667055,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 6.774498615413904e-7,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 9.994742032847968e-11,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 238.50703501701355,
+      "runtime_seconds": 238.50703501701355,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:13:13.062",
+      "trajectory": [
+        {
+          "energy": -82.29772095557915,
+          "iteration": 1
+        },
+        {
+          "energy": -82.32898789518406,
+          "iteration": 2
+        },
+        {
+          "energy": -82.32898941668242,
+          "iteration": 3
+        },
+        {
+          "energy": -82.32898941691809,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -20.40459447365191,
+      "E1": -20.306340774004028,
+      "Gamma": 1.0,
+      "L": 16,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 8.357463803125803,
+      "Sq": 1.1383166783163718,
+      "cell_id": "stage1-54a951b2d46b4661a0ec4c60cef3ecb8",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 4.5145731597528993e-10,
+      "correlation_ratio": 0.40080352136022507,
+      "correlation_ratio_absolute_error": 1.3661649435281475e-5,
+      "discarded_weight": null,
+      "ed_E0": -20.40459447475665,
+      "ed_E1": -20.306340775217688,
+      "ed_correlation_ratio": 0.4007898597107898,
+      "ed_energy_relative_error": 5.414178599753538e-11,
+      "ed_gap": 0.09825369953896157,
+      "excited_variance": 7.904361609689659e-9,
+      "gap": 0.09825369964788067,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.0031044439529069e-8,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": 1.9169176669781935e-11,
+      "normalized_ground_variance": 2.4092963273644567e-11,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 233.73482012748718,
+      "runtime_seconds": 233.73482012748718,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:13:08.506",
+      "trajectory": [
+        {
+          "energy": -20.40459445241941,
+          "iteration": 1
+        },
+        {
+          "energy": -20.40459447365191,
+          "iteration": 2
+        }
+      ]
+    },
+    {
+      "E0": -20.404594474077484,
+      "E1": -20.306340774754677,
+      "Gamma": 1.0,
+      "L": 16,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 8.357459427945916,
+      "Sq": 1.1383182967916121,
+      "cell_id": "stage1-c74c086a940d1f8f0797ba066969ab62",
+      "chi": 128,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 4.5145731597528993e-10,
+      "correlation_ratio": 0.400803070044067,
+      "correlation_ratio_absolute_error": 1.3210333281610254e-5,
+      "discarded_weight": null,
+      "ed_E0": -20.404594474756653,
+      "ed_E1": -20.30634077521774,
+      "ed_correlation_ratio": 0.4007898597107854,
+      "ed_energy_relative_error": 3.328508792972289e-11,
+      "ed_gap": 0.09825369953891183,
+      "excited_variance": 3.5708467294170987e-9,
+      "gap": 0.09825369932280736,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 3.6075675780011807e-9,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": 8.659800144762882e-12,
+      "normalized_ground_variance": 8.664799930288038e-12,
+      "poles": null,
+      "resource_class": "B",
+      "runtime": 236.64471793174744,
+      "runtime_seconds": 236.64471793174744,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:08:17.909",
+      "trajectory": [
+        {
+          "energy": -20.40459445241941,
+          "iteration": 1
+        },
+        {
+          "energy": -20.404594474077484,
+          "iteration": 2
+        }
+      ]
+    },
+    {
+      "E0": -30.579576597346307,
+      "E1": -30.51410337605298,
+      "Gamma": 1.0,
+      "L": 24,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 11.353609635043759,
+      "Sq": 1.5630685932059551,
+      "cell_id": "stage1-77f00f96ba6d607f72e6d6fbd49df9f2",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 4.551914400963142e-15,
+      "correlation_ratio": 0.39832215176066227,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": 2.3146640160121024e-9,
+      "gap": 0.06547322129332755,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.248281478183344e-10,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": 2.4859176262851768e-12,
+      "normalized_ground_variance": 1.3349026362963558e-13,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 242.8138599395752,
+      "runtime_seconds": 242.8138599395752,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:13:20.875",
+      "trajectory": [
+        {
+          "energy": -30.579554926013092,
+          "iteration": 1
+        },
+        {
+          "energy": -30.57957658244153,
+          "iteration": 2
+        },
+        {
+          "energy": -30.579576597346275,
+          "iteration": 3
+        },
+        {
+          "energy": -30.579576597346307,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -30.57957659735705,
+      "E1": -30.51410337622052,
+      "Gamma": 1.0,
+      "L": 24,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 11.353609649230533,
+      "Sq": 1.563068589630648,
+      "cell_id": "stage1-18782f2d428388568f18ebaf2c116b12",
+      "chi": 128,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 3.3306690738754696e-15,
+      "correlation_ratio": 0.39832215257753584,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": 2.3424036044161767e-9,
+      "gap": 0.06547322113653209,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": -5.684341886080801e-13,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": 2.515709566376097e-12,
+      "normalized_ground_variance": 6.078791604259646e-16,
+      "poles": null,
+      "resource_class": "B",
+      "runtime": 271.52666997909546,
+      "runtime_seconds": 271.52666997909546,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:08:53.229",
+      "trajectory": [
+        {
+          "energy": -30.579554926013092,
+          "iteration": 1
+        },
+        {
+          "energy": -30.57957658246316,
+          "iteration": 2
+        },
+        {
+          "energy": -30.579576597357022,
+          "iteration": 3
+        },
+        {
+          "energy": -30.57957659735705,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -40.760032493847845,
+      "E1": -40.710935247988516,
+      "Gamma": 1.0,
+      "L": 32,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 14.105435056265577,
+      "Sq": 1.9546251382062239,
+      "cell_id": "stage1-a040728b5d63608f0d7f607b2d4930ee",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 6.59472476627343e-14,
+      "correlation_ratio": 0.39681767226300496,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": 1.347052602795884e-8,
+      "gap": 0.049097245859329064,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 3.6679921322502196e-9,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": 8.127601398646448e-12,
+      "normalized_ground_variance": 2.2077980851643267e-12,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 253.24964809417725,
+      "runtime_seconds": 253.24964809417725,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:13:30.808",
+      "trajectory": [
+        {
+          "energy": -40.75214427723882,
+          "iteration": 1
+        },
+        {
+          "energy": -40.76003248991685,
+          "iteration": 2
+        },
+        {
+          "energy": -40.76003249384771,
+          "iteration": 3
+        },
+        {
+          "energy": -40.760032493847845,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -40.76003249419231,
+      "E1": -40.71093524977426,
+      "Gamma": 1.0,
+      "L": 32,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 14.105435309666834,
+      "Sq": 1.9546250570837662,
+      "cell_id": "stage1-991982a4999d2834ffc9120a74c7a50b",
+      "chi": 128,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 6.8833827526759706e-15,
+      "correlation_ratio": 0.39681768595992156,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": 9.158611646853387e-10,
+      "gap": 0.04909724441804997,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": -5.4569682106375694e-12,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": 5.525956794084779e-13,
+      "normalized_ground_variance": 3.2845991844190583e-15,
+      "poles": null,
+      "resource_class": "B",
+      "runtime": 308.21023988723755,
+      "runtime_seconds": 308.21023988723755,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:09:28.901",
+      "trajectory": [
+        {
+          "energy": -40.75214427723882,
+          "iteration": 1
+        },
+        {
+          "energy": -40.76003249049849,
+          "iteration": 2
+        },
+        {
+          "energy": -40.760032494192245,
+          "iteration": 3
+        },
+        {
+          "energy": -40.76003249419231,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -61.126407805894594,
+      "E1": -61.0936799643382,
+      "Gamma": 1.0,
+      "L": 48,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 19.144934899125982,
+      "Sq": 2.6730970175613575,
+      "cell_id": "stage1-b97d40ede9f3a383d901688ddbe38ed5",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 9.632517006252783e-12,
+      "correlation_ratio": 0.39507886786023444,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": 8.280812835437246e-8,
+      "gap": 0.032727841556393855,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.0952908269246109e-7,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": 2.2186070956690284e-11,
+      "normalized_ground_variance": 2.931377171800068e-11,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 291.6144151687622,
+      "runtime_seconds": 291.6144151687622,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:14:10.744",
+      "trajectory": [
+        {
+          "energy": -61.10697194727191,
+          "iteration": 1
+        },
+        {
+          "energy": -61.126407729164484,
+          "iteration": 2
+        },
+        {
+          "energy": -61.12640780592506,
+          "iteration": 3
+        },
+        {
+          "energy": -61.126407805894594,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -61.126407818149445,
+      "E1": -61.093679970193264,
+      "Gamma": 1.0,
+      "L": 48,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 19.144939931674664,
+      "Sq": 2.6730951283870623,
+      "cell_id": "stage1-1adf29d1d24c9fb52d93924bec9c8de4",
+      "chi": 128,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 6.607270286451694e-12,
+      "correlation_ratio": 0.39507909047773665,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": 1.4942088455427438e-8,
+      "gap": 0.03272784795618122,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 9.185896487906575e-11,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": 4.003305487488537e-12,
+      "normalized_ground_variance": 2.4584636878570504e-14,
+      "poles": null,
+      "resource_class": "B",
+      "runtime": 537.782418012619,
+      "runtime_seconds": 537.782418012619,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:13:18.134",
+      "trajectory": [
+        {
+          "energy": -61.10697194727191,
+          "iteration": 1
+        },
+        {
+          "energy": -61.12640778156405,
+          "iteration": 2
+        },
+        {
+          "energy": -61.12640781814284,
+          "iteration": 3
+        },
+        {
+          "energy": -61.126407818149445,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -81.49551257645955,
+      "E1": -81.47096767653582,
+      "Gamma": 1.0,
+      "L": 64,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 23.773064366870482,
+      "Sq": 3.333598456764539,
+      "cell_id": "stage1-0b23224a42d8bb8622a6b9cfdbb380c4",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 8.851364086126523e-12,
+      "correlation_ratio": 0.3940925819063672,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": 5.383699317462742e-7,
+      "gap": 0.02454489992372544,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 8.105917004286312e-7,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": 8.11101205566306e-11,
+      "normalized_ground_variance": 1.2204915063821637e-10,
+      "poles": null,
+      "resource_class": "A",
+      "runtime": 330.68091011047363,
+      "runtime_seconds": 330.68091011047363,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:14:51.063",
+      "trajectory": [
+        {
+          "energy": -81.47603383854441,
+          "iteration": 1
+        },
+        {
+          "energy": -81.49549614535319,
+          "iteration": 2
+        },
+        {
+          "energy": -81.49551257614864,
+          "iteration": 3
+        },
+        {
+          "energy": -81.49551257645955,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -81.49551266876574,
+      "E1": -81.47096774400939,
+      "Gamma": 1.0,
+      "L": 64,
+      "MPO_bond_dimension": 4,
+      "MPO_error": null,
+      "S0": 23.77309962290524,
+      "Sq": 3.333583608330527,
+      "cell_id": "stage1-866128e2662c5f71b8c9d1ad0b85819a",
+      "chi": 128,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 2.6584290324649373e-12,
+      "correlation_ratio": 0.39409394262012476,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": 1.3787939678877592e-9,
+      "gap": 0.024544924756355613,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.6061676433309913e-9,
+      "model": "nn",
+      "mpo_error": null,
+      "normalized_excited_variance": 2.0772732312546165e-13,
+      "normalized_ground_variance": 2.4183740852935295e-13,
+      "poles": null,
+      "resource_class": "B",
+      "runtime": 1093.362529039383,
+      "runtime_seconds": 1093.362529039383,
+      "sigma": null,
+      "soe_fit_error": null,
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:22:33.935",
+      "trajectory": [
+        {
+          "energy": -81.47603383854441,
+          "iteration": 1
+        },
+        {
+          "energy": -81.49550566545969,
+          "iteration": 2
+        },
+        {
+          "energy": -81.49551266876304,
+          "iteration": 3
+        },
+        {
+          "energy": -81.49551266876574,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -28.084066460840322,
+      "E1": null,
+      "Gamma": 1.52,
+      "L": 16,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 2.7067237340361316e-13,
+        "max_relative": 4.164404413474493e-13,
+        "rms_relative": 2.384603445333114e-13
+      },
+      "S0": 7.1836372432937585,
+      "Sq": 1.0918541339887238,
+      "cell_id": "stage1-0bd0c47c494e120b7e81e2f282f1fbcc",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 6.8937078268049845e-12,
+      "correlation_ratio": 0.37593264163997386,
+      "correlation_ratio_absolute_error": 5.2060494803995994e-8,
+      "discarded_weight": null,
+      "ed_E0": -28.08406647994049,
+      "ed_E1": -26.524412898731754,
+      "ed_correlation_ratio": 0.37593269370046867,
+      "ed_energy_relative_error": 6.801068782246959e-10,
+      "ed_gap": 1.5596535812087353,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 3.668499175546458e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 2.7067237340361316e-13,
+        "max_relative": 4.164404413474493e-13,
+        "rms_relative": 2.384603445333114e-13
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 4.6512367040881226e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 207.16507697105408,
+      "runtime_seconds": 207.16507697105408,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 4.163336342344337e-13,
+        "rms_relative": 2.532151035897361e-13,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 8,
+        "xmax": 2.5,
+        "xmin": -8.4
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:12:51.107",
+      "trajectory": [
+        {
+          "energy": -28.084066330908037,
+          "iteration": 1
+        },
+        {
+          "energy": -28.08406646088453,
+          "iteration": 2
+        },
+        {
+          "energy": -28.084066460840322,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -28.319898163479145,
+      "E1": null,
+      "Gamma": 1.54,
+      "L": 16,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 2.7067237340361316e-13,
+        "max_relative": 4.164404413474493e-13,
+        "rms_relative": 2.384603445333114e-13
+      },
+      "S0": 6.871393107878355,
+      "Sq": 1.1426582347603162,
+      "cell_id": "stage1-f1d91af59156ab667419e08adbe68760",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 4.094280470212652e-12,
+      "correlation_ratio": 0.35636194160880186,
+      "correlation_ratio_absolute_error": 4.6789393692847625e-8,
+      "discarded_weight": null,
+      "ed_E0": -28.31989818147313,
+      "ed_E1": -26.740245687901446,
+      "ed_correlation_ratio": 0.35636198839819555,
+      "ed_energy_relative_error": 6.353830468262929e-10,
+      "ed_gap": 1.5796524935716825,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 3.4824984140868764e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 2.7067237340361316e-13,
+        "max_relative": 4.164404413474493e-13,
+        "rms_relative": 2.384603445333114e-13
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 4.3421773005463543e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 200.0877809524536,
+      "runtime_seconds": 200.0877809524536,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 4.163336342344337e-13,
+        "rms_relative": 2.532151035897361e-13,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 8,
+        "xmax": 2.5,
+        "xmin": -8.4
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:12:49.148",
+      "trajectory": [
+        {
+          "energy": -28.31989803903276,
+          "iteration": 1
+        },
+        {
+          "energy": -28.319898163520502,
+          "iteration": 2
+        },
+        {
+          "energy": -28.319898163479145,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -28.559678051582377,
+      "E1": null,
+      "Gamma": 1.56,
+      "L": 16,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 2.7067237340361316e-13,
+        "max_relative": 4.164404413474493e-13,
+        "rms_relative": 2.384603445333114e-13
+      },
+      "S0": 6.56981933649786,
+      "Sq": 1.1912486318834763,
+      "cell_id": "stage1-eed3d17742c1614a9beba5ee3f8fe4c4",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 2.8733682100323676e-12,
+      "correlation_ratio": 0.3381834616283839,
+      "correlation_ratio_absolute_error": 4.1652251925317074e-8,
+      "discarded_weight": null,
+      "ed_E0": -28.559678068415508,
+      "ed_E1": -26.95498241537553,
+      "ed_correlation_ratio": 0.33818350328063584,
+      "ed_energy_relative_error": 5.89401967514088e-10,
+      "ed_gap": 1.604695653039979,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 3.2756474865891505e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 2.7067237340361316e-13,
+        "max_relative": 4.164404413474493e-13,
+        "rms_relative": 2.384603445333114e-13
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 4.015970773903911e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 199.1774320602417,
+      "runtime_seconds": 199.1774320602417,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 4.163336342344337e-13,
+        "rms_relative": 2.532151035897361e-13,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 8,
+        "xmax": 2.5,
+        "xmin": -8.4
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:17:30.403",
+      "trajectory": [
+        {
+          "energy": -28.559677928476095,
+          "iteration": 1
+        },
+        {
+          "energy": -28.559678051598468,
+          "iteration": 2
+        },
+        {
+          "energy": -28.559678051582377,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -28.803229002854255,
+      "E1": null,
+      "Gamma": 1.58,
+      "L": 16,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 2.7067237340361316e-13,
+        "max_relative": 4.164404413474493e-13,
+        "rms_relative": 2.384603445333114e-13
+      },
+      "S0": 6.280691108730924,
+      "Sq": 1.2372172273069708,
+      "cell_id": "stage1-555f2998693f813d0b8f58fa1091dff7",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 2.9483082641945657e-12,
+      "correlation_ratio": 0.32133796601904824,
+      "correlation_ratio_absolute_error": 3.704456869035866e-8,
+      "discarded_weight": null,
+      "ed_E0": -28.80322901852365,
+      "ed_E1": -27.16871333244034,
+      "ed_correlation_ratio": 0.32133800306361693,
+      "ed_energy_relative_error": 5.440151478935564e-10,
+      "ed_gap": 1.6345156860833079,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 3.0624016744695837e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 2.7067237340361316e-13,
+        "max_relative": 4.164404413474493e-13,
+        "rms_relative": 2.384603445333114e-13
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 3.6913038776653596e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 204.23815083503723,
+      "runtime_seconds": 204.23815083503723,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 4.163336342344337e-13,
+        "rms_relative": 2.532151035897361e-13,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 8,
+        "xmax": 2.5,
+        "xmin": -8.4
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:17:38.752",
+      "trajectory": [
+        {
+          "energy": -28.803228885340328,
+          "iteration": 1
+        },
+        {
+          "energy": -28.803229002877757,
+          "iteration": 2
+        },
+        {
+          "energy": -28.803229002854255,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -29.05036287727896,
+      "E1": null,
+      "Gamma": 1.6,
+      "L": 16,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 2.7067237340361316e-13,
+        "max_relative": 4.164404413474493e-13,
+        "rms_relative": 2.384603445333114e-13
+      },
+      "S0": 6.005311728040034,
+      "Sq": 1.2802624330404972,
+      "cell_id": "stage1-0bccdf09bf337b05df57b176385ad7a8",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.794564497004103e-12,
+      "correlation_ratio": 0.3057551652277296,
+      "correlation_ratio_absolute_error": 3.305789580965168e-8,
+      "discarded_weight": null,
+      "ed_E0": -29.05036289181218,
+      "ed_E1": -27.381541540273815,
+      "ed_correlation_ratio": 0.3057551982856254,
+      "ed_energy_relative_error": 5.002767401947044e-10,
+      "ed_gap": 1.6688213515383659,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 2.851149929483654e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 2.7067237340361316e-13,
+        "max_relative": 4.164404413474493e-13,
+        "rms_relative": 2.384603445333114e-13
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 3.378445615098727e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 199.00634908676147,
+      "runtime_seconds": 199.00634908676147,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 4.163336342344337e-13,
+        "rms_relative": 2.532151035897361e-13,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 8,
+        "xmax": 2.5,
+        "xmin": -8.4
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:17:33.418",
+      "trajectory": [
+        {
+          "energy": -29.050362764915818,
+          "iteration": 1
+        },
+        {
+          "energy": -29.050362877316548,
+          "iteration": 2
+        },
+        {
+          "energy": -29.05036287727896,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -56.03695568011186,
+      "E1": null,
+      "Gamma": 1.52,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "S0": 12.662071574008806,
+      "Sq": 1.59853920780909,
+      "cell_id": "stage1-79a7a21826b0162af37b9be832b59bcd",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.244001568423414e-10,
+      "correlation_ratio": 0.4187023424700008,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 4.141738872931455e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.3189661425432605e-8,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 211.68197393417358,
+      "runtime_seconds": 211.68197393417358,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 3.1626323782063537e-10,
+        "rms_relative": 1.6849538444388167e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 1.75,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:17:45.580",
+      "trajectory": [
+        {
+          "energy": -56.0308922817213,
+          "iteration": 1
+        },
+        {
+          "energy": -56.03695561913059,
+          "iteration": 2
+        },
+        {
+          "energy": -56.03695567930997,
+          "iteration": 3
+        },
+        {
+          "energy": -56.03695568011186,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -56.50527395453286,
+      "E1": null,
+      "Gamma": 1.54,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "S0": 11.65708514584581,
+      "Sq": 1.7443638369694456,
+      "cell_id": "stage1-187f5968f0db4c76744665619d17bf1c",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.3517076347113743e-10,
+      "correlation_ratio": 0.37940062548960374,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 4.183202781860018e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.310179946648274e-8,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 216.98143100738525,
+      "runtime_seconds": 216.98143100738525,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 3.1626323782063537e-10,
+        "rms_relative": 1.6849538444388167e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 1.75,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:17:56.372",
+      "trajectory": [
+        {
+          "energy": -56.50039586295792,
+          "iteration": 1
+        },
+        {
+          "energy": -56.50527389196421,
+          "iteration": 2
+        },
+        {
+          "energy": -56.50527395374318,
+          "iteration": 3
+        },
+        {
+          "energy": -56.50527395453286,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -56.98348299476608,
+      "E1": null,
+      "Gamma": 1.56,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "S0": 10.690308743023063,
+      "Sq": 1.8828688182075037,
+      "cell_id": "stage1-c36ab4b353baa3e328e95847263bdf0c",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 5.537500458174804e-10,
+      "correlation_ratio": 0.34421908418513536,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 4.145257253185264e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.2765960778524357e-8,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 212.96387100219727,
+      "runtime_seconds": 212.96387100219727,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 3.1626323782063537e-10,
+        "rms_relative": 1.6849538444388167e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 1.75,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:17:58.430",
+      "trajectory": [
+        {
+          "energy": -56.97988896559346,
+          "iteration": 1
+        },
+        {
+          "energy": -56.98348294179031,
+          "iteration": 2
+        },
+        {
+          "energy": -56.98348299476608,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -57.4710634886117,
+      "E1": null,
+      "Gamma": 1.58,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "S0": 9.785378888018966,
+      "Sq": 2.008842695220955,
+      "cell_id": "stage1-196f18e9287c381087559d2693fd771c",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 3.912236090641841e-10,
+      "correlation_ratio": 0.31314123882609207,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 4.1452118693996454e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.2550131188541853e-8,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 208.08186888694763,
+      "runtime_seconds": 208.08186888694763,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 3.1626323782063537e-10,
+        "rms_relative": 1.6849538444388167e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 1.75,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:17:58.054",
+      "trajectory": [
+        {
+          "energy": -57.468152300453056,
+          "iteration": 1
+        },
+        {
+          "energy": -57.47106342202368,
+          "iteration": 2
+        },
+        {
+          "energy": -57.4710634886117,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -57.96737089137916,
+      "E1": null,
+      "Gamma": 1.6,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "S0": 8.958029632197592,
+      "Sq": 2.118775341736791,
+      "cell_id": "stage1-03edd7edf9c12880de98c8c1f16752a0",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 8.443001853208898e-10,
+      "correlation_ratio": 0.28594470074861267,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 4.079113841726212e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.2139439056381717e-8,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 206.78314208984375,
+      "runtime_seconds": 206.78314208984375,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 3.1626323782063537e-10,
+        "rms_relative": 1.6849538444388167e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 1.75,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:18:01.507",
+      "trajectory": [
+        {
+          "energy": -57.96550474015411,
+          "iteration": 1
+        },
+        {
+          "energy": -57.967370862222886,
+          "iteration": 2
+        },
+        {
+          "energy": -57.96737089137916,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -26.07641135031488,
+      "E1": null,
+      "Gamma": 1.38,
+      "L": 16,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 1.5942802633617248e-13,
+        "max_relative": 1.5933259852848795e-13,
+        "rms_relative": 8.303178676580583e-14
+      },
+      "S0": 7.8016135587043545,
+      "Sq": 1.040899980457623,
+      "cell_id": "stage1-14fc546e9b877f80ddcf856f014be3af",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.0836997965668616e-11,
+      "correlation_ratio": 0.4056130319797819,
+      "correlation_ratio_absolute_error": 5.9127300611194755e-8,
+      "discarded_weight": null,
+      "ed_E0": -26.07641136383669,
+      "ed_E1": -24.72339032416847,
+      "ed_correlation_ratio": 0.4056130911070825,
+      "ed_energy_relative_error": 5.18545641163824e-10,
+      "ed_gap": 1.3530210396682207,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 2.2747769889974734e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 1.5942802633617248e-13,
+        "max_relative": 1.5933259852848795e-13,
+        "rms_relative": 8.303178676580583e-14
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 3.345362464440479e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 199.0610008239746,
+      "runtime_seconds": 199.0610008239746,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 1.5931700403370996e-13,
+        "rms_relative": 8.349671573827652e-14,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 8,
+        "xmax": 3.75,
+        "xmin": -8.4
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:17:56.104",
+      "trajectory": [
+        {
+          "energy": -26.076411233609225,
+          "iteration": 1
+        },
+        {
+          "energy": -26.076411350310565,
+          "iteration": 2
+        },
+        {
+          "energy": -26.07641135031488,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -26.30193977250642,
+      "E1": null,
+      "Gamma": 1.4,
+      "L": 16,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 1.5942802633617248e-13,
+        "max_relative": 1.5933259852848795e-13,
+        "rms_relative": 8.303178676580583e-14
+      },
+      "S0": 7.442406252384544,
+      "Sq": 1.103106826646217,
+      "cell_id": "stage1-6a8bf78cfbca2cb1850ae74dbeb72b54",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.1121770171484968e-11,
+      "correlation_ratio": 0.3815328864870269,
+      "correlation_ratio_absolute_error": 5.256176843770888e-8,
+      "discarded_weight": null,
+      "ed_E0": -26.301939785345215,
+      "ed_E1": -24.936818973036246,
+      "ed_correlation_ratio": 0.3815329390487953,
+      "ed_energy_relative_error": 4.88131171967883e-10,
+      "ed_gap": 1.3651208123089695,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 2.1734649635618553e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 1.5942802633617248e-13,
+        "max_relative": 1.5933259852848795e-13,
+        "rms_relative": 8.303178676580583e-14
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 3.1417895134615814e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 203.21128392219543,
+      "runtime_seconds": 203.21128392219543,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 1.5931700403370996e-13,
+        "rms_relative": 8.349671573827652e-14,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 8,
+        "xmax": 3.75,
+        "xmin": -8.4
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:18:03.046",
+      "trajectory": [
+        {
+          "energy": -26.30193966068349,
+          "iteration": 1
+        },
+        {
+          "energy": -26.301939772496976,
+          "iteration": 2
+        },
+        {
+          "energy": -26.30193977250642,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -26.5320160238326,
+      "E1": null,
+      "Gamma": 1.42,
+      "L": 16,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 1.5942802633617248e-13,
+        "max_relative": 1.5933259852848795e-13,
+        "rms_relative": 8.303178676580583e-14
+      },
+      "S0": 7.091769625976526,
+      "Sq": 1.163505330862472,
+      "cell_id": "stage1-8ede9c98aa9bcb336a09aa33c27a3c1d",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 9.101386311272108e-12,
+      "correlation_ratio": 0.3592524358897184,
+      "correlation_ratio_absolute_error": 4.6672834264072094e-8,
+      "discarded_weight": null,
+      "ed_E0": -26.53201603592781,
+      "ed_E1": -25.149044217092406,
+      "ed_correlation_ratio": 0.35925248256255266,
+      "ed_energy_relative_error": 4.558722620393465e-10,
+      "ed_gap": 1.3829718188354043,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 2.059719008684624e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 1.5942802633617248e-13,
+        "max_relative": 1.5933259852848795e-13,
+        "rms_relative": 8.303178676580583e-14
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 2.9259538723165277e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 203.08074283599854,
+      "runtime_seconds": 203.08074283599854,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 1.5931700403370996e-13,
+        "rms_relative": 8.349671573827652e-14,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 8,
+        "xmax": 3.75,
+        "xmin": -8.4
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:18:03.367",
+      "trajectory": [
+        {
+          "energy": -26.532015910363675,
+          "iteration": 1
+        },
+        {
+          "energy": -26.53201602384686,
+          "iteration": 2
+        },
+        {
+          "energy": -26.5320160238326,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -26.766464571358927,
+      "E1": null,
+      "Gamma": 1.44,
+      "L": 16,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 1.5942802633617248e-13,
+        "max_relative": 1.5933259852848795e-13,
+        "rms_relative": 8.303178676580583e-14
+      },
+      "S0": 6.7529654711097065,
+      "Sq": 1.2213108222976263,
+      "cell_id": "stage1-f8c097846391192cead5b5e0da2446ae",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 4.680034138004885e-12,
+      "correlation_ratio": 0.33871510008974925,
+      "correlation_ratio_absolute_error": 4.150642685107897e-8,
+      "discarded_weight": null,
+      "ed_E0": -26.76646458267631,
+      "ed_E1": -25.360140192587615,
+      "ed_correlation_ratio": 0.3387151415961761,
+      "ed_energy_relative_error": 4.2281947814522046e-10,
+      "ed_gap": 1.4063243900886953,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.9380706817173632e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 1.5942802633617248e-13,
+        "max_relative": 1.5933259852848795e-13,
+        "rms_relative": 8.303178676580583e-14
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 2.705126561715917e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 201.14405703544617,
+      "runtime_seconds": 201.14405703544617,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 1.5931700403370996e-13,
+        "rms_relative": 8.349671573827652e-14,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 8,
+        "xmax": 3.75,
+        "xmin": -8.4
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:18:06.225",
+      "trajectory": [
+        {
+          "energy": -26.766464462714318,
+          "iteration": 1
+        },
+        {
+          "energy": -26.76646457140239,
+          "iteration": 2
+        },
+        {
+          "energy": -26.766464571358927,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -27.00508569007067,
+      "E1": null,
+      "Gamma": 1.46,
+      "L": 16,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 1.5942802633617248e-13,
+        "max_relative": 1.5933259852848795e-13,
+        "rms_relative": 8.303178676580583e-14
+      },
+      "S0": 6.428625905485654,
+      "Sq": 1.2758845080272392,
+      "cell_id": "stage1-e743b1013cd01fe08d2762d69fe15b52",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 3.0946356588401613e-12,
+      "correlation_ratio": 0.31984062320893397,
+      "correlation_ratio_absolute_error": 3.702787593207191e-8,
+      "discarded_weight": null,
+      "ed_E0": -27.005085700600784,
+      "ed_E1": -25.570206712351528,
+      "ed_correlation_ratio": 0.3198406602368099,
+      "ed_energy_relative_error": 3.8993082869712885e-10,
+      "ed_gap": 1.434878988249256,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.8130833723262185e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 1.5942802633617248e-13,
+        "max_relative": 1.5933259852848795e-13,
+        "rms_relative": 8.303178676580583e-14
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 2.486146151589672e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 204.14537286758423,
+      "runtime_seconds": 204.14537286758423,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 1.5931700403370996e-13,
+        "rms_relative": 8.349671573827652e-14,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 8,
+        "xmax": 3.75,
+        "xmin": -8.4
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:18:09.073",
+      "trajectory": [
+        {
+          "energy": -27.005085581984556,
+          "iteration": 1
+        },
+        {
+          "energy": -27.0050856901142,
+          "iteration": 2
+        },
+        {
+          "energy": -27.00508569007067,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -52.051632620600934,
+      "E1": null,
+      "Gamma": 1.38,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "S0": 14.074213799592458,
+      "Sq": 1.5129772392661789,
+      "cell_id": "stage1-4e49d8fea8c302e3e82deb2c20544627",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.192258514137734e-10,
+      "correlation_ratio": 0.45858530244950835,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 2.559623726483551e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 9.447293665666699e-9,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 215.74105405807495,
+      "runtime_seconds": 215.74105405807495,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 3.951416971403887e-10,
+        "rms_relative": 1.851542034375999e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 3.25,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:18:29.343",
+      "trajectory": [
+        {
+          "energy": -52.04043898439886,
+          "iteration": 1
+        },
+        {
+          "energy": -52.051632548970055,
+          "iteration": 2
+        },
+        {
+          "energy": -52.05163261882948,
+          "iteration": 3
+        },
+        {
+          "energy": -52.051632620600934,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -52.49866235123277,
+      "E1": null,
+      "Gamma": 1.4,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "S0": 12.913739301026853,
+      "Sq": 1.6944064502269214,
+      "cell_id": "stage1-6412230f3c30ef3c830165adf44c592c",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.397543192283024e-10,
+      "correlation_ratio": 0.409538608153957,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 2.7014392344426597e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 9.80163954566867e-9,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 215.9115490913391,
+      "runtime_seconds": 215.9115490913391,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 3.951416971403887e-10,
+        "rms_relative": 1.851542034375999e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 3.25,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:19:10.289",
+      "trajectory": [
+        {
+          "energy": -52.489482264197946,
+          "iteration": 1
+        },
+        {
+          "energy": -52.498662271434966,
+          "iteration": 2
+        },
+        {
+          "energy": -52.4986623445255,
+          "iteration": 3
+        },
+        {
+          "energy": -52.49866235123277,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -52.95689835606454,
+      "E1": null,
+      "Gamma": 1.42,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "S0": 11.766956647322885,
+      "Sq": 1.8737690541812844,
+      "cell_id": "stage1-d20e43f63779adfbb5fb04ef227e0d46",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.6627299537219642e-10,
+      "correlation_ratio": 0.3657044311796807,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 2.8187969746795716e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.0051218519955276e-8,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 222.33142399787903,
+      "runtime_seconds": 222.33142399787903,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 3.951416971403887e-10,
+        "rms_relative": 1.851542034375999e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 3.25,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:19:54.837",
+      "trajectory": [
+        {
+          "energy": -52.94964351604686,
+          "iteration": 1
+        },
+        {
+          "energy": -52.956898274668546,
+          "iteration": 2
+        },
+        {
+          "energy": -52.956898344044234,
+          "iteration": 3
+        },
+        {
+          "energy": -52.95689835606454,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -53.42591565947364,
+      "E1": null,
+      "Gamma": 1.44,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "S0": 10.675199465105536,
+      "Sq": 2.041412747171639,
+      "cell_id": "stage1-24666c261157448efacdc8396956962f",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.635579449654756e-10,
+      "correlation_ratio": 0.32730706404232596,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 2.8712148832710227e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.005916074281743e-8,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 211.43981409072876,
+      "runtime_seconds": 211.43981409072876,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 3.951416971403887e-10,
+        "rms_relative": 1.851542034375999e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 3.25,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:22:23.362",
+      "trajectory": [
+        {
+          "energy": -53.42109148144548,
+          "iteration": 1
+        },
+        {
+          "energy": -53.42591560619669,
+          "iteration": 2
+        },
+        {
+          "energy": -53.42591565305949,
+          "iteration": 3
+        },
+        {
+          "energy": -53.42591565947364,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -53.905058214694904,
+      "E1": null,
+      "Gamma": 1.46,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "S0": 9.670381482701327,
+      "Sq": 2.189753445826113,
+      "cell_id": "stage1-424b7760b9a7bdb44ece1c12a11442f7",
+      "chi": 32,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 9.448762883224049e-10,
+      "correlation_ratio": 0.29416537524867,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 2.781471084745135e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 9.572282578866176e-9,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 208.01183581352234,
+      "runtime_seconds": 208.01183581352234,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 3.951416971403887e-10,
+        "rms_relative": 1.851542034375999e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 3.25,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:22:22.981",
+      "trajectory": [
+        {
+          "energy": -53.90127493940143,
+          "iteration": 1
+        },
+        {
+          "energy": -53.90505817156269,
+          "iteration": 2
+        },
+        {
+          "energy": -53.905058214694904,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -56.03695873177296,
+      "E1": null,
+      "Gamma": 1.52,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "S0": 12.662111758202261,
+      "Sq": 1.5985163221607928,
+      "cell_id": "stage1-433e0bda651d6fe7f85ed6cec024bdbe",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.3210543770014738e-12,
+      "correlation_ratio": 0.4187065331537671,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 3.790059963648673e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.206971366173138e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 251.21020102500916,
+      "runtime_seconds": 251.21020102500916,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 3.1626323782063537e-10,
+        "rms_relative": 1.6849538444388167e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 1.75,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:23:13.337",
+      "trajectory": [
+        {
+          "energy": -56.0308922817213,
+          "iteration": 1
+        },
+        {
+          "energy": -56.03695872619849,
+          "iteration": 2
+        },
+        {
+          "energy": -56.03695873176523,
+          "iteration": 3
+        },
+        {
+          "energy": -56.03695873177296,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -56.50527699590428,
+      "E1": null,
+      "Gamma": 1.54,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "S0": 11.657130461522325,
+      "Sq": 1.7443392823424515,
+      "cell_id": "stage1-16e795118093d64eef90a9e23662a650",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.3751222383007189e-12,
+      "correlation_ratio": 0.3794046329630111,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 3.798841134994291e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.189797674013694e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 246.50128412246704,
+      "runtime_seconds": 246.50128412246704,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 3.1626323782063537e-10,
+        "rms_relative": 1.6849538444388167e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 1.75,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:23:13.171",
+      "trajectory": [
+        {
+          "energy": -56.50039586295792,
+          "iteration": 1
+        },
+        {
+          "energy": -56.50527699116608,
+          "iteration": 2
+        },
+        {
+          "energy": -56.505276995904566,
+          "iteration": 3
+        },
+        {
+          "energy": -56.50527699590428,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -56.983485971676046,
+      "E1": null,
+      "Gamma": 1.56,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "S0": 10.69035972348353,
+      "Sq": 1.8828419778895675,
+      "cell_id": "stage1-cb3879a11e39be377971187f13e07ddb",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.389333093015921e-10,
+      "correlation_ratio": 0.34422305836797057,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 3.694049155456014e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.1376394473232163e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 232.96848917007446,
+      "runtime_seconds": 232.96848917007446,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 3.1626323782063537e-10,
+        "rms_relative": 1.6849538444388167e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 1.75,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:23:11.853",
+      "trajectory": [
+        {
+          "energy": -56.97988896559346,
+          "iteration": 1
+        },
+        {
+          "energy": -56.983485968834025,
+          "iteration": 2
+        },
+        {
+          "energy": -56.983485971676046,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -57.47106639208181,
+      "E1": null,
+      "Gamma": 1.58,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "S0": 9.785437633944726,
+      "Sq": 2.008812796657681,
+      "cell_id": "stage1-a8008375d48f64207a64d7aeeefb532b",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.2509537850036168e-10,
+      "correlation_ratio": 0.3131453539189699,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 3.51851213054033e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.0652720718808676e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 228.66103601455688,
+      "runtime_seconds": 228.66103601455688,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 3.1626323782063537e-10,
+        "rms_relative": 1.6849538444388167e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 1.75,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:23:06.876",
+      "trajectory": [
+        {
+          "energy": -57.468152300453056,
+          "iteration": 1
+        },
+        {
+          "energy": -57.47106638925244,
+          "iteration": 2
+        },
+        {
+          "energy": -57.47106639208181,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -57.9673736682264,
+      "E1": null,
+      "Gamma": 1.6,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "S0": 8.95809522179457,
+      "Sq": 2.118746473570074,
+      "cell_id": "stage1-4ebef3162d3dfe862fcbf9d001e3ad0d",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.2954082251326327e-12,
+      "correlation_ratio": 0.2859486233718153,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 3.42010025633499e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 6.028910704003465e-11,
+        "max_relative": 3.162632532717331e-10,
+        "rms_relative": 1.6849773279565732e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.0178214254787683e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 247.0018880367279,
+      "runtime_seconds": 247.0018880367279,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 3.1626323782063537e-10,
+        "rms_relative": 1.6849538444388167e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 1.75,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:23:26.718",
+      "trajectory": [
+        {
+          "energy": -57.96550474015411,
+          "iteration": 1
+        },
+        {
+          "energy": -57.96737366298501,
+          "iteration": 2
+        },
+        {
+          "energy": -57.967373668278725,
+          "iteration": 3
+        },
+        {
+          "energy": -57.9673736682264,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -112.0041184496063,
+      "E1": null,
+      "Gamma": 1.52,
+      "L": 64,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 6.560996190785318e-11,
+        "max_relative": 2.2741813590818206e-10,
+        "rms_relative": 1.1039770919103901e-10
+      },
+      "S0": 23.587692261685447,
+      "Sq": 2.1577159518362046,
+      "cell_id": "stage1-e423d6f51a4e8264c38525880b019b47",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 6.072153890812615e-11,
+      "correlation_ratio": 0.5015726429826985,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.622802665224299e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 6.560996190785318e-11,
+        "max_relative": 2.2741813590818206e-10,
+        "rms_relative": 1.1039770919103901e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.293593211754458e-9,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 341.8646340370178,
+      "runtime_seconds": 341.8646340370178,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 2.27418306408822e-10,
+        "rms_relative": 1.0953196781600787e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 32,
+        "xmax": 2.0,
+        "xmin": -2.75
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:25:02.954",
+      "trajectory": [
+        {
+          "energy": -111.9836013737262,
+          "iteration": 1
+        },
+        {
+          "energy": -112.00411578245912,
+          "iteration": 2
+        },
+        {
+          "energy": -112.00411843464067,
+          "iteration": 3
+        },
+        {
+          "energy": -112.0041184496063,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -112.9347707134418,
+      "E1": null,
+      "Gamma": 1.54,
+      "L": 64,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 6.560996190785318e-11,
+        "max_relative": 2.2741813590818206e-10,
+        "rms_relative": 1.1039770919103901e-10
+      },
+      "S0": 20.522839758837595,
+      "Sq": 2.5795625563060955,
+      "cell_id": "stage1-f32cc7471e553f9cb5bd0d392655caa5",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 5.5961235645440865e-11,
+      "correlation_ratio": 0.4197570342641743,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.7120144548243843e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 6.560996190785318e-11,
+        "max_relative": 2.2741813590818206e-10,
+        "rms_relative": 1.1039770919103901e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.3423076899993576e-9,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 336.1431620121002,
+      "runtime_seconds": 336.1431620121002,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 2.27418306408822e-10,
+        "rms_relative": 1.0953196781600787e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 32,
+        "xmax": 2.0,
+        "xmin": -2.75
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:24:59.002",
+      "trajectory": [
+        {
+          "energy": -112.9059876879206,
+          "iteration": 1
+        },
+        {
+          "energy": -112.93476869786772,
+          "iteration": 2
+        },
+        {
+          "energy": -112.93477070182246,
+          "iteration": 3
+        },
+        {
+          "energy": -112.9347707134418,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -113.88907259224,
+      "E1": null,
+      "Gamma": 1.56,
+      "L": 64,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 6.560996190785318e-11,
+        "max_relative": 2.2741813590818206e-10,
+        "rms_relative": 1.1039770919103901e-10
+      },
+      "S0": 17.476319742041003,
+      "Sq": 3.001942230574505,
+      "cell_id": "stage1-41817c61b952021bae870fb6bf010597",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 4.842393153126068e-11,
+      "correlation_ratio": 0.3494772536311071,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.6529920685570687e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 6.560996190785318e-11,
+        "max_relative": 2.2741813590818206e-10,
+        "rms_relative": 1.1039770919103901e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.2744026233534716e-9,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 337.3392939567566,
+      "runtime_seconds": 337.3392939567566,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 2.27418306408822e-10,
+        "rms_relative": 1.0953196781600787e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 32,
+        "xmax": 2.0,
+        "xmin": -2.75
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:25:03.609",
+      "trajectory": [
+        {
+          "energy": -113.85228080028634,
+          "iteration": 1
+        },
+        {
+          "energy": -113.88907083284609,
+          "iteration": 2
+        },
+        {
+          "energy": -113.88907258430606,
+          "iteration": 3
+        },
+        {
+          "energy": -113.88907259224,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -114.86581054253132,
+      "E1": null,
+      "Gamma": 1.58,
+      "L": 64,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 6.560996190785318e-11,
+        "max_relative": 2.2741813590818206e-10,
+        "rms_relative": 1.1039770919103901e-10
+      },
+      "S0": 14.729846548642206,
+      "Sq": 3.363019664249581,
+      "cell_id": "stage1-8cf1e2dc39c720d5a080f665b6e644fd",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 4.2057690663455105e-11,
+      "correlation_ratio": 0.29260049141057587,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.4734738215338439e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 6.560996190785318e-11,
+        "max_relative": 2.2741813590818206e-10,
+        "rms_relative": 1.1039770919103901e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 1.1167626005693015e-9,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 345.1835079193115,
+      "runtime_seconds": 345.1835079193115,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 2.27418306408822e-10,
+        "rms_relative": 1.0953196781600787e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 32,
+        "xmax": 2.0,
+        "xmin": -2.75
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:25:11.399",
+      "trajectory": [
+        {
+          "energy": -114.82494654844108,
+          "iteration": 1
+        },
+        {
+          "energy": -114.86580902064156,
+          "iteration": 2
+        },
+        {
+          "energy": -114.86581053678911,
+          "iteration": 3
+        },
+        {
+          "energy": -114.86581054253132,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -115.86270620905705,
+      "E1": null,
+      "Gamma": 1.6,
+      "L": 64,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 6.560996190785318e-11,
+        "max_relative": 2.2741813590818206e-10,
+        "rms_relative": 1.1039770919103901e-10
+      },
+      "S0": 12.445747349268498,
+      "Sq": 3.6264714686253283,
+      "cell_id": "stage1-a6dd08c83cfd9ac36cab71a58aae5782",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 3.616962285235559e-11,
+      "correlation_ratio": 0.248195820127632,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.2423890439094976e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 6.560996190785318e-11,
+        "max_relative": 2.2741813590818206e-10,
+        "rms_relative": 1.1039770919103901e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 9.254869017881017e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 331.1085011959076,
+      "runtime_seconds": 331.1085011959076,
+      "sigma": 1.75,
+      "soe_fit_error": {
+        "max_relative": 2.27418306408822e-10,
+        "rms_relative": 1.0953196781600787e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 32,
+        "xmax": 2.0,
+        "xmin": -2.75
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:25:01.548",
+      "trajectory": [
+        {
+          "energy": -115.82130264253564,
+          "iteration": 1
+        },
+        {
+          "energy": -115.86270498153074,
+          "iteration": 2
+        },
+        {
+          "energy": -115.86270620411825,
+          "iteration": 3
+        },
+        {
+          "energy": -115.86270620905705,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -52.051634793157966,
+      "E1": null,
+      "Gamma": 1.38,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "S0": 14.074243701414266,
+      "Sq": 1.5129567067920073,
+      "cell_id": "stage1-82322db5579a2ee109e3368d88e95d21",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.6293633109398797e-12,
+      "correlation_ratio": 0.4585893348228571,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 2.410993147350382e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 8.898713569449288e-11,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 247.27514004707336,
+      "runtime_seconds": 247.27514004707336,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 3.951416971403887e-10,
+        "rms_relative": 1.851542034375999e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 3.25,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:23:38.926",
+      "trajectory": [
+        {
+          "energy": -52.04043898439886,
+          "iteration": 1
+        },
+        {
+          "energy": -52.05163477604208,
+          "iteration": 2
+        },
+        {
+          "energy": -52.05163479298233,
+          "iteration": 3
+        },
+        {
+          "energy": -52.051634793157966,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -52.498664590969156,
+      "E1": null,
+      "Gamma": 1.4,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "S0": 12.913776537598439,
+      "Sq": 1.6943816684658721,
+      "cell_id": "stage1-08221cf50c2ad39530769e15a77310fc",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.7004175845158898e-12,
+      "correlation_ratio": 0.4095427349991735,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 2.474116627126932e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 8.97684352647318e-11,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 254.7225239276886,
+      "runtime_seconds": 254.7225239276886,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 3.951416971403887e-10,
+        "rms_relative": 1.851542034375999e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 3.25,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:24:07.296",
+      "trajectory": [
+        {
+          "energy": -52.489482264197946,
+          "iteration": 1
+        },
+        {
+          "energy": -52.498664584073836,
+          "iteration": 2
+        },
+        {
+          "energy": -52.49866459077874,
+          "iteration": 3
+        },
+        {
+          "energy": -52.498664590969156,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -52.95690062391026,
+      "E1": null,
+      "Gamma": 1.42,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "S0": 11.767004695950847,
+      "Sq": 1.8737385139492788,
+      "cell_id": "stage1-beb54b854473aba18328e0c7c407344f",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.1349809980742975e-12,
+      "correlation_ratio": 0.3657088640306768,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 2.4810879040160216e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 8.847020476674573e-11,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 252.5003309249878,
+      "runtime_seconds": 252.5003309249878,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 3.951416971403887e-10,
+        "rms_relative": 1.851542034375999e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 3.25,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:24:47.106",
+      "trajectory": [
+        {
+          "energy": -52.94964351604686,
+          "iteration": 1
+        },
+        {
+          "energy": -52.95690061903365,
+          "iteration": 2
+        },
+        {
+          "energy": -52.95690062380042,
+          "iteration": 3
+        },
+        {
+          "energy": -52.95690062391026,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -53.42591789285903,
+      "E1": null,
+      "Gamma": 1.44,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "S0": 10.675259327998612,
+      "Sq": 2.0413784630473457,
+      "cell_id": "stage1-f2a1b4df3020b6c64f2019d79143515f",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 1.0866862965031032e-12,
+      "correlation_ratio": 0.32731159709353513,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 2.3779239199939184e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 8.330939312452467e-11,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 272.53479194641113,
+      "runtime_seconds": 272.53479194641113,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 3.951416971403887e-10,
+        "rms_relative": 1.851542034375999e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 3.25,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:25:48.776",
+      "trajectory": [
+        {
+          "energy": -53.42109148144548,
+          "iteration": 1
+        },
+        {
+          "energy": -53.4259178885529,
+          "iteration": 2
+        },
+        {
+          "energy": -53.42591789286404,
+          "iteration": 3
+        },
+        {
+          "energy": -53.42591789285903,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -53.90506032560834,
+      "E1": null,
+      "Gamma": 1.46,
+      "L": 32,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "S0": 9.670446164900667,
+      "Sq": 2.189720151093666,
+      "cell_id": "stage1-ec1049e133d44193f35597c6c9b31470",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 7.706272286966964e-10,
+      "correlation_ratio": 0.2941695380471177,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 2.2177573555381969e-7,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 1.9900192604893618e-10,
+        "max_relative": 3.9514126943571994e-10,
+        "rms_relative": 1.8717586661851034e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 7.632291614445247e-11,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 223.5149281024933,
+      "runtime_seconds": 223.5149281024933,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 3.951416971403887e-10,
+        "rms_relative": 1.851542034375999e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 16,
+        "xmax": 3.25,
+        "xmin": -2.0
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:27:33.364",
+      "trajectory": [
+        {
+          "energy": -53.90127493940143,
+          "iteration": 1
+        },
+        {
+          "energy": -53.90506032198835,
+          "iteration": 2
+        },
+        {
+          "energy": -53.90506032560834,
+          "iteration": 3
+        }
+      ]
+    },
+    {
+      "E0": -104.05488020883213,
+      "E1": null,
+      "Gamma": 1.38,
+      "L": 64,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 7.90776333303711e-10,
+        "max_relative": 7.907690720178257e-10,
+        "rms_relative": 3.074909114644415e-10
+      },
+      "S0": 26.733598768366154,
+      "Sq": 1.9763268600953354,
+      "cell_id": "stage1-735fad2e14befcaed8cf93fb7c387629",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 5.544742442964434e-11,
+      "correlation_ratio": 0.5633030961884777,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 9.316194336861372e-6,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 7.90776333303711e-10,
+        "max_relative": 7.907690720178257e-10,
+        "rms_relative": 3.074909114644415e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 8.604262119449694e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 332.93430495262146,
+      "runtime_seconds": 332.93430495262146,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 7.907691168540509e-10,
+        "rms_relative": 3.095617080089722e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 32,
+        "xmax": 2.25,
+        "xmin": -2.75
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:29:23.549",
+      "trajectory": [
+        {
+          "energy": -104.04025231989927,
+          "iteration": 1
+        },
+        {
+          "energy": -104.05486429749864,
+          "iteration": 2
+        },
+        {
+          "energy": -104.05488019134353,
+          "iteration": 3
+        },
+        {
+          "energy": -104.05488020883213,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -104.9425134909257,
+      "E1": null,
+      "Gamma": 1.4,
+      "L": 64,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 7.90776333303711e-10,
+        "max_relative": 7.907690720178257e-10,
+        "rms_relative": 3.074909114644415e-10
+      },
+      "S0": 23.281207231573536,
+      "Sq": 2.480361811244122,
+      "cell_id": "stage1-6c235e1866a83f5be324d2899009d039",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 6.655309636727225e-11,
+      "correlation_ratio": 0.4608961781444712,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.0238652976113372e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 7.90776333303711e-10,
+        "max_relative": 7.907690720178257e-10,
+        "rms_relative": 3.074909114644415e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 9.296937253132675e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 341.2975060939789,
+      "runtime_seconds": 341.2975060939789,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 7.907691168540509e-10,
+        "rms_relative": 3.095617080089722e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 32,
+        "xmax": 2.25,
+        "xmin": -2.75
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:30:13.095",
+      "trajectory": [
+        {
+          "energy": -104.91998322596972,
+          "iteration": 1
+        },
+        {
+          "energy": -104.94251023768938,
+          "iteration": 2
+        },
+        {
+          "energy": -104.9425134691247,
+          "iteration": 3
+        },
+        {
+          "energy": -104.9425134909257,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -105.85624284852781,
+      "E1": null,
+      "Gamma": 1.42,
+      "L": 64,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 7.90776333303711e-10,
+        "max_relative": 7.907690720178257e-10,
+        "rms_relative": 3.074909114644415e-10
+      },
+      "S0": 19.61462393351461,
+      "Sq": 3.038370621822768,
+      "cell_id": "stage1-c13d8071850879c692802b1d6048ce04",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 5.814559944639086e-11,
+      "correlation_ratio": 0.371743124583377,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 1.0147434295504354e-5,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 7.90776333303711e-10,
+        "max_relative": 7.907690720178257e-10,
+        "rms_relative": 3.074909114644415e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 9.055726486516473e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 331.60850501060486,
+      "runtime_seconds": 331.60850501060486,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 7.907691168540509e-10,
+        "rms_relative": 3.095617080089722e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 32,
+        "xmax": 2.25,
+        "xmin": -2.75
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:30:12.510",
+      "trajectory": [
+        {
+          "energy": -105.82382872770255,
+          "iteration": 1
+        },
+        {
+          "energy": -105.85624092605401,
+          "iteration": 2
+        },
+        {
+          "energy": -105.85624283623328,
+          "iteration": 3
+        },
+        {
+          "energy": -105.85624284852781,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -106.79554884464906,
+      "E1": null,
+      "Gamma": 1.44,
+      "L": 64,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 7.90776333303711e-10,
+        "max_relative": 7.907690720178257e-10,
+        "rms_relative": 3.074909114644415e-10
+      },
+      "S0": 16.190460205810197,
+      "Sq": 3.5441963782822947,
+      "cell_id": "stage1-b7cf3b9a2e45cc497996bb7a1aba241e",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 4.441280676559245e-11,
+      "correlation_ratio": 0.3006369534912854,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 9.207809853251092e-6,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 7.90776333303711e-10,
+        "max_relative": 7.907690720178257e-10,
+        "rms_relative": 3.074909114644415e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 8.07328043066074e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 335.8823928833008,
+      "runtime_seconds": 335.8823928833008,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 7.907691168540509e-10,
+        "rms_relative": 3.095617080089722e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 32,
+        "xmax": 2.25,
+        "xmin": -2.75
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:30:13.246",
+      "trajectory": [
+        {
+          "energy": -106.75429625615683,
+          "iteration": 1
+        },
+        {
+          "energy": -106.79554725803078,
+          "iteration": 2
+        },
+        {
+          "energy": -106.79554883698113,
+          "iteration": 3
+        },
+        {
+          "energy": -106.79554884464906,
+          "iteration": 4
+        }
+      ]
+    },
+    {
+      "E0": -107.75812492905662,
+      "E1": null,
+      "Gamma": 1.46,
+      "L": 64,
+      "MPO_bond_dimension": 34,
+      "MPO_error": {
+        "max_absolute": 7.90776333303711e-10,
+        "max_relative": 7.907690720178257e-10,
+        "rms_relative": 3.074909114644415e-10
+      },
+      "S0": 13.349556835909604,
+      "Sq": 3.9157991148537223,
+      "cell_id": "stage1-236ecae781390f09b88491dd604982d3",
+      "chi": 64,
+      "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "convergence_residual": 3.711386753479928e-11,
+      "correlation_ratio": 0.24703147352986507,
+      "correlation_ratio_absolute_error": null,
+      "discarded_weight": null,
+      "ed_E0": null,
+      "ed_E1": null,
+      "ed_correlation_ratio": null,
+      "ed_energy_relative_error": null,
+      "ed_gap": null,
+      "excited_variance": null,
+      "gap": null,
+      "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+      "ground_variance": 7.758635547361337e-6,
+      "model": "long_range",
+      "mpo_error": {
+        "max_absolute": 7.90776333303711e-10,
+        "max_relative": 7.907690720178257e-10,
+        "rms_relative": 3.074909114644415e-10
+      },
+      "normalized_excited_variance": null,
+      "normalized_ground_variance": 6.681674275278555e-10,
+      "poles": 16,
+      "resource_class": "A",
+      "runtime": 341.92751908302307,
+      "runtime_seconds": 341.92751908302307,
+      "sigma": 2.0,
+      "soe_fit_error": {
+        "max_relative": 7.907691168540509e-10,
+        "rms_relative": 3.095617080089722e-10,
+        "target": "finite_periodic_hurwitz",
+        "unique_distances": 32,
+        "xmax": 2.25,
+        "xmin": -2.75
+      },
+      "stage": "stage1",
+      "timestamp_utc": "2026-07-28T05:30:25.222",
+      "trajectory": [
+        {
+          "energy": -107.71238428568675,
+          "iteration": 1
+        },
+        {
+          "energy": -107.75812370112381,
+          "iteration": 2
+        },
+        {
+          "energy": -107.75812492344134,
+          "iteration": 3
+        },
+        {
+          "energy": -107.75812492905662,
+          "iteration": 4
+        }
+      ]
+    }
+  ]
+}

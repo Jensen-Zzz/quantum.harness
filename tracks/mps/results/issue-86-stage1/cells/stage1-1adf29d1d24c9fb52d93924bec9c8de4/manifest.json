@@ -1,0 +1,83 @@
+{
+  "cell_id": "stage1-1adf29d1d24c9fb52d93924bec9c8de4",
+  "params": {
+    "L": 48,
+    "chi": 128,
+    "excited": true,
+    "gamma": 1.0,
+    "maxiter": 40,
+    "model": "nn",
+    "poles": null,
+    "seed": 86,
+    "sigma": null,
+    "tolerance": 1.0e-9
+  },
+  "resource_class": "B",
+  "result": {
+    "E0": -61.126407818149445,
+    "E1": -61.093679970193264,
+    "Gamma": 1.0,
+    "L": 48,
+    "MPO_bond_dimension": 4,
+    "MPO_error": null,
+    "S0": 19.144939931674664,
+    "Sq": 2.6730951283870623,
+    "chi": 128,
+    "code_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+    "convergence_residual": 6.607270286451694e-12,
+    "correlation_ratio": 0.39507909047773665,
+    "correlation_ratio_absolute_error": null,
+    "discarded_weight": null,
+    "ed_E0": null,
+    "ed_E1": null,
+    "ed_correlation_ratio": null,
+    "ed_energy_relative_error": null,
+    "ed_gap": null,
+    "excited_variance": 1.4942088455427438e-8,
+    "gap": 0.03272784795618122,
+    "git_commit": "5b254486579d4041e900f3266df067a8f85edfc4",
+    "ground_variance": 9.185896487906575e-11,
+    "model": "nn",
+    "mpo_error": null,
+    "normalized_excited_variance": 4.003305487488537e-12,
+    "normalized_ground_variance": 2.4584636878570504e-14,
+    "poles": null,
+    "runtime": 537.782418012619,
+    "runtime_seconds": 537.782418012619,
+    "sigma": null,
+    "soe_fit_error": null,
+    "timestamp_utc": "2026-07-28T05:13:18.134",
+    "trajectory": [
+      {
+        "energy": -61.10697194727191,
+        "iteration": 1
+      },
+      {
+        "energy": -61.12640778156405,
+        "iteration": 2
+      },
+      {
+        "energy": -61.12640781814284,
+        "iteration": 3
+      },
+      {
+        "energy": -61.126407818149445,
+        "iteration": 4
+      }
+    ]
+  },
+  "runtime": {
+    "blas_threads": 16,
+    "completed_utc": "2026-07-28T05:13:18.139",
+    "hostname": "a04r05n07",
+    "julia_threads": 16,
+    "max_rss_raw": 1707937792,
+    "slurm_cpus_per_task": "16",
+    "slurm_job_id": "22975256",
+    "slurm_step_id": "3",
+    "started_utc": "2026-07-28T05:04:11.372"
+  },
+  "schema_version": 1,
+  "stage": "stage1",
+  "status": "success"
+}

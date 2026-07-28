@@ -1,0 +1,67 @@
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+launching 5 class-B cells: 8 workers x 16 cores x 61440 MB
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+bash: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8)
+srun: ROUTE: split_hostlist: hl=a04r05n07 tree_width 0
+srun: ROUTE: split_hostlist: hl=a04r05n07 tree_width 0
+srun: ROUTE: split_hostlist: hl=a04r05n07 tree_width 0
+srun: ROUTE: split_hostlist: hl=a04r05n07 tree_width 0
+srun: ROUTE: split_hostlist: hl=a04r05n07 tree_width 0
+]0;Julia]0;Julia]0;Julia]0;Julia]0;Julia]0;Julia]0;Julia]0;Julia]0;Julia]0;Juliacell stage1-1adf29d1d24c9fb52d93924bec9c8de4 starting: JSON.Object{String, Any}("L" => 48, "chi" => 128, "excited" => true, "gamma" => 1.0, "maxiter" => 40, "model" => "nn", "poles" => nothing, "seed" => 86, "sigma" => nothing, "tolerance" => 1.0e-9)
+cell stage1-866128e2662c5f71b8c9d1ad0b85819a starting: JSON.Object{String, Any}("L" => 64, "chi" => 128, "excited" => true, "gamma" => 1.0, "maxiter" => 40, "model" => "nn", "poles" => nothing, "seed" => 86, "sigma" => nothing, "tolerance" => 1.0e-9)
+cell stage1-991982a4999d2834ffc9120a74c7a50b starting: JSON.Object{String, Any}("L" => 32, "chi" => 128, "excited" => true, "gamma" => 1.0, "maxiter" => 40, "model" => "nn", "poles" => nothing, "seed" => 86, "sigma" => nothing, "tolerance" => 1.0e-9)
+cell stage1-c74c086a940d1f8f0797ba066969ab62 starting: JSON.Object{String, Any}("L" => 16, "chi" => 128, "excited" => true, "gamma" => 1.0, "maxiter" => 40, "model" => "nn", "poles" => nothing, "seed" => 86, "sigma" => nothing, "tolerance" => 1.0e-9)
+cell stage1-18782f2d428388568f18ebaf2c116b12 starting: JSON.Object{String, Any}("L" => 24, "chi" => 128, "excited" => true, "gamma" => 1.0, "maxiter" => 40, "model" => "nn", "poles" => nothing, "seed" => 86, "sigma" => nothing, "tolerance" => 1.0e-9)
+DMRG L=16 gamma=1.0 chi=128 iter=1 E=-20.40459445241941
+DMRG L=48 gamma=1.0 chi=128 iter=1 E=-61.10697194727191
+DMRG L=16 gamma=1.0 chi=128 iter=2 E=-20.404594474077484
+DMRG L=32 gamma=1.0 chi=128 iter=1 E=-40.75214427723882
+DMRG L=64 gamma=1.0 chi=128 iter=1 E=-81.47603383854441
+DMRG L=24 gamma=1.0 chi=128 iter=1 E=-30.579554926013092
+DMRG L=24 gamma=1.0 chi=128 iter=2 E=-30.57957658246316
+DMRG L=32 gamma=1.0 chi=128 iter=2 E=-40.76003249049849
+DMRG L=32 gamma=1.0 chi=128 iter=3 E=-40.760032494192245
+DMRG L=24 gamma=1.0 chi=128 iter=3 E=-30.579576597357022
+DMRG L=24 gamma=1.0 chi=128 iter=4 E=-30.57957659735705
+DMRG L=32 gamma=1.0 chi=128 iter=4 E=-40.76003249419231
+DMRG L=48 gamma=1.0 chi=128 iter=2 E=-61.12640778156405
+cell stage1-c74c086a940d1f8f0797ba066969ab62 completed
+DMRG L=48 gamma=1.0 chi=128 iter=3 E=-61.12640781814284
+DMRG L=64 gamma=1.0 chi=128 iter=2 E=-81.49550566545969
+cell stage1-18782f2d428388568f18ebaf2c116b12 completed
+DMRG L=48 gamma=1.0 chi=128 iter=4 E=-61.126407818149445
+cell stage1-991982a4999d2834ffc9120a74c7a50b completed
+DMRG L=64 gamma=1.0 chi=128 iter=3 E=-81.49551266876304
+DMRG L=64 gamma=1.0 chi=128 iter=4 E=-81.49551266876574
+cell stage1-1adf29d1d24c9fb52d93924bec9c8de4 completed
+cell stage1-866128e2662c5f71b8c9d1ad0b85819a completed
+collected 55/75 successful cells

@@ -1,0 +1,268 @@
+{
+  "adaptive_cells": 4,
+  "convergence_audit": {
+    "failures": [
+      {
+        "Gamma": 1.56,
+        "L": 32,
+        "chi": 64,
+        "convergence_residual": 1.389333093015921e-10,
+        "model": "long_range",
+        "normalized_ground_variance": 1.1376394473232163e-10,
+        "poles": 16,
+        "sigma": 1.75
+      },
+      {
+        "Gamma": 1.0,
+        "L": 64,
+        "chi": 64,
+        "convergence_residual": 8.851364086126523e-12,
+        "model": "nn",
+        "normalized_ground_variance": 1.2204915063821637e-10,
+        "poles": null,
+        "sigma": null
+      },
+      {
+        "Gamma": 1.4,
+        "L": 64,
+        "chi": 64,
+        "convergence_residual": 6.655309636727225e-11,
+        "model": "long_range",
+        "normalized_ground_variance": 9.296937253132675e-10,
+        "poles": 16,
+        "sigma": 2.0
+      },
+      {
+        "Gamma": 1.38,
+        "L": 64,
+        "chi": 64,
+        "convergence_residual": 5.544742442964434e-11,
+        "model": "long_range",
+        "normalized_ground_variance": 8.604262119449694e-10,
+        "poles": 16,
+        "sigma": 2.0
+      },
+      {
+        "Gamma": 1.0,
+        "L": 64,
+        "chi": 64,
+        "convergence_residual": 8.851364086126523e-12,
+        "model": "nn",
+        "normalized_ground_variance": 1.2204915063821637e-10,
+        "poles": null,
+        "sigma": null
+      },
+      {
+        "Gamma": 1.46,
+        "L": 64,
+        "chi": 64,
+        "convergence_residual": 3.711386753479928e-11,
+        "model": "long_range",
+        "normalized_ground_variance": 6.681674275278555e-10,
+        "poles": 16,
+        "sigma": 2.0
+      },
+      {
+        "Gamma": 1.01,
+        "L": 64,
+        "chi": 64,
+        "convergence_residual": 1.0824674490095276e-11,
+        "model": "nn",
+        "normalized_ground_variance": 1.1668284996297282e-10,
+        "poles": null,
+        "sigma": null
+      },
+      {
+        "Gamma": 1.6,
+        "L": 32,
+        "chi": 64,
+        "convergence_residual": 1.2954082251326327e-12,
+        "model": "long_range",
+        "normalized_ground_variance": 1.0178214254787683e-10,
+        "poles": 16,
+        "sigma": 1.75
+      },
+      {
+        "Gamma": 1.42,
+        "L": 64,
+        "chi": 64,
+        "convergence_residual": 5.814559944639086e-11,
+        "model": "long_range",
+        "normalized_ground_variance": 9.055726486516473e-10,
+        "poles": 16,
+        "sigma": 2.0
+      },
+      {
+        "Gamma": 1.54,
+        "L": 64,
+        "chi": 64,
+        "convergence_residual": 5.5961235645440865e-11,
+        "model": "long_range",
+        "normalized_ground_variance": 1.3423076899993576e-9,
+        "poles": 16,
+        "sigma": 1.75
+      },
+      {
+        "Gamma": 1.44,
+        "L": 64,
+        "chi": 64,
+        "convergence_residual": 4.441280676559245e-11,
+        "model": "long_range",
+        "normalized_ground_variance": 8.07328043066074e-10,
+        "poles": 16,
+        "sigma": 2.0
+      },
+      {
+        "Gamma": 1.56,
+        "L": 64,
+        "chi": 64,
+        "convergence_residual": 4.842393153126068e-11,
+        "model": "long_range",
+        "normalized_ground_variance": 1.2744026233534716e-9,
+        "poles": 16,
+        "sigma": 1.75
+      },
+      {
+        "Gamma": 1.6,
+        "L": 64,
+        "chi": 64,
+        "convergence_residual": 3.616962285235559e-11,
+        "model": "long_range",
+        "normalized_ground_variance": 9.254869017881017e-10,
+        "poles": 16,
+        "sigma": 1.75
+      },
+      {
+        "Gamma": 0.99,
+        "L": 64,
+        "chi": 64,
+        "convergence_residual": 6.377498529275272e-11,
+        "model": "nn",
+        "normalized_ground_variance": 1.1277483668505553e-10,
+        "poles": null,
+        "sigma": null
+      },
+      {
+        "Gamma": 1.52,
+        "L": 64,
+        "chi": 64,
+        "convergence_residual": 6.072153890812615e-11,
+        "model": "long_range",
+        "normalized_ground_variance": 1.293593211754458e-9,
+        "poles": 16,
+        "sigma": 1.75
+      },
+      {
+        "Gamma": 1.58,
+        "L": 64,
+        "chi": 64,
+        "convergence_residual": 4.2057690663455105e-11,
+        "model": "long_range",
+        "normalized_ground_variance": 1.1167626005693015e-9,
+        "poles": 16,
+        "sigma": 1.75
+      },
+      {
+        "Gamma": 1.58,
+        "L": 32,
+        "chi": 64,
+        "convergence_residual": 1.2509537850036168e-10,
+        "model": "long_range",
+        "normalized_ground_variance": 1.0652720718808676e-10,
+        "poles": 16,
+        "sigma": 1.75
+      },
+      {
+        "Gamma": 1.54,
+        "L": 32,
+        "chi": 64,
+        "convergence_residual": 1.3751222383007189e-12,
+        "model": "long_range",
+        "normalized_ground_variance": 1.189797674013694e-10,
+        "poles": 16,
+        "sigma": 1.75
+      },
+      {
+        "Gamma": 1.52,
+        "L": 32,
+        "chi": 64,
+        "convergence_residual": 1.3210543770014738e-12,
+        "model": "long_range",
+        "normalized_ground_variance": 1.206971366173138e-10,
+        "poles": 16,
+        "sigma": 1.75
+      }
+    ],
+    "normalized_variance_tolerance": 1.0e-10,
+    "passes": false,
+    "residual_tolerance": 1.0e-8
+  },
+  "nn_audit": {
+    "Gamma_crossing": 0.9993397770869324,
+    "gamma_pass": true,
+    "gap_fit": {
+      "chis": [
+        128,
+        128,
+        128,
+        128,
+        128
+      ],
+      "gaps": [
+        0.09825369932280736,
+        0.06547322113653209,
+        0.04909724441804997,
+        0.03272784795618122,
+        0.024544924756355613
+      ],
+      "intercept": 0.4536896592796181,
+      "lengths": [
+        16,
+        24,
+        32,
+        48,
+        64
+      ],
+      "log_rmse": 0.00010036001987974142,
+      "without_smallest": {
+        "lengths": [
+          24,
+          32,
+          48,
+          64
+        ],
+        "z": 1.0003073255722421
+      },
+      "z": 1.0005177937771796
+    },
+    "status": "pass",
+    "z_pass": true
+  },
+  "sigma_audits": {
+    "1.75": {
+      "missing": [
+        "four baseline size pairs",
+        "chi=128 L=32/64 crossing",
+        "P=12 L=32/64 crossing"
+      ],
+      "reference": 1.5609,
+      "reference_error": 0.0003,
+      "sigma": 1.75,
+      "size_fit": null,
+      "status": "insufficient data"
+    },
+    "2.0": {
+      "missing": [
+        "four baseline size pairs",
+        "chi=128 L=32/64 crossing",
+        "P=12 L=32/64 crossing"
+      ],
+      "reference": 1.4208,
+      "reference_error": 0.0002,
+      "sigma": 2.0,
+      "size_fit": null,
+      "status": "insufficient data"
+    }
+  },
+  "status": "pipeline validation / finite-size preliminary result"
+}
