@@ -81,4 +81,31 @@ single_output="$(
 )"
 [[ "$single_output" == *"$fake_solution_directory/track_c.jl critical"* ]]
 
+printf '%s\n' \
+  '#!/bin/bash' \
+  'if [[ "$*" == *" pending "* ]]; then printf "%s\n" "test-cell"; fi' \
+  > "$fake_binary_directory/julia"
+chmod +x "$fake_binary_directory/julia"
+touch "$temporary_directory/run.json"
+
+standard_worker_output="$(
+  PATH="$fake_binary_directory:$PATH" \
+  SLURM_CPUS_PER_TASK="64" \
+  SLURM_MEM_PER_NODE="245760" \
+  bash "$solution_directory/scnet/packed_worker.sh" \
+    "$temporary_directory/run.json" \
+    "$temporary_directory/standard-output" standard short
+)"
+[[ "$standard_worker_output" == *"Track C: 1 cells, 4x16 cores, 61440 MB/worker"* ]]
+
+large_worker_output="$(
+  PATH="$fake_binary_directory:$PATH" \
+  SLURM_CPUS_PER_TASK="64" \
+  SLURM_MEM_PER_NODE="245760" \
+  bash "$solution_directory/scnet/packed_worker.sh" \
+    "$temporary_directory/run.json" \
+    "$temporary_directory/large-output" large short
+)"
+[[ "$large_worker_output" == *"Track C: 1 cells, 2x32 cores, 122880 MB/worker"* ]]
+
 printf '%s\n' "slurm-spool-paths-ok"

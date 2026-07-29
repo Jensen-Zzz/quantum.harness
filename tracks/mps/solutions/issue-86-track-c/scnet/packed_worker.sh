@@ -18,11 +18,11 @@ julia_project="$repo_root/julia-env"
 
 case "$resource_class" in
   standard)
-    workers=8
+    max_workers=8
     cores_per_worker=16
     ;;
   large)
-    workers=4
+    max_workers=4
     cores_per_worker=32
     ;;
   *)
@@ -54,8 +54,10 @@ if (( ${#pending_ids[@]} == 0 )); then
 fi
 
 allocated_cpus="${SLURM_CPUS_PER_TASK:-128}"
-(( workers * cores_per_worker <= allocated_cpus )) || {
-  echo "packed worker layout exceeds allocation" >&2
+workers=$((allocated_cpus / cores_per_worker))
+(( workers > max_workers )) && workers="$max_workers"
+(( workers >= 1 )) || {
+  echo "allocation cannot fit one Track C worker" >&2
   exit 2
 }
 
