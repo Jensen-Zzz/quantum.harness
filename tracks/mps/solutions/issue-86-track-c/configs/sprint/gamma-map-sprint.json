@@ -1,0 +1,92 @@
+{
+  "code_revision": "6a85467fa88dd2ee6850513c88aa3f61faf759aa",
+  "created_at": "2026-07-29T09:03:39",
+  "entries": {
+    "1.0:12": {
+      "Gamma_c": 0.9625000000000001,
+      "Gamma_high": 0.9666666666666668,
+      "Gamma_low": 0.9583333333333335,
+      "scan_parameter_hash": "5cb9627f2a88f562951b593e7fa8af6c4aa9830ed941f9a3772c12b78b165ea3",
+      "target_width": 0.01
+    },
+    "1.0:16": {
+      "Gamma_c": 1.2333333333333334,
+      "Gamma_high": 1.2375,
+      "Gamma_low": 1.2291666666666667,
+      "scan_parameter_hash": "fac50760823857a9fce752cdb57f4707001e86124b7f8a1c2c52f28d8af493c1",
+      "target_width": 0.01
+    },
+    "1.0:20": {
+      "Gamma_c": 1.4216666666666669,
+      "Gamma_high": 1.4258333333333335,
+      "Gamma_low": 1.4175000000000002,
+      "scan_parameter_hash": "9bb59c2e8821b179b6673939ad6c6f553ed85f5e2fbd8d60ca5e5f4108354535",
+      "target_width": 0.01
+    },
+    "1.0:64": {
+      "Gamma_c": 2.05625,
+      "Gamma_high": 2.058333333333333,
+      "Gamma_low": 2.0541666666666667,
+      "scan_parameter_hash": "a72a21be270e65f9ca748638cae6b388d8941e6364376078c843dd2ad756bd4b",
+      "target_width": 0.005
+    },
+    "1.75:64": {
+      "Gamma_c": 1.3933333333333333,
+      "Gamma_high": 1.3938541666666666,
+      "Gamma_low": 1.3928125,
+      "scan_parameter_hash": "f64021e8442dbfa04d975fba1127b80b12c794376a0e2254f7c1b10509f222ea",
+      "target_width": 0.002
+    },
+    "1.875:128": {
+      "Gamma_c": 1.4097916666666668,
+      "Gamma_high": 1.4103125,
+      "Gamma_low": 1.4092708333333333,
+      "scan_parameter_hash": "b2cb137a38d638368f827286b93005d3726f5f9e0880f01ffb78ff575662ad54",
+      "target_width": 0.002
+    },
+    "1.875:32": {
+      "Gamma_c": 1.184375,
+      "Gamma_high": 1.1848958333333333,
+      "Gamma_low": 1.1838541666666667,
+      "scan_parameter_hash": "c981b37791ed2cb63beb477ea3ae692b10d1bf53232555e35aee275416a1a308",
+      "target_width": 0.002
+    },
+    "1.875:64": {
+      "Gamma_c": 1.3342708333333333,
+      "Gamma_high": 1.3347916666666666,
+      "Gamma_low": 1.33375,
+      "scan_parameter_hash": "24abc33ebb2a2c22c92002ad5cd6dea278c38fc0e91ffd2c6f8b2379f2a2da82",
+      "target_width": 0.002
+    },
+    "1.8:64": {
+      "Gamma_c": 1.3685416666666668,
+      "Gamma_high": 1.3690625,
+      "Gamma_low": 1.3680208333333332,
+      "scan_parameter_hash": "c648070ba82c4d98a59411c400ff69324dd88b326840e6f44bfdf720e40c69bd",
+      "target_width": 0.002
+    },
+    "1.95:64": {
+      "Gamma_c": 1.3030208333333333,
+      "Gamma_high": 1.3035416666666666,
+      "Gamma_low": 1.3025,
+      "scan_parameter_hash": "9a7f764154ef476ad2bd3f23f640a669b7a9d487e7abe68f5ddf0fe7b8cc67fa",
+      "target_width": 0.002
+    },
+    "2.0:64": {
+      "Gamma_c": 1.2835416666666666,
+      "Gamma_high": 1.2840625,
+      "Gamma_low": 1.2830208333333333,
+      "scan_parameter_hash": "78b97d98c756ec71fd598ad562208ccf660682191f0fa357f601d3e61e3b7021",
+      "target_width": 0.002
+    }
+  },
+  "kind": "track-c-gamma-map",
+  "map_hash": "888ad0132275e8a723f0d8d404fb82954cab1537b5ad324306fdf9b4fd9f444d",
+  "provenance_policy": "identical-driver-source-sha256",
+  "scan_code_revisions": [
+    "7730435aee8d714540f6df3d98bda1ae03bd4012",
+    "a0761f7c11305d7a09a8c5aafe689e1a259a6867"
+  ],
+  "schema_version": 1,
+  "source_sha256": "aaf37c9d7fc02182f9ee075a50b6b2a74fdea57fa25671627c1cf274425e675e"
+}

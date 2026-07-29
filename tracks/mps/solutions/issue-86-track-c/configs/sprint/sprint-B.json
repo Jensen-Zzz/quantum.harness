@@ -1,0 +1,1435 @@
+{
+  "acceptance": {
+    "fit_indices": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "mpo_max_relative_error": 1.0e-6,
+    "norm_drift": 1.0e-8,
+    "parity_drift": 1.0e-6,
+    "scientific_failure_may_change_fit_window": false
+  },
+  "cells": [
+    {
+      "error": null,
+      "id": "sprint-b-e61414f1c4d7",
+      "lease": null,
+      "parameter_hash": "e61414f1c4d7be4342cfed410a2152c6f6646a05691b3c5c3d4f211e9b7fd1c8",
+      "parameters": {
+        "Gamma_c": 1.3933333333333333,
+        "Gamma_c_interval": [
+          1.3928125,
+          1.3938541666666666
+        ],
+        "Gamma_c_nominal": 1.3933333333333333,
+        "L": 64,
+        "T": 4.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.75,
+        "tau_Q": 2.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-dd3e25eee8f1",
+      "lease": null,
+      "parameter_hash": "dd3e25eee8f192bbdac9a0c4e1ba7e459bf4cc7c2dc7643de7c4572eb9b02b3e",
+      "parameters": {
+        "Gamma_c": 1.3685416666666668,
+        "Gamma_c_interval": [
+          1.3680208333333332,
+          1.3690625
+        ],
+        "Gamma_c_nominal": 1.3685416666666668,
+        "L": 64,
+        "T": 4.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.8,
+        "tau_Q": 2.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-a55183e96f30",
+      "lease": null,
+      "parameter_hash": "a55183e96f30e96bb9e0f1ec14880ec0e7370b40b3de7e0315ebb6a2b082739e",
+      "parameters": {
+        "Gamma_c": 1.3030208333333333,
+        "Gamma_c_interval": [
+          1.3025,
+          1.3035416666666666
+        ],
+        "Gamma_c_nominal": 1.3030208333333333,
+        "L": 64,
+        "T": 4.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.95,
+        "tau_Q": 2.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-87c2572a5f84",
+      "lease": null,
+      "parameter_hash": "87c2572a5f844266ae2084d7ee30925b3232df63231389e0919b7ab5680c76ec",
+      "parameters": {
+        "Gamma_c": 1.2835416666666666,
+        "Gamma_c_interval": [
+          1.2830208333333333,
+          1.2840625
+        ],
+        "Gamma_c_nominal": 1.2835416666666666,
+        "L": 64,
+        "T": 4.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 2.0,
+        "tau_Q": 2.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-995e351d89aa",
+      "lease": null,
+      "parameter_hash": "995e351d89aa7b6390533cc1fd9227e9c06b053241dfc935e7bf64e7faf9aabd",
+      "parameters": {
+        "Gamma_c": 1.3933333333333333,
+        "Gamma_c_interval": [
+          1.3928125,
+          1.3938541666666666
+        ],
+        "Gamma_c_nominal": 1.3933333333333333,
+        "L": 64,
+        "T": 8.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.75,
+        "tau_Q": 4.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-31783a556b38",
+      "lease": null,
+      "parameter_hash": "31783a556b386ab06cb66da0d8c3ea403df6e4f2dbff2e88eb8715ff028a8bb1",
+      "parameters": {
+        "Gamma_c": 1.3685416666666668,
+        "Gamma_c_interval": [
+          1.3680208333333332,
+          1.3690625
+        ],
+        "Gamma_c_nominal": 1.3685416666666668,
+        "L": 64,
+        "T": 8.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.8,
+        "tau_Q": 4.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-35e3f783c35d",
+      "lease": null,
+      "parameter_hash": "35e3f783c35dd840906198191f05277465ce408b8d938d3ee3203123271e6c15",
+      "parameters": {
+        "Gamma_c": 1.3030208333333333,
+        "Gamma_c_interval": [
+          1.3025,
+          1.3035416666666666
+        ],
+        "Gamma_c_nominal": 1.3030208333333333,
+        "L": 64,
+        "T": 8.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.95,
+        "tau_Q": 4.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-23fa7abfb870",
+      "lease": null,
+      "parameter_hash": "23fa7abfb870afa39a786663f0ee15db73904da4fb7f75fea6711c1c8df378f4",
+      "parameters": {
+        "Gamma_c": 1.2835416666666666,
+        "Gamma_c_interval": [
+          1.2830208333333333,
+          1.2840625
+        ],
+        "Gamma_c_nominal": 1.2835416666666666,
+        "L": 64,
+        "T": 8.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 2.0,
+        "tau_Q": 4.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-c593fe01279c",
+      "lease": null,
+      "parameter_hash": "c593fe01279cd73eb7b29bb05c73fa3cb9d1b3af914b5bb1ea3d52eb13d00be7",
+      "parameters": {
+        "Gamma_c": 1.3933333333333333,
+        "Gamma_c_interval": [
+          1.3928125,
+          1.3938541666666666
+        ],
+        "Gamma_c_nominal": 1.3933333333333333,
+        "L": 64,
+        "T": 16.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.75,
+        "tau_Q": 8.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-6ba67a0df9f1",
+      "lease": null,
+      "parameter_hash": "6ba67a0df9f144ead2c6f0a9c592160cb1d8be07114969018bf6ef2458066faa",
+      "parameters": {
+        "Gamma_c": 1.3685416666666668,
+        "Gamma_c_interval": [
+          1.3680208333333332,
+          1.3690625
+        ],
+        "Gamma_c_nominal": 1.3685416666666668,
+        "L": 64,
+        "T": 16.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.8,
+        "tau_Q": 8.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-de1d1eb130e0",
+      "lease": null,
+      "parameter_hash": "de1d1eb130e09580de77264f65fb74d5e9cb0694d92be4dcfe3072c1b608ee20",
+      "parameters": {
+        "Gamma_c": 1.3030208333333333,
+        "Gamma_c_interval": [
+          1.3025,
+          1.3035416666666666
+        ],
+        "Gamma_c_nominal": 1.3030208333333333,
+        "L": 64,
+        "T": 16.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.95,
+        "tau_Q": 8.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-0a7d1e59240e",
+      "lease": null,
+      "parameter_hash": "0a7d1e59240ec23a84eeb7cbe3e79bb274d7d877b3b8b668904e0b8ccbb27b9d",
+      "parameters": {
+        "Gamma_c": 1.2835416666666666,
+        "Gamma_c_interval": [
+          1.2830208333333333,
+          1.2840625
+        ],
+        "Gamma_c_nominal": 1.2835416666666666,
+        "L": 64,
+        "T": 16.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 2.0,
+        "tau_Q": 8.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-c416b185690f",
+      "lease": null,
+      "parameter_hash": "c416b185690fe9646ec97bde189acac5b525e7422c6ea8fc6468c0560c514134",
+      "parameters": {
+        "Gamma_c": 1.3933333333333333,
+        "Gamma_c_interval": [
+          1.3928125,
+          1.3938541666666666
+        ],
+        "Gamma_c_nominal": 1.3933333333333333,
+        "L": 64,
+        "T": 32.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.75,
+        "tau_Q": 16.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-24028c911da9",
+      "lease": null,
+      "parameter_hash": "24028c911da9c4c7be8ebc440b226aa62e513f915b833994bbbd794e4e262c28",
+      "parameters": {
+        "Gamma_c": 1.3685416666666668,
+        "Gamma_c_interval": [
+          1.3680208333333332,
+          1.3690625
+        ],
+        "Gamma_c_nominal": 1.3685416666666668,
+        "L": 64,
+        "T": 32.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.8,
+        "tau_Q": 16.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-e9ee072be972",
+      "lease": null,
+      "parameter_hash": "e9ee072be972623960376bd22d1770617e69b7c9e48facaa6e74f0d50f6023ff",
+      "parameters": {
+        "Gamma_c": 1.3030208333333333,
+        "Gamma_c_interval": [
+          1.3025,
+          1.3035416666666666
+        ],
+        "Gamma_c_nominal": 1.3030208333333333,
+        "L": 64,
+        "T": 32.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.95,
+        "tau_Q": 16.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-6b8f7c0bfdfa",
+      "lease": null,
+      "parameter_hash": "6b8f7c0bfdfa6eeab3dfc5e61fb0ba25d507201397378692d203e47fabe012eb",
+      "parameters": {
+        "Gamma_c": 1.2835416666666666,
+        "Gamma_c_interval": [
+          1.2830208333333333,
+          1.2840625
+        ],
+        "Gamma_c_nominal": 1.2835416666666666,
+        "L": 64,
+        "T": 32.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 2.0,
+        "tau_Q": 16.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-b52dfb3b2808",
+      "lease": null,
+      "parameter_hash": "b52dfb3b2808c811450bb9bbc01645b9c498936a41b76dc07602ff032fccd83b",
+      "parameters": {
+        "Gamma_c": 1.3933333333333333,
+        "Gamma_c_interval": [
+          1.3928125,
+          1.3938541666666666
+        ],
+        "Gamma_c_nominal": 1.3933333333333333,
+        "L": 64,
+        "T": 64.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.75,
+        "tau_Q": 32.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-03ae78d161a7",
+      "lease": null,
+      "parameter_hash": "03ae78d161a7e0cf600928142c44df7c5b7f6643544d0bb692cfd3a4caa9fcbe",
+      "parameters": {
+        "Gamma_c": 1.3685416666666668,
+        "Gamma_c_interval": [
+          1.3680208333333332,
+          1.3690625
+        ],
+        "Gamma_c_nominal": 1.3685416666666668,
+        "L": 64,
+        "T": 64.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.8,
+        "tau_Q": 32.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-a377cb57ad11",
+      "lease": null,
+      "parameter_hash": "a377cb57ad112b48ec17d15c68ae325d398fec2ea42774845b2cdeae07ebd8c1",
+      "parameters": {
+        "Gamma_c": 1.3030208333333333,
+        "Gamma_c_interval": [
+          1.3025,
+          1.3035416666666666
+        ],
+        "Gamma_c_nominal": 1.3030208333333333,
+        "L": 64,
+        "T": 64.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.95,
+        "tau_Q": 32.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-0fc0f780ae01",
+      "lease": null,
+      "parameter_hash": "0fc0f780ae01db4c01e48747cb8708cd2677cc70c1be4a446545ad6538dafd0d",
+      "parameters": {
+        "Gamma_c": 1.2835416666666666,
+        "Gamma_c_interval": [
+          1.2830208333333333,
+          1.2840625
+        ],
+        "Gamma_c_nominal": 1.2835416666666666,
+        "L": 64,
+        "T": 64.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 2.0,
+        "tau_Q": 32.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-149c8fe7993e",
+      "lease": null,
+      "parameter_hash": "149c8fe7993e67cb4fd114814efd26f9dba111b190016223b9ac5b2c16877ba4",
+      "parameters": {
+        "Gamma_c": 1.3933333333333333,
+        "Gamma_c_interval": [
+          1.3928125,
+          1.3938541666666666
+        ],
+        "Gamma_c_nominal": 1.3933333333333333,
+        "L": 64,
+        "T": 128.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.75,
+        "tau_Q": 64.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-befaa65c78ae",
+      "lease": null,
+      "parameter_hash": "befaa65c78ae07d2e8f6820f7516466465d99566ce4107cb1b59194af4f46ebc",
+      "parameters": {
+        "Gamma_c": 1.3685416666666668,
+        "Gamma_c_interval": [
+          1.3680208333333332,
+          1.3690625
+        ],
+        "Gamma_c_nominal": 1.3685416666666668,
+        "L": 64,
+        "T": 128.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.8,
+        "tau_Q": 64.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-bb602989094a",
+      "lease": null,
+      "parameter_hash": "bb602989094a3f283f476d5b7e48d0ba9a0233f283afa12cec0eb5ecb0b50ae5",
+      "parameters": {
+        "Gamma_c": 1.3030208333333333,
+        "Gamma_c_interval": [
+          1.3025,
+          1.3035416666666666
+        ],
+        "Gamma_c_nominal": 1.3030208333333333,
+        "L": 64,
+        "T": 128.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.95,
+        "tau_Q": 64.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-f5236c98b435",
+      "lease": null,
+      "parameter_hash": "f5236c98b43522453686e1e91e4a489cead67cd304caa8b55a6b267a348a884f",
+      "parameters": {
+        "Gamma_c": 1.2835416666666666,
+        "Gamma_c_interval": [
+          1.2830208333333333,
+          1.2840625
+        ],
+        "Gamma_c_nominal": 1.2835416666666666,
+        "L": 64,
+        "T": 128.0,
+        "chi": 96,
+        "component_stage": "sprint-trend",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 2.0,
+        "tau_Q": 64.0,
+        "variant": "baseline"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-76de3966db7d",
+      "lease": null,
+      "parameter_hash": "76de3966db7decaa132cbc807a2441209490e263c87be0e88971165e50f7503b",
+      "parameters": {
+        "Gamma_c": 1.3933333333333333,
+        "Gamma_c_interval": [
+          1.3928125,
+          1.3938541666666666
+        ],
+        "Gamma_c_nominal": 1.3933333333333333,
+        "L": 64,
+        "T": 16.0,
+        "chi": 96,
+        "component_stage": "sprint-sentinels",
+        "dt": 0.025,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.75,
+        "tau_Q": 8.0,
+        "variant": "dt"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-3463223909a7",
+      "lease": null,
+      "parameter_hash": "3463223909a7520f1784f5c06c8d8d41a2ae5fb3a16e858d22b3c1a6143d9423",
+      "parameters": {
+        "Gamma_c": 1.3933333333333333,
+        "Gamma_c_interval": [
+          1.3928125,
+          1.3938541666666666
+        ],
+        "Gamma_c_nominal": 1.3933333333333333,
+        "L": 64,
+        "T": 16.0,
+        "chi": 96,
+        "component_stage": "sprint-sentinels",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 24,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.75,
+        "tau_Q": 8.0,
+        "variant": "poles"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-3ae757eafa2c",
+      "lease": null,
+      "parameter_hash": "3ae757eafa2c777689a0f4c8a0847afc68fa96f1ef3d7ae2f06f67edee202886",
+      "parameters": {
+        "Gamma_c": 1.3933333333333333,
+        "Gamma_c_interval": [
+          1.3928125,
+          1.3938541666666666
+        ],
+        "Gamma_c_nominal": 1.3933333333333333,
+        "L": 64,
+        "T": 64.0,
+        "chi": 96,
+        "component_stage": "sprint-sentinels",
+        "dt": 0.025,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.75,
+        "tau_Q": 32.0,
+        "variant": "dt"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-aabee694f8d9",
+      "lease": null,
+      "parameter_hash": "aabee694f8d996f4cea06104897450398b35d80f51224e1f48e6ab95b6c62fb2",
+      "parameters": {
+        "Gamma_c": 1.3933333333333333,
+        "Gamma_c_interval": [
+          1.3928125,
+          1.3938541666666666
+        ],
+        "Gamma_c_nominal": 1.3933333333333333,
+        "L": 64,
+        "T": 64.0,
+        "chi": 96,
+        "component_stage": "sprint-sentinels",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 24,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.75,
+        "tau_Q": 32.0,
+        "variant": "poles"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-c73645024b28",
+      "lease": null,
+      "parameter_hash": "c73645024b28a0bd1fa2d9507e941267052702800d7e36f0c9b0bb669d61b632",
+      "parameters": {
+        "Gamma_c": 1.2835416666666666,
+        "Gamma_c_interval": [
+          1.2830208333333333,
+          1.2840625
+        ],
+        "Gamma_c_nominal": 1.2835416666666666,
+        "L": 64,
+        "T": 16.0,
+        "chi": 96,
+        "component_stage": "sprint-sentinels",
+        "dt": 0.025,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 2.0,
+        "tau_Q": 8.0,
+        "variant": "dt"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-06c44d9525b7",
+      "lease": null,
+      "parameter_hash": "06c44d9525b7300a7c5b427ee840e710c99a1c821be6a00b871ff8c3df205872",
+      "parameters": {
+        "Gamma_c": 1.2835416666666666,
+        "Gamma_c_interval": [
+          1.2830208333333333,
+          1.2840625
+        ],
+        "Gamma_c_nominal": 1.2835416666666666,
+        "L": 64,
+        "T": 16.0,
+        "chi": 96,
+        "component_stage": "sprint-sentinels",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 24,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 2.0,
+        "tau_Q": 8.0,
+        "variant": "poles"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-fea1707c6026",
+      "lease": null,
+      "parameter_hash": "fea1707c602649a93fcddb0e83cf6b7fa35f9f135a741c2b52c92bdd8a901dfa",
+      "parameters": {
+        "Gamma_c": 1.2835416666666666,
+        "Gamma_c_interval": [
+          1.2830208333333333,
+          1.2840625
+        ],
+        "Gamma_c_nominal": 1.2835416666666666,
+        "L": 64,
+        "T": 64.0,
+        "chi": 96,
+        "component_stage": "sprint-sentinels",
+        "dt": 0.025,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 2.0,
+        "tau_Q": 32.0,
+        "variant": "dt"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-caa78b969ef2",
+      "lease": null,
+      "parameter_hash": "caa78b969ef28a98c5e5b29c0edaf7747083db8949d8da0f068021ac7ddd33f4",
+      "parameters": {
+        "Gamma_c": 1.2835416666666666,
+        "Gamma_c_interval": [
+          1.2830208333333333,
+          1.2840625
+        ],
+        "Gamma_c_nominal": 1.2835416666666666,
+        "L": 64,
+        "T": 64.0,
+        "chi": 96,
+        "component_stage": "sprint-sentinels",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 24,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 2.0,
+        "tau_Q": 32.0,
+        "variant": "poles"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-96456c782365",
+      "lease": null,
+      "parameter_hash": "96456c7823655a7d8c16f97e87aa0925221d72552ded3e3f29f9b88721b5c82f",
+      "parameters": {
+        "Gamma_c": 1.3685416666666668,
+        "Gamma_c_interval": [
+          1.3680208333333332,
+          1.3690625
+        ],
+        "Gamma_c_nominal": 1.3685416666666668,
+        "L": 64,
+        "T": 16.0,
+        "chi": 128,
+        "component_stage": "sprint-sentinels",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.8,
+        "tau_Q": 8.0,
+        "variant": "chi"
+      },
+      "resource_class": "large",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-75adc5bba6bc",
+      "lease": null,
+      "parameter_hash": "75adc5bba6bcc47624a519d72ebe35a9af1964c163214af437a6f89aac35abab",
+      "parameters": {
+        "Gamma_c": 1.3685416666666668,
+        "Gamma_c_interval": [
+          1.3680208333333332,
+          1.3690625
+        ],
+        "Gamma_c_nominal": 1.3685416666666668,
+        "L": 64,
+        "T": 16.0,
+        "chi": 96,
+        "component_stage": "sprint-sentinels",
+        "dt": 0.025,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.8,
+        "tau_Q": 8.0,
+        "variant": "dt"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-04e130d01659",
+      "lease": null,
+      "parameter_hash": "04e130d01659cc7aafc2a3b740b0775b321269ce2e79c2fbf862773ff36c8446",
+      "parameters": {
+        "Gamma_c": 1.3685416666666668,
+        "Gamma_c_interval": [
+          1.3680208333333332,
+          1.3690625
+        ],
+        "Gamma_c_nominal": 1.3685416666666668,
+        "L": 64,
+        "T": 64.0,
+        "chi": 128,
+        "component_stage": "sprint-sentinels",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.8,
+        "tau_Q": 32.0,
+        "variant": "chi"
+      },
+      "resource_class": "large",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-ca99c6238e58",
+      "lease": null,
+      "parameter_hash": "ca99c6238e58fd860493e3ebcd44713705b45b9548bc24404915a506fa176c70",
+      "parameters": {
+        "Gamma_c": 1.3685416666666668,
+        "Gamma_c_interval": [
+          1.3680208333333332,
+          1.3690625
+        ],
+        "Gamma_c_nominal": 1.3685416666666668,
+        "L": 64,
+        "T": 64.0,
+        "chi": 96,
+        "component_stage": "sprint-sentinels",
+        "dt": 0.025,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.8,
+        "tau_Q": 32.0,
+        "variant": "dt"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-44841b09f230",
+      "lease": null,
+      "parameter_hash": "44841b09f23096d44ce997a1a8b26d548bae02915d476e78837c209868577e40",
+      "parameters": {
+        "Gamma_c": 1.3030208333333333,
+        "Gamma_c_interval": [
+          1.3025,
+          1.3035416666666666
+        ],
+        "Gamma_c_nominal": 1.3030208333333333,
+        "L": 64,
+        "T": 16.0,
+        "chi": 128,
+        "component_stage": "sprint-sentinels",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.95,
+        "tau_Q": 8.0,
+        "variant": "chi"
+      },
+      "resource_class": "large",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-8a748084dd36",
+      "lease": null,
+      "parameter_hash": "8a748084dd36b4f5c4be062c19814ba3a3b34bf19a883254846bc5acd6e08a11",
+      "parameters": {
+        "Gamma_c": 1.3030208333333333,
+        "Gamma_c_interval": [
+          1.3025,
+          1.3035416666666666
+        ],
+        "Gamma_c_nominal": 1.3030208333333333,
+        "L": 64,
+        "T": 16.0,
+        "chi": 96,
+        "component_stage": "sprint-sentinels",
+        "dt": 0.025,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.95,
+        "tau_Q": 8.0,
+        "variant": "dt"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-9bd3966f0e8c",
+      "lease": null,
+      "parameter_hash": "9bd3966f0e8c1e98a058d0f3221d8821fc71d16398c330c19f110742844350c3",
+      "parameters": {
+        "Gamma_c": 1.3030208333333333,
+        "Gamma_c_interval": [
+          1.3025,
+          1.3035416666666666
+        ],
+        "Gamma_c_nominal": 1.3030208333333333,
+        "L": 64,
+        "T": 64.0,
+        "chi": 128,
+        "component_stage": "sprint-sentinels",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.95,
+        "tau_Q": 32.0,
+        "variant": "chi"
+      },
+      "resource_class": "large",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-b05e762cbf03",
+      "lease": null,
+      "parameter_hash": "b05e762cbf0371c3305d6196cd75a70794c2c2361617260385a299860f03e154",
+      "parameters": {
+        "Gamma_c": 1.3030208333333333,
+        "Gamma_c_interval": [
+          1.3025,
+          1.3035416666666666
+        ],
+        "Gamma_c_nominal": 1.3030208333333333,
+        "L": 64,
+        "T": 64.0,
+        "chi": 96,
+        "component_stage": "sprint-sentinels",
+        "dt": 0.025,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.95,
+        "tau_Q": 32.0,
+        "variant": "dt"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-8eb623811a1b",
+      "lease": null,
+      "parameter_hash": "8eb623811a1b07faa2d2837121a693446e48a4495eafbecf6000ad2f3030576d",
+      "parameters": {
+        "Gamma_c": 1.3680208333333332,
+        "Gamma_c_interval": [
+          1.3680208333333332,
+          1.3690625
+        ],
+        "Gamma_c_nominal": 1.3685416666666668,
+        "L": 64,
+        "T": 16.0,
+        "chi": 96,
+        "component_stage": "sprint-gamma",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.8,
+        "tau_Q": 8.0,
+        "variant": "gamma_low"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-741a7a31081d",
+      "lease": null,
+      "parameter_hash": "741a7a31081d5dc61aa04440dfa806160b58b875d7a5ee907b188428a2c0aeb8",
+      "parameters": {
+        "Gamma_c": 1.3690625,
+        "Gamma_c_interval": [
+          1.3680208333333332,
+          1.3690625
+        ],
+        "Gamma_c_nominal": 1.3685416666666668,
+        "L": 64,
+        "T": 16.0,
+        "chi": 96,
+        "component_stage": "sprint-gamma",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.8,
+        "tau_Q": 8.0,
+        "variant": "gamma_high"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-5f5d5143bc42",
+      "lease": null,
+      "parameter_hash": "5f5d5143bc42b646eb38e7de5593012400d6e556b2da8a97a754947f25d12065",
+      "parameters": {
+        "Gamma_c": 1.3680208333333332,
+        "Gamma_c_interval": [
+          1.3680208333333332,
+          1.3690625
+        ],
+        "Gamma_c_nominal": 1.3685416666666668,
+        "L": 64,
+        "T": 64.0,
+        "chi": 96,
+        "component_stage": "sprint-gamma",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.8,
+        "tau_Q": 32.0,
+        "variant": "gamma_low"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-34aa92fdb4d8",
+      "lease": null,
+      "parameter_hash": "34aa92fdb4d81cd3b7ed5fc3cd792e80b14235628e47cec466f17ff8b5d8c8b9",
+      "parameters": {
+        "Gamma_c": 1.3690625,
+        "Gamma_c_interval": [
+          1.3680208333333332,
+          1.3690625
+        ],
+        "Gamma_c_nominal": 1.3685416666666668,
+        "L": 64,
+        "T": 64.0,
+        "chi": 96,
+        "component_stage": "sprint-gamma",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.8,
+        "tau_Q": 32.0,
+        "variant": "gamma_high"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-cc57b9324b0d",
+      "lease": null,
+      "parameter_hash": "cc57b9324b0d98f5c946b516c8c2e020f3390d8fc0e74be490404199f6ba6b9d",
+      "parameters": {
+        "Gamma_c": 1.3025,
+        "Gamma_c_interval": [
+          1.3025,
+          1.3035416666666666
+        ],
+        "Gamma_c_nominal": 1.3030208333333333,
+        "L": 64,
+        "T": 16.0,
+        "chi": 96,
+        "component_stage": "sprint-gamma",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.95,
+        "tau_Q": 8.0,
+        "variant": "gamma_low"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-d8826dda8d2e",
+      "lease": null,
+      "parameter_hash": "d8826dda8d2e1cdde4d250f52d1a0d74f9688ad8c68c7ad4210def77860427db",
+      "parameters": {
+        "Gamma_c": 1.3035416666666666,
+        "Gamma_c_interval": [
+          1.3025,
+          1.3035416666666666
+        ],
+        "Gamma_c_nominal": 1.3030208333333333,
+        "L": 64,
+        "T": 16.0,
+        "chi": 96,
+        "component_stage": "sprint-gamma",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.95,
+        "tau_Q": 8.0,
+        "variant": "gamma_high"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-b5eb83ba47e3",
+      "lease": null,
+      "parameter_hash": "b5eb83ba47e3907c02ae15d210d55f90c11cf5ad6ae9c7631aadca78f19bc80c",
+      "parameters": {
+        "Gamma_c": 1.3025,
+        "Gamma_c_interval": [
+          1.3025,
+          1.3035416666666666
+        ],
+        "Gamma_c_nominal": 1.3030208333333333,
+        "L": 64,
+        "T": 64.0,
+        "chi": 96,
+        "component_stage": "sprint-gamma",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.95,
+        "tau_Q": 32.0,
+        "variant": "gamma_low"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    },
+    {
+      "error": null,
+      "id": "sprint-b-4a9b922cdb0a",
+      "lease": null,
+      "parameter_hash": "4a9b922cdb0a12232bc213cb412ad0214313b40fefd22aa69fc1b1b975f86dda",
+      "parameters": {
+        "Gamma_c": 1.3035416666666666,
+        "Gamma_c_interval": [
+          1.3025,
+          1.3035416666666666
+        ],
+        "Gamma_c_nominal": 1.3030208333333333,
+        "L": 64,
+        "T": 64.0,
+        "chi": 96,
+        "component_stage": "sprint-gamma",
+        "dt": 0.05,
+        "execution_mode": "tdvp",
+        "poles": 16,
+        "seed": 86,
+        "shard_id": "B",
+        "sigma": 1.95,
+        "tau_Q": 32.0,
+        "variant": "gamma_high"
+      },
+      "resource_class": "standard",
+      "result": null,
+      "status": "pending"
+    }
+  ],
+  "code_revision": "6a85467fa88dd2ee6850513c88aa3f61faf759aa",
+  "code_source_sha256": "aaf37c9d7fc02182f9ee075a50b6b2a74fdea57fa25671627c1cf274425e675e",
+  "created_at": "2026-07-29T09:03:49",
+  "gamma_map_hash": "888ad0132275e8a723f0d8d404fb82954cab1537b5ad324306fdf9b4fd9f444d",
+  "physics": {
+    "J": 1.0,
+    "boundary": "open",
+    "hamiltonian": "-sum_{i<j} |i-j|^(-(1+sigma)) ZiZj - Gamma(t) sum_i Xi",
+    "hbar": 1.0,
+    "interaction": "ferromagnetic",
+    "pauli_normalization": "eigenvalues +/-1"
+  },
+  "protocol": {
+    "Gamma_final": 0.0,
+    "Gamma_initial": "2*Gamma_c",
+    "paper_horizontal_axis": "T",
+    "ramp": "linear",
+    "tau_Q_definition": "T/2"
+  },
+  "run_id": "track-c-sprint-B",
+  "schema_version": 1,
+  "sources": {
+    "challenge": "https://github.com/QuantumBFS/quantum.harness/issues/86",
+    "paper": "https://arxiv.org/abs/1612.07437"
+  },
+  "stage": "sprint-B",
+  "track": "C"
+}
