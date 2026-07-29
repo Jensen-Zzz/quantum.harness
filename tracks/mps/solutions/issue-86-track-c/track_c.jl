@@ -40,6 +40,31 @@ function parse_gamma_source(value::AbstractString)
     return parse(Float64, value)
 end
 
+function build_provenance_aware_gamma_map(scans::AbstractVector)
+    sources = Set(String(scan["code_source_sha256"]) for scan in scans)
+    length(sources) == 1 ||
+        error("critical scans were produced by different source revisions")
+    revisions = sort!(unique(
+        String(scan["code_revision"]) for scan in scans
+    ))
+    if length(revisions) == 1
+        gamma_map = build_gamma_map(scans)
+        gamma_map["scan_code_revisions"] = revisions
+        gamma_map["provenance_policy"] = "single-revision"
+        return gamma_map
+    end
+
+    equivalent_scans = deepcopy(scans)
+    for scan in equivalent_scans
+        scan["code_revision"] = first(revisions)
+    end
+    gamma_map = build_gamma_map(equivalent_scans)
+    gamma_map["code_revision"] = Issue86TrackC._git_revision()
+    gamma_map["scan_code_revisions"] = revisions
+    gamma_map["provenance_policy"] = "identical-driver-source-sha256"
+    return gamma_map
+end
+
 function write_curve_csv(path, run)
     open(path, "w") do io
         println(
@@ -255,7 +280,7 @@ elseif command == "merge-gamma"
     length(ARGS) >= 2 || (usage(); exit(2))
     output = popfirst!(ARGS)
     isfile(output) && error("refusing to overwrite existing Gamma_c map: $output")
-    gamma_map = build_gamma_map(read_run_json.(ARGS))
+    gamma_map = build_provenance_aware_gamma_map(read_run_json.(ARGS))
     write_run_json(output, gamma_map)
     println(output)
 elseif command == "generate-sprint"

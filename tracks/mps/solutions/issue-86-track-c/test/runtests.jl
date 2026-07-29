@@ -487,6 +487,8 @@ end
     @test_throws ErrorException merge_campaign_runs(run_a, duplicate)
 end
 
+include(joinpath(@__DIR__, "provenance_merge.jl"))
+
 @testset "Critical scan shards are balanced and registered" begin
     estimates = Dict{String, Any}(
         "1.0:12" => 1.2,
